@@ -2,8 +2,8 @@ export const black = '#000'
 export const white = '#fff'
 
 export const colors = {
-  black,
-  white
+	black,
+	white
 }
 
 export const bpTiny = 'min-width: 25em' /* 400px */
@@ -13,14 +13,14 @@ export const bpLarge = 'min-width: 62.5em' /* 1000px */
 
 
 export const mq = {
-  bpTiny,
-  bpSmall,
-  bpMedium,
-  bpLarge
+	bpTiny,
+	bpSmall,
+	bpMedium,
+	bpLarge
 }
 
 export const containerWidth = '85.333em' /* 1024px */
 
 export const container = {
-  width: containerWidth,
+	width: containerWidth,
 }
