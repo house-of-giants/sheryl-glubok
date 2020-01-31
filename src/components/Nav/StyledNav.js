@@ -15,7 +15,7 @@ export const StyledNavActivator = styled.button`
 	position: fixed;
 	right: 2rem;
 	top: 0;
-	z-index: 5;
+	z-index: 11;
 
 	&::after,
 	&::before {
@@ -61,7 +61,7 @@ export const StyledNav = styled(motion.nav)`
 	position: fixed;
 	top: 0;
 	width: 100vw;
-	z-index: 4;
+	z-index: 10;
 
 	& svg {
 		height: 100%;

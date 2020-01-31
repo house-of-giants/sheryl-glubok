@@ -25,14 +25,15 @@ export const StyledHero = styled.div`
 		width: 100%;
 
 		&:nth-child(2) {
-			animation-name: glitch-anim-1;
+			animation-name: glitch-1;
 		}
 
 		&:nth-child(3) {
-			animation-name: glitch-anim-2;
+			animation-name: glitch-2;
 		}
+
 		&:nth-child(4) {
-			animation-name: glitch-anim-3;
+			animation-name: glitch-3;
 			mix-blend-mode: ${blend};
 		}
 
@@ -57,7 +58,7 @@ export const StyledHero = styled.div`
 	}
 
 	& svg {
-		animation-name: glitch-anim-text;
+		animation-name: glitch-text;
 		animation-delay: calc(${delay} * 2);
 		animation-duration: ${time};
 		animation-timing-function: linear;
@@ -65,7 +66,7 @@ export const StyledHero = styled.div`
 		fill: ${colors.white};
 	}
 
-	@keyframes glitch-anim-1 {
+	@keyframes glitch-1 {
 		0% {
 			opacity: 1;
 			transform: translate3d(${gapHor},0,0);
@@ -112,7 +113,7 @@ export const StyledHero = styled.div`
 		}
 	}
 
-	@keyframes glitch-anim-2 {
+	@keyframes glitch-2 {
 		0% {
 			opacity: 1;
 			transform: translate3d(calc(-1 * ${gapHor}),0,0);
@@ -159,7 +160,7 @@ export const StyledHero = styled.div`
 		}
 	}
 
-	@keyframes glitch-anim-3 {
+	@keyframes glitch-3 {
 		0% {
 			opacity: 1;
 			transform: translate3d(0, calc(-1 * ${gapVer}), 0) scale3d(-1,-1,1);
@@ -230,7 +231,7 @@ export const StyledHero = styled.div`
 		}
 	}
 
-	@keyframes glitch-anim-text {
+	@keyframes glitch-text {
 		0% {
 			transform: translate3d(calc(-1 * ${gapHor}),0,0) scale3d(-1,-1,1);
 			clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
@@ -266,7 +267,7 @@ export const StyledHero = styled.div`
 	}
 
 	/* Flash */
-	@keyframes glitch-anim-flash {
+	@keyframes glitch-flash {
 		0%, 5% {
 			opacity: 0.2;
 			transform: translate3d(${gapHor}, ${gapVer}, 0);
