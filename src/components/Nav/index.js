@@ -15,7 +15,7 @@ const Nav = () => {
 		const el = navRef.current
 		const blurElement = { a: isToggled ? 10 : 0 }
 		TweenMax
-			.fromTo( blurElement, 0.3, { a: isToggled ? 10 : 0 }, { a: isToggled ? 0 : 10 } )
+			.fromTo( blurElement, 0.2, { a: isToggled ? 10 : 0 }, { a: isToggled ? 0 : 10 } )
 			.eventCallback( 'onUpdate', () => {
 			TweenMax.set( el, { filter: `blur(${blurElement.a}px)` } )
 		} )
