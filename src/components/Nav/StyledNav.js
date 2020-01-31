@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { motion } from "framer-motion"
-import { colors } from '../base/variables'
+import { colors } from '../../styles/base/variables'
 
 export const StyledNavActivator = styled.button`
 	background-color: transparent;
@@ -12,20 +12,21 @@ export const StyledNavActivator = styled.button`
 	font-weight: 700;
 	margin: 2rem 0 0 auto;
 	padding-right: 4rem;
-	position: sticky;
+	position: fixed;
+	right: 2rem;
 	top: 0;
 	z-index: 5;
 
 	&::after,
 	&::before {
-		background-color: ${colors.white};
+		background-color: currentColor;
 		border-radius: 3px;
 		content: "";
 		height: 3px;
 		position: absolute;
 		left: calc(100% - 30px);
 		transform: translateY(0.5rem);
-		transition: transform ease 300ms;
+		transition: transform ease 300ms, color ease 300ms;
 		width: 30px;
 	}
 
@@ -34,6 +35,8 @@ export const StyledNavActivator = styled.button`
 	}
 
 	&.is-active {
+		color: ${colors.codGray};
+
 		&::before {
 			transform: translateY(0.8rem) rotate(45deg);
 		}
@@ -49,7 +52,7 @@ export const StyledNav = styled(motion.nav)`
 	background-color: #efefef;
 	box-sizing: border-box;
 	display: flex;
-	filter: url(#blur);
+	filter: blur(10px);
 	flex-direction: column;
 	justify-content: center;
 	height: 100vh;
@@ -58,6 +61,7 @@ export const StyledNav = styled(motion.nav)`
 	position: fixed;
 	top: 0;
 	width: 100vw;
+	z-index: 4;
 
 	& svg {
 		height: 100%;
@@ -79,12 +83,20 @@ export const StyledNav = styled(motion.nav)`
 	}
 
 	& a {
-		color: ${colors.black};
+		box-shadow: inset 0 0 0 rgba(76, 41, 84, 0.3);
+		color: ${colors.codGray};
 		display: block;
 		font-size: 4rem;
 		font-weight: 900;
 		padding: 2rem 0;
+		position: relative;
 		text-align: center;
+		transition: box-shadow ease 300ms;
 		width: 100%;
+
+		&:hover {
+			box-shadow: inset 0 -4rem 0 rgba(76, 41, 84, 0.3);
+			text-decoration: none;
+		}
 	}
 `
