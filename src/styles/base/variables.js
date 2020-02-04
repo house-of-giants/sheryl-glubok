@@ -1,11 +1,13 @@
-export const codGray = '#1A1A1A'
-export const white = '#fff'
-export const bossanova = '#4C2954'
+export const black = '#000000'
+export const codGray = '#1a1a1a'
+export const white = '#ffffff'
+export const bossanova = '#4c2954'
 export const cosmic = '#774175'
-export const revolver = '#281C3D'
+export const revolver = '#281c3d'
 
 
 export const colors = {
+	black,
 	codGray,
 	white,
 	bossanova,
