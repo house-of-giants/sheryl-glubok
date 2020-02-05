@@ -12,7 +12,7 @@ const Hero = () => (
 		<div className="content">
 			<Logo />
 			<h1 className="screen-reader-text">Sheryl Glubok</h1>
-			<p>Writer, Director, Story Teller</p>
+			<p>Writer, Director, Storyteller</p>
 		</div>
 	</StyledHero>
 )
