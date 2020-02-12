@@ -9,14 +9,17 @@ import { FishbowlStyles } from './Fishbowl'
 import { LilyNRoseStyles } from './LilyNRose'
 
 const StyledFilm = styled.div`
-	display: grid;
-	padding-bottom: 13.25rem;
+	& .film-wrap {
+		cursor: pointer;
+		display: grid;
+		padding-bottom: 13.25rem;
 
-	${() => FishbowlStyles}
-	${() => LilyNRoseStyles}
-	${() => Sonnet98Styles}
-	${() => ThawStyles}
-	${() => AlexiaStyles}
+		${() => FishbowlStyles}
+		${() => LilyNRoseStyles}
+		${() => Sonnet98Styles}
+		${() => ThawStyles}
+		${() => AlexiaStyles}
+	}
 
 	& img {
 		height: 100%;
