@@ -7,6 +7,7 @@ import LilyNRose from '../components/Films/LilyNRose'
 import Sonnet98 from '../components/Films/Sonnet98'
 import Thaw from '../components/Films/Thaw'
 import Alexia from '../components/Films/Alexia'
+import Stage from '../components/Stage'
 
 import { StyledContainer } from '../styles/global/layout'
 
@@ -19,6 +20,7 @@ export default () => (
 			<Sonnet98 />
 			<Thaw />
 			<Alexia />
+			<Stage />
 		</StyledContainer>
 	</Layout>
 )
