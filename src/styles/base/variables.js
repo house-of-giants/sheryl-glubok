@@ -5,7 +5,6 @@ export const bossanova = '#4c2954'
 export const cosmic = '#774175'
 export const revolver = '#281c3d'
 
-
 export const colors = {
 	black,
 	codGray,
