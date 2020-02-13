@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { colors, mq } from '../../styles/base/variables'
+import { colors, mq, containerWidth } from '../../styles/base/variables'
 
 import { ThawStyles } from './Thaw'
 import { AlexiaStyles } from './Alexia'
@@ -9,14 +9,20 @@ import { FishbowlStyles } from './Fishbowl'
 import { LilyNRoseStyles } from './LilyNRose'
 
 const StyledFilm = styled.div`
-	display: grid;
-	padding-bottom: 13.25rem;
+	& .film-wrap {
+		cursor: pointer;
+		display: grid;
+		padding-bottom: 13.25rem;
 
-	${() => FishbowlStyles}
-	${() => LilyNRoseStyles}
-	${() => Sonnet98Styles}
-	${() => ThawStyles}
-	${() => AlexiaStyles}
+		margin: 0 auto;
+		max-width: ${containerWidth};
+
+		${() => FishbowlStyles}
+		${() => LilyNRoseStyles}
+		${() => Sonnet98Styles}
+		${() => ThawStyles}
+		${() => AlexiaStyles}
+	}
 
 	& img {
 		height: 100%;
@@ -29,6 +35,8 @@ const StyledFilm = styled.div`
 		grid-column: -4 / span 3;
 		grid-row: -1;
 		justify-content: space-between;
+		position: relative;
+		z-index: 1;
 
 		@media(${mq.bpLarge}) {
 			grid-column -3 / span 2;
