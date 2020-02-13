@@ -1,16 +1,14 @@
 import { useEffect } from 'react'
 import * as THREE from 'three'
 
-// import gooeyShader from '../../glsl/gooeyShader.glsl'
-
 import Tile from './Tile'
 
 const perspective = 800
 
-const Scene = ( scene ) => {
+const Scene = ( scene, els ) => {
 	let mainScene
 	const container = scene
-	const tileEls = document.querySelectorAll( '.film' )
+	const tileEls = els
 
 	const ww = window.innerWidth
 	const wh = window.innerHeight
@@ -29,7 +27,7 @@ const Scene = ( scene ) => {
 		renderer.setSize( ww, wh )
 		renderer.setPixelRatio( window.devicePixelRatio )
 
-		const tiles = Array.from( tileEls ).map( (el, i) => new Tile( tileEls[i], mainScene, 0.5 ) )
+		const tiles = tileEls.map( (el, i) => new Tile( tileEls[i], mainScene, 0.5 ) )
 
 		const initCamera = () => {
 			const fov = ( 180 * ( 2 * Math.atan( wh / 2 / perspective ) ) ) / Math.PI
@@ -45,7 +43,7 @@ const Scene = ( scene ) => {
 
 		const update = () => {
 			requestAnimationFrame( update )
-			// tiles.forEach( tile => console.log( tile ))
+			tiles.forEach( tile => tile.update())
 			renderer.render( mainScene, camera )
 		}
 
