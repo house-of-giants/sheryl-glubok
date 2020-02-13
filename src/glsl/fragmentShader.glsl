@@ -1,7 +1,45 @@
+// // #pragma glslify: snoise2 = require('glsl-noise/simplex/2d')
+// #pragma glslify: snoise3 = require('glsl-noise/simplex/3d')
+
+// uniform vec2 u_mouse;
+// uniform vec2 u_res;
+
+// varying vec2 v_uv;
+
+// uniform float u_time;
+
+// float circle(in vec2 _st, in float _radius, in float blurriness){
+// 	vec2 dist = _st;
+// 	return 1. - smoothstep(_radius-(_radius*blurriness), _radius+(_radius*blurriness), dot(dist,dist)*4.0);
+// }
+
+// void main(){
+// 	vec2 res = u_res * PR;
+// 	vec2 st = gl_FragCoord.xy / res.xy - vec2(0.5);
+
+// 	st.y *= u_res.y / u_res.x;
+
+// 	vec2 mouse = u_mouse * -0.5;
+
+// 	// mouse.y *= u_res.y / u_res.x;
+// 	mouse *= -1.;
+
+// 	vec2 circlePos = st + mouse;
+// 	float c = circle(circlePos, 0.3, 1.) * 2.5;
+
+// 	float offx = v_uv.x + sin(v_uv.y + u_time * .1);
+// 	float offy = v_uv.y - u_time * 0.1 - cos(u_time * .01) * .01;
+
+// 	float n = snoise3(vec3(offx, offy, u_time * .1) * 8.) - 0.4;
+
+// 	float finalMask = smoothstep(0.4, 0.5, n + c);
+// 	gl_FragColor = vec4(vec3(finalMask), 1.0);
+// }
+
 #pragma glslify: snoise3 = require('glsl-noise/simplex/3d')
 
-uniform sampler2D u_map;
-uniform sampler2D u_hovermap;
+// uniform sampler2D u_map;
+// uniform sampler2D u_hovermap;
 
 uniform float u_alpha;
 uniform float u_time;
@@ -10,8 +48,8 @@ uniform float u_progressClick;
 
 uniform vec2 u_res;
 uniform vec2 u_mouse;
-uniform vec2 u_ratio;
-uniform vec2 u_hoverratio;
+// uniform vec2 u_ratio;
+// uniform vec2 u_hoverratio;
 
 varying vec2 v_uv;
 
@@ -38,39 +76,30 @@ void main() {
 
 	vec2 cpos = st + mouse;
 
-	float grd = 0.1 * progressHover;
-
-	float sqr = 100. * ((smoothstep(0., grd, uv.x) - smoothstep(1. - grd, 1., uv.x)) * (smoothstep(0., grd, uv.y) - smoothstep(1. - grd, 1., uv.y))) - 10.;
-
-	float c = circle(cpos, .04 * progressHover + progress * 0.8, 2.) * 50.;
-	float c2 = circle(cpos, .01 * progressHover + progress * 0.5, 2.);
+	float c = circle(cpos, .02 * progressHover + progress * 0.8, 2.);
 
 	float offX = uv.x + sin(uv.y + time * 2.);
 	float offY = uv.y - time * .2 - cos(time * 2.) * 0.1;
 	float nc = (snoise3(vec3(offX, offY, time * .5) * 8.)) * progressHover;
-	float nh = (snoise3(vec3(offX, offY, time * .5 ) * 2.)) * .1;
-
-	c2 = smoothstep(.1, .8, c2 * 5. + nc * 3. - 1.);
+	// float nh = (snoise3(vec3(offX, offY, time * .5 ) * 2.)) * .03;
 
 	uv_h -= vec2(0.5);
 	uv_h *= 1. - u_progressHover * 0.1;
 	uv_h += vec2(0.5);
 
-	uv_h *= u_hoverratio;
+	// uv_h *= u_hoverratio;
 
 	uv -= vec2(0.5);
 	uv *= 1. - u_progressHover * 0.2;
-	uv += mouse * 0.1 * u_progressHover;
-	uv *= u_ratio;
+	// uv *= u_ratio;
 	uv += vec2(0.5);
 
-	vec4 color = vec4(0.0314, 0.0314, 0.2235, 1.);
+	// vec4 image = texture2D(u_hovermap, uv_h);
+	// vec4 imageDistorted = texture2D(u_map, uv + vec2(nh) * progressHover);
 
-	vec4 image = texture2D(u_map, uv);
-	vec4 hover = texture2D(u_hovermap, uv_h + vec2(nh) * progressHover * (1. - progress));
-	hover = mix(hover, color * hover, .8 * (1. - progress));
+	float finalMask = smoothstep(.99, 1., pow(c, 2.) * 4. + nc * (1. - progress));
 
-	float finalMask = smoothstep(.0, .1, sqr - c);
+	// vec4 finalImage = mix(imageDistorted, image, clamp(finalMask + progress, 0., 1.));
 
-	gl_FragColor = vec4(vec3(finalMask), u_alpha * finalMask);
+	gl_FragColor = vec4(vec3(finalMask), 0.3);
 }
