@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { colors, mq } from '../../styles/base/variables'
+import { colors, mq, containerWidth } from '../../styles/base/variables'
 
 import { ThawStyles } from './Thaw'
 import { AlexiaStyles } from './Alexia'
@@ -13,6 +13,9 @@ const StyledFilm = styled.div`
 		cursor: pointer;
 		display: grid;
 		padding-bottom: 13.25rem;
+
+		margin: 0 auto;
+		max-width: ${containerWidth};
 
 		${() => FishbowlStyles}
 		${() => LilyNRoseStyles}
@@ -32,6 +35,8 @@ const StyledFilm = styled.div`
 		grid-column: -4 / span 3;
 		grid-row: -1;
 		justify-content: space-between;
+		position: relative;
+		z-index: 1;
 
 		@media(${mq.bpLarge}) {
 			grid-column -3 / span 2;
