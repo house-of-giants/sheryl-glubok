@@ -14,7 +14,6 @@ export const StyledHero = styled.div`
 	justify-content: center;
 	position: relative;
 	height: 70vh;
-	margin-bottom: 10rem;
 	overflow: hidden;
 
 	& img {
