@@ -66,6 +66,10 @@ export const StyledHero = styled.div`
 		fill: ${colors.white};
 	}
 
+	& + * {
+		padding-top: 10rem;
+	}
+
 	@keyframes glitch-1 {
 		0% {
 			opacity: 1;
