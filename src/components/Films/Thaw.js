@@ -7,12 +7,15 @@ import { colors, mq } from '../../styles/base/variables'
 
 export const ThawStyles = css`
 	&.thaw {
-		grid-template-columns: 2fr 1fr 30px 1fr 1fr 2fr;
-		grid-template-rows: 1fr 30px 1fr 2fr 1fr;
 
-		@media(${mq.bpLarge}) {
-			grid-template-columns: 2fr 1fr 80px 1fr 1fr 2fr;
-			grid-template-rows: 1fr 80px 1fr 2fr 1fr;
+		& .film-wrap {
+			grid-template-columns: 2fr 1fr 30px 1fr 1fr 2fr;
+			grid-template-rows: 1fr 30px 1fr 2fr 1fr;
+
+			@media(${mq.bpLarge}) {
+				grid-template-columns: 2fr 1fr 80px 1fr 1fr 2fr;
+				grid-template-rows: 1fr 80px 1fr 2fr 1fr;
+			}
 		}
 
 		& svg {

@@ -28,7 +28,7 @@ class Film extends Component {
 
 	componentDidMount() {
 		const film = this.filmRef.current;
-		const els = film.querySelectorAll( `${StyledFilm} > *:not(.meta):not(.screen-reader-text)` )
+		const els = film.querySelectorAll( `${StyledFilm} .film-wrap > *:not(.meta):not(.screen-reader-text)` )
 
 		const setBlur = () => {
 			for ( let i = 0, len = els.length; i < len; i++ ) {
@@ -57,12 +57,14 @@ class Film extends Component {
 
 		return(
 			<StyledFilm className={`film ${slug}`} ref={ this.filmRef } itemScope itemType="http://schema.org/Movie">
-				{children}
-				<div className="meta">
-					<span className="screen-reader-text" itemProp="name">{title}</span>
-					<span className="screen-reader-text" itemProp="director">{director}</span>
-					<p itemProp="dateCreated">{date}</p>
-					<p><Link to={`/films/${slug}`}>View Film</Link></p>
+				<div className="film-wrap">
+					{children}
+					<div className="meta">
+						<span className="screen-reader-text" itemProp="name">{title}</span>
+						<span className="screen-reader-text" itemProp="director">{director}</span>
+						<p itemProp="dateCreated">{date}</p>
+						<p><Link to={`/films/${slug}`}>View Film</Link></p>
+					</div>
 				</div>
 			</StyledFilm>
 		)

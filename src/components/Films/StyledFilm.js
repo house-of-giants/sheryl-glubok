@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { colors, mq } from '../../styles/base/variables'
+import { colors, mq, containerWidth } from '../../styles/base/variables'
 
 import { ThawStyles } from './Thaw'
 import { AlexiaStyles } from './Alexia'
@@ -9,18 +9,19 @@ import { FishbowlStyles } from './Fishbowl'
 import { LilyNRoseStyles } from './LilyNRose'
 
 const StyledFilm = styled.div`
-	display: grid;
-	padding-bottom: 13.25rem;
+
+	& .film-wrap {
+		display: grid;
+		margin: 0 auto;
+		max-width: ${containerWidth};
+		padding-bottom: 13.25rem;
+	}
 
 	${() => FishbowlStyles}
 	${() => LilyNRoseStyles}
 	${() => Sonnet98Styles}
 	${() => ThawStyles}
 	${() => AlexiaStyles}
-
-	&:first-child {
-		padding-top: 10rem;
-	}
 
 	& img {
 		height: 100%;
