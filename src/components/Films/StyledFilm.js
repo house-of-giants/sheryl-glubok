@@ -18,6 +18,10 @@ const StyledFilm = styled.div`
 	${() => ThawStyles}
 	${() => AlexiaStyles}
 
+	&:first-child {
+		padding-top: 10rem;
+	}
+
 	& img {
 		height: 100%;
 		object-fit: cover;
@@ -29,6 +33,8 @@ const StyledFilm = styled.div`
 		grid-column: -4 / span 3;
 		grid-row: -1;
 		justify-content: space-between;
+		position: relative;
+		z-index: 2;
 
 		@media(${mq.bpLarge}) {
 			grid-column -3 / span 2;
