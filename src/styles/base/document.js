@@ -3,13 +3,11 @@ import { colors } from './variables'
 
 export const DocStyles = css`
 	body {
-		--c-bg: ${colors.black};
-		background-color: var(--c-bg);
+		background: ${ colors.black };
 		color: ${ colors.white };
 		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 		margin: 0;
 		padding: 0;
-		transition: 300ms ease background-color;
 	}
 
 	a {
