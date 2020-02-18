@@ -1,0 +1,32 @@
+import { css } from 'styled-components'
+
+export const Typography = css`
+	h1 {
+		font-size: 5rem;
+		padding: 1.875rem 0;
+	}
+
+	p {
+		font-size: 1.3rem;
+		line-height: 1.6;
+	}
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.screen-reader-text {
+		clip: rect(1px, 1px, 1px, 1px);
+		clip-path: inset(50%);
+		height: 1px;
+		width: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+	}
+`

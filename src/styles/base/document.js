@@ -10,30 +10,6 @@ export const DocStyles = css`
 		padding: 0;
 	}
 
-	a {
-		text-decoration: none;
-
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-
-	& h1 {
-		font-size: 5rem;
-		padding: 1.875rem 0;
-	}
-
-	.screen-reader-text {
-		clip: rect(1px, 1px, 1px, 1px);
-		clip-path: inset(50%);
-		height: 1px;
-		width: 1px;
-		margin: -1px;
-		overflow: hidden;
-		padding: 0;
-		position: absolute;
-	}
-
 	img {
 		max-width: 100%;
 	}
