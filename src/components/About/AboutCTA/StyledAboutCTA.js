@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { colors, bpMedium } from '../../styles/base/variables'
+import { colors, bpMedium } from '../../../styles/base/variables'
 
-export const StyledAbout = styled.div`
+export const StyledAboutCTA = styled.div`
 	& .logo {
 		max-height: 131px;
 
