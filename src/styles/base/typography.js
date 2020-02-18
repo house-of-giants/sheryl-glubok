@@ -6,6 +6,15 @@ export const Typography = css`
 		padding: 1.875rem 0;
 	}
 
+	h2 {
+		font-size: 4.5rem;
+		letter-spacing: 1px;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
 	p {
 		font-size: 1.3rem;
 		line-height: 1.6;

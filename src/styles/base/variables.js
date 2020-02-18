@@ -29,7 +29,9 @@ export const mq = {
 }
 
 export const containerWidth = '85.333em' /* 1024px */
+export const containerWidthNarrow = '51.3125em' /* 821px */
 
 export const container = {
 	width: containerWidth,
+	widthNarrow: containerWidthNarrow
 }
