@@ -9,6 +9,10 @@ export const Typography = css`
 	p {
 		font-size: 1.3rem;
 		line-height: 1.6;
+
+		&:not(:last-of-type) {
+			padding-bottom: 2rem;
+		}
 	}
 
 	a {
