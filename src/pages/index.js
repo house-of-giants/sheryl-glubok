@@ -12,7 +12,7 @@ import { StyledContainer } from '../styles/global/layout'
 
 export default () => (
 	<Layout>
-		<Hero />
+		<Hero logo={true} content="Writer, Director, Storyteller" />
 		<StyledContainer>
 			<Fishbowl />
 			<LilyNRose />
