@@ -9,7 +9,7 @@ export const StyledAboutHero = styled.div`
 	@media (${bpMedium}) {
 		grid-column-gap: 3rem;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: 2fr 2fr 1fr 1fr;
+		grid-template-rows: 2fr 2fr 1fr 0.6fr;
 	}
 
 	& svg {
