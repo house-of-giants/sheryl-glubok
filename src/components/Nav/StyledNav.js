@@ -11,6 +11,7 @@ export const StyledNavActivator = styled.button`
 	font-size: 1.4rem;
 	font-weight: 700;
 	margin: 2rem 0 0 auto;
+	mix-blend-mode: difference;
 	padding-right: 4rem;
 	position: fixed;
 	right: 2rem;
@@ -36,6 +37,7 @@ export const StyledNavActivator = styled.button`
 
 	&.is-active {
 		color: ${colors.codGray};
+		mix-blend-mode: normal;
 
 		&::before {
 			transform: translateY(0.8rem) rotate(45deg);

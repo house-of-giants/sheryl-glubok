@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import { Link } from 'gatsby'
 import { AnimatePresence } from 'framer-motion'
 import { TweenMax } from 'gsap'
 
@@ -30,13 +31,13 @@ const Nav = () => {
 						<StyledNav ref={ navRef } onUpdate={ gsapBlur } initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
 							<ul>
 								<li>
-									<a href="#">Home</a>
+									<Link to="/">Home</Link>
 								</li>
 								<li>
 									<a href="#">Films</a>
 								</li>
 								<li>
-									<a href="#">About</a>
+									<Link to="/about">About</Link>
 								</li>
 								<li>
 									<a href="#">Blog</a>
