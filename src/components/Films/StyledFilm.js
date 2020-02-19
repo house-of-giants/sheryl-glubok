@@ -44,6 +44,7 @@ const StyledFilm = styled.div`
 		& p {
 			align-items: center;
 			display: flex;
+			padding-bottom: 0;
 
 			&::before {
 				background-color: ${colors.white};
