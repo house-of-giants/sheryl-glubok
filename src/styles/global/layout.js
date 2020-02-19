@@ -10,4 +10,8 @@ export const StyledContainer = styled.div`
 	@media (${mq.bpXLarge}) {
 		overflow-x: visible;
 	}
+
+	& .wrap {
+		max-width: ${ container.widthNarrow };
+	}
 `
