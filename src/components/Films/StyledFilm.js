@@ -9,12 +9,13 @@ import { FishbowlStyles } from './Fishbowl'
 import { LilyNRoseStyles } from './LilyNRose'
 
 const StyledFilm = styled.div`
+	overflow-x: hidden;
+	padding-bottom: 13.25rem;
 
 	& .film-wrap {
 		display: grid;
 		margin: 0 auto;
 		max-width: ${containerWidth};
-		padding-bottom: 13.25rem;
 	}
 
 	${() => FishbowlStyles}
@@ -25,8 +26,15 @@ const StyledFilm = styled.div`
 
 	& img {
 		height: 100%;
+		left: 0;
 		object-fit: cover;
+		position: absolute;
+		top: 0;
 		width: 100%
+	}
+
+	& svg {
+		max-width: 100%;
 	}
 
 	& .meta {
