@@ -5,8 +5,11 @@ import Film from './Film'
 
 export const FishbowlStyles = css`
 	&.fishbowl {
-		grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-		grid-template-rows: 3fr 2fr 2fr 1fr;
+
+		& .film-wrap {
+			grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+			grid-template-rows: 3fr 2fr 2fr 1fr;
+		}
 
 		& svg {
 			grid-column: 1 / span 3;

@@ -5,8 +5,11 @@ import Film from './Film'
 
 export const LilyNRoseStyles = css`
 	&.lily-n-rose {
-		grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr 7fr;
+
+		& .film-wrap {
+			grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 7fr;
+		}
 
 		& svg {
 			grid-column: 2 / span 2;
