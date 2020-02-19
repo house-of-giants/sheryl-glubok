@@ -5,8 +5,11 @@ import { css } from 'styled-components'
 
 export const Sonnet98Styles = css`
 	&.sonnet-98 {
-		grid-template-columns: 3fr 3fr 40px 3fr 2fr;
-		grid-template-rows: 1fr 2fr 3fr 1fr 1fr;
+
+		& .film-wrap {
+			grid-template-columns: 3fr 3fr 40px 3fr 2fr;
+			grid-template-rows: 1fr 2fr 3fr 1fr 1fr;
+		}
 
 		& svg {
 			grid-column: 2 / span 3;

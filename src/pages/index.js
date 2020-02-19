@@ -10,19 +10,15 @@ import Thaw from '../components/Films/Thaw'
 import Alexia from '../components/Films/Alexia'
 import AboutCTA from '../components/About/AboutCTA'
 
-import { StyledContainer } from '../styles/global/layout'
-
 export default () => (
 	<Layout>
 		<Hero />
 		<NavLogo />
-		<StyledContainer>
-			<Fishbowl />
-			<LilyNRose />
-			<Sonnet98 />
-			<Thaw />
-			<Alexia />
-		</StyledContainer>
+		<Fishbowl />
+		<LilyNRose />
+		<Sonnet98 />
+		<Thaw />
+		<Alexia />
 		<AboutCTA />
 	</Layout>
 )

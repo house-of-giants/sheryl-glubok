@@ -5,8 +5,11 @@ import Film from './Film'
 
 export const AlexiaStyles = css`
 	&.alexia {
-		grid-template-columns: 1fr 80px 5fr 1fr 1fr;
-		grid-template-rows: 1fr 4fr 2fr;
+
+		& .film-wrap {
+			grid-template-columns: 1fr 80px 5fr 1fr 1fr;
+			grid-template-rows: 1fr 4fr 2fr;
+		}
 
 		& svg:first-of-type {
 			grid-column: 1 / span 2;
