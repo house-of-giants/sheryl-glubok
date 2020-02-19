@@ -15,6 +15,7 @@ export const StyledHero = styled.div`
 	position: relative;
 	height: 70vh;
 	overflow: hidden;
+	margin-bottom: 5rem;
 
 	& img {
 		height: 100%;
@@ -64,10 +65,6 @@ export const StyledHero = styled.div`
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
 		fill: ${colors.white};
-	}
-
-	& + * {
-		padding-top: 10rem;
 	}
 
 	@keyframes glitch-1 {
