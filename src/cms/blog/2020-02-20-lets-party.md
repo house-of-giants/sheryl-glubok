@@ -1,5 +1,5 @@
 ---
-path: lets-party
+path: /lets-part
 layout: film
 title: Let's Party
 date: 2020-02-20T00:05:57.847Z
