@@ -22,7 +22,7 @@ module.exports = {
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				name: `cms`,
-				path: `${__dirname}/src/cms`,
+				path: `${__dirname}/src`,
 			},
 		},
 		`gatsby-transformer-remark`,
