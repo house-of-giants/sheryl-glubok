@@ -13,7 +13,7 @@ export default function Blog({ data }) {
       <StyledContainer>
         { posts
           .map(({ node: post }) => 
-              <PostItem key={post.id} post={post} />
+            <PostItem key={post.id} post={post} />
           )
         }
       </StyledContainer>
@@ -26,10 +26,12 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
-            path
             thumbnail
           }
         }
