@@ -1,5 +1,4 @@
 ---
-path: "/im-a-blog"
 layout: blog
 title: "I'm a blog"
 date: 2020-02-19T20:02:26.491Z
