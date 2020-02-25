@@ -12,13 +12,31 @@ export const StyledContainer = styled.div`
 `
 
 export const StyledBlogContainer = styled.section`
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	margin: 0 auto;
+	max-width: ${ container.width };
+	padding: 0 1rem;
 
-	& .heading {
+	& .blog-heading {
 		display: grid;
 		grid-column: 1 / span 2;
 		grid-template-columns: repeat(2, 1fr);
+		mix-blend-mode: difference;
+		pointer-events: none;
+		position: relative;
+		z-index: 1;
+	}
+
+	& .blog-wrap {
+		display: grid;
+		grid-column-gap: 7.5rem;
+		margin: -4rem auto 0;
+		max-width: ${ container.widthNarrow };
+		padding: 0 1rem;
+		position: relative;
+
+		@media( ${mq.bpLarge} ) {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 
 	& svg {
