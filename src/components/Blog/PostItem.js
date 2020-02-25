@@ -10,7 +10,7 @@ const PostItem = ({ post }) => {
 	return(
 		<StyledPostItem itemScope itemType="https://schema.org/BlogPosting">
 			<Link to={post.fields.slug}>
-				<div itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+				<div className="image" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
 					<img src={post.frontmatter.thumbnail} alt="" />
 					<meta itemProp="url" content={post.frontmatter.thumbnail} />
 					<meta itemProp="width" content="100" />
