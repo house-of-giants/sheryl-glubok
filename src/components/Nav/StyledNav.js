@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { motion } from "framer-motion"
-import { colors } from '../../styles/base/variables'
+import { colors, mq } from '../../styles/base/variables'
 
 export const StyledNavActivator = styled.button`
 	background-color: transparent;
@@ -81,23 +81,27 @@ export const StyledNav = styled(motion.nav)`
 	}
 
 	& li {
+		text-align: center;
 		width: 100%;
 	}
 
 	& a {
 		box-shadow: inset 0 0 0 rgba(76, 41, 84, 0.3);
 		color: ${colors.codGray};
-		display: block;
+		display: inline-block;
 		font-size: 4rem;
 		font-weight: 900;
-		padding: 2rem 0;
+		margin: 1rem 0;
+		padding: 0 1rem;
 		position: relative;
-		text-align: center;
 		transition: box-shadow ease 300ms;
-		width: 100%;
+
+		@media( ${mq.bpLarge} ) {
+			margin: 2rem 0;
+		}
 
 		&:hover {
-			box-shadow: inset 0 -4rem 0 rgba(76, 41, 84, 0.3);
+			box-shadow: inset 0 -2.3rem 0 rgba(200, 200, 200, 0.7);
 			text-decoration: none;
 		}
 	}

@@ -40,7 +40,7 @@ const Nav = () => {
 									<Link to="/about">About</Link>
 								</li>
 								<li>
-									<a href="#">Blog</a>
+									<Link to="/blog">Blog</Link>
 								</li>
 							</ul>
 						</StyledNav>
