@@ -54,7 +54,6 @@ export const StyledNav = styled(motion.nav)`
 	background-color: #efefef;
 	box-sizing: border-box;
 	display: flex;
-	filter: blur(10px);
 	flex-direction: column;
 	justify-content: center;
 	height: 100vh;
