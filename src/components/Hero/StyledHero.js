@@ -48,23 +48,28 @@ export const StyledHero = styled.div`
 
 	& .content {
 		padding: 0 2rem;
-		position: absolute;
 		width: 60vw;
 		z-index: 1;
 
 		& p {
 			font-size: 1.5rem;
+			isolation: isolate;
 			letter-spacing: 0.5rem;
 		}
+
+
 	}
 
 	& svg {
 		animation-name: glitch-text;
 		animation-delay: calc(${delay} * 2);
 		animation-duration: ${time};
+		animation-direction: forwards;
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 		fill: ${colors.white};
+		overflow: visible;
 	}
 
 	@keyframes glitch-1 {
