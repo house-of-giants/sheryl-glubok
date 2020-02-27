@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: blog
 title: Prague 1992
 date: 2016-07-03T14:26:00.000Z
 thumbnail: /images/water.jpg

@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: blog
 title: Welcome to the Fishbowl is quarterfinalist at Big Bear
 date: 2014-09-24T23:52:00.000Z
 thumbnail: /images/welcome to the fishbowl.jpeg

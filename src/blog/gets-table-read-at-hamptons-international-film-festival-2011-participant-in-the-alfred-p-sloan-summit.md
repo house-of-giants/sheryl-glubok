@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: blog
 title: >-
   "=" gets table read at Hamptons International Film Festival  2011 participant
   in the Alfred P. Sloan summit 
