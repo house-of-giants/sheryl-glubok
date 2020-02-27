@@ -10,7 +10,7 @@ const Hero = () => (
 		<img src="/sheryl-car.jpg" alt=""/>
 		<img src="/sheryl-car.jpg" alt=""/>
 		<div className="wrap">
-			<div className="content -difference">
+			<div className="content -overlay">
 				<Logo />
 				<h1 className="screen-reader-text">Sheryl Glubok</h1>
 			</div>
