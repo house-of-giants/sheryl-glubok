@@ -41,24 +41,37 @@ export const StyledAboutHero = styled.div`
 		}
 	}
 
-	& img {
+	& .image {
 		grid-column: 1;
 		grid-row: 4;
 		height: 100%;
 		min-height: 300px;
-		object-fit: cover;
+		position: relative;
 		width: 100%;
+		z-index: 0;
 
 		@media (${bpMedium}) {
 			grid-row: 1 / span 3;
 			grid-column: 2;
-			object-fit: contain;
+		}
+
+		& img {
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			width: 100%;
+
+			@media (${bpMedium}) {
+				object-fit: contain;
+			}
 		}
 	}
 
 	& .desc {
 		grid-column: 1;
 		grid-row: 4 / span 3;
+		position: relative;
+		z-index: 1;
 
 		@media (${bpMedium}) {
 			grid-column: 2;

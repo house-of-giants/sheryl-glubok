@@ -33,10 +33,6 @@ const StyledFilm = styled.div`
 		width: 100%
 	}
 
-	& svg {
-		max-width: 100%;
-	}
-
 	& .meta {
 		display: flex;
 		grid-column: -4 / span 3;
