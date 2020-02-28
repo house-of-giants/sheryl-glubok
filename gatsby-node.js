@@ -10,6 +10,11 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 			name: "slug",
 			value: slug,
 		})
+		createNodeField({
+			node,
+			name: "layout",
+			value: node.frontmatter.layout,
+		})
 	}
 }
 
@@ -25,6 +30,7 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             fields {
               slug
+              layout
             }
           }
         }
@@ -37,8 +43,9 @@ exports.createPages = async ({ graphql, actions }) => {
     return
   }
 
-	const template = path.resolve("src/templates/post.js")
 	result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+		const template = path.resolve(`src/templates/${node.fields.layout}.js`)
+
 		createPage({
 			path: node.fields.slug,
 			component: template,

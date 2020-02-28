@@ -9,6 +9,7 @@ import { StyledBlogContainer } from '../styles/global/layout'
 
 export default function Blog({ data }) {
 	const { edges: posts } = data.allMarkdownRemark
+
 	return (
 		<Layout>
 			<NavLogo />
@@ -19,6 +20,7 @@ export default function Blog({ data }) {
 				</div>
 				<div className="blog-wrap">
 					{ posts
+						.filter(edge => edge.node.fields.layout === 'blog')
 						.map(({ node: post }) =>
 							<PostItem key={post.id} post={post} />
 						)
@@ -37,6 +39,7 @@ export const pageQuery = graphql`
 					id
 					fields {
 						slug
+						layout
 					}
 					frontmatter {
 						title
