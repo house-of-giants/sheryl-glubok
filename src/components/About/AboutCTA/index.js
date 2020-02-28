@@ -1,6 +1,6 @@
 import React from 'react'
 
-import YAMLData from "../../../content/home.yaml"
+import YAMLData from "../../../content/home.yml"
 
 import { Logo } from '../../SVG/Logo'
 import { StyledContainer } from '../../../styles/global/layout'
