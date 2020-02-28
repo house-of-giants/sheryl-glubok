@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: blog
 title: Reflections on the Middlebury New Filmmakers Festival
 date: 2015-10-09T14:21:00.000Z
 thumbnail: /images/middlebury new filmmakers festival 2015.png

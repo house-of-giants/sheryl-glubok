@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: blog
 title: THAW to play at Vermont International Film Festival
 date: 2014-09-23T23:53:00.000Z
 thumbnail: /images/VTIFF.png

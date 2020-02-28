@@ -39,6 +39,7 @@ const animItem = {
 
 export default function Blog({ data }) {
 	const { edges: posts } = data.allMarkdownRemark
+
 	return (
 		<Layout>
 			<NavLogo />
@@ -49,7 +50,10 @@ export default function Blog({ data }) {
 				</div>
 				<motion.div className="blog-wrap" variants={animList} initial="hidden" animate="visible" exit="hidden">
 					{ posts
-						.map(({ node: post }, i) => <PostItem key={post.id} post={post} variants={animItem} i={i} />)
+						.filter(edge => edge.node.fields.layout === 'blog')
+						.map(({ node: post }) =>
+							<PostItem key={post.id} post={post} variants={animItem} i={i} />
+						)
 					}
 				</motion.div>
 			</StyledBlogContainer>
@@ -65,6 +69,7 @@ export const pageQuery = graphql`
 					id
 					fields {
 						slug
+						layout
 					}
 					frontmatter {
 						title

@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: blog
 title: Post-SDFF radio interview
 date: 2014-12-02T00:57:00.000Z
 thumbnail: /images/water.jpg
