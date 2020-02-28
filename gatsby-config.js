@@ -5,7 +5,7 @@
  */
 
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+	path: `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
@@ -17,18 +17,14 @@ module.exports = {
 				pure: true,
 			},
 		},
+		`gatsby-plugin-netlify-cms`,
 		{
-			resolve: `gatsby-source-prismic`,
+			resolve: `gatsby-source-filesystem`,
 			options: {
-				repositoryName: 'sherylglubok',
-				accessToken: `${process.env.GATSBY_PRISMIC_API_KEY}`,
-				path: '/preview',
-				previews: true,
-				linkResolver: ({ node, key, value }) => post => `/${post.uid}`,
-			}
+				name: `cms`,
+				path: `${__dirname}/src`,
+			},
 		},
-		{
-			resolve: `gatsby-plugin-netlify-cms`,
-		},
+		`gatsby-transformer-remark`,
 	],
 }

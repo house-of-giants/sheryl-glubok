@@ -2,35 +2,32 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../theme/layout'
-
 import { StyledContainer } from '../styles/global/layout'
 
-const Post = ({ data: { prismicBlogPost } }) => {
-	const { data } = prismicBlogPost
-	return (
-		<Layout>
+export default function Post({ data }) {
+  const { markdownRemark: post } = data
+
+  return (
+    <Layout>
 			<StyledContainer>
-				<h1>{data.post_title.text}</h1>
-				<div dangerouslySetInnerHTML={{ __html: data.post_content.html }} />
+				<h1>{post.frontmatter.title}</h1>
+				<h2>{post.frontmatter.date}</h2>
+				<img src={post.frontmatter.thumbnail} alt="" />
+				<div dangerouslySetInnerHTML={{ __html: post.html }} />
 			</StyledContainer>
 		</Layout>
-	)
+  )
 }
 
-export default Post
-
 export const pageQuery = graphql`
-	query PostBySlug($uid: String!) {
-		prismicBlogPost(uid: { eq: $uid }) {
-			uid
-			data {
-				post_title {
-					text
-				}
-				post_content {
-					html
-				}
-			}
-		}
-	}
+  query BlogPostByPath($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        title
+        thumbnail
+      }
+    }
+  }
 `

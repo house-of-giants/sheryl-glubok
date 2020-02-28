@@ -1,26 +1,49 @@
 const path = require("path")
+const { createFilePath } = require("gatsby-source-filesystem")
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+	const { createNodeField } = actions
+	if ( node.internal.type === `MarkdownRemark` ) {
+		const slug = createFilePath({ node, getNode })
+		createNodeField({
+			node,
+			name: "slug",
+			value: slug,
+		})
+	}
+}
 
 exports.createPages = async ({ graphql, actions }) => {
 	const { createPage } = actions
-	const pages = await graphql(`
-		{
-			allPrismicBlogPost {
-				edges {
-					node {
-						id
-						uid
-					}
-				}
-			}
-		}
-	`)
+	const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
 	const template = path.resolve("src/templates/post.js")
-	pages.data.allPrismicBlogPost.edges.forEach(edge => {
+	result.data.allMarkdownRemark.edges.forEach(({ node }) => {
 		createPage({
-			path: `/post/${edge.node.uid}`,
+			path: node.fields.slug,
 			component: template,
 			context: {
-				uid: edge.node.uid,
+				slug: node.fields.slug
 			},
 		})
 	})

@@ -1,18 +1,26 @@
 import { css } from 'styled-components'
 
 export const Typography = css`
-	h1 {
+	h1,
+	.h1 {
 		font-size: 5rem;
 		padding: 1.875rem 0;
 	}
 
-	h2 {
+	h2,
+	.h2 {
 		font-size: 4.5rem;
 		letter-spacing: 1px;
 	}
 
-	h3 {
+	h3,
+	.h3 {
 		font-size: 2rem;
+	}
+
+	h4,
+	.h4 {
+		font-size: 1.25rem;
 	}
 
 	p {
@@ -30,6 +38,10 @@ export const Typography = css`
 		&:hover {
 			text-decoration: underline;
 		}
+	}
+
+	.-overlay {
+		mix-blend-mode: overlay;
 	}
 
 	.screen-reader-text {

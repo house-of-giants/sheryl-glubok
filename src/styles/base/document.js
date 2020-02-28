@@ -10,7 +10,8 @@ export const DocStyles = css`
 		padding: 0;
 	}
 
-	img {
+	img,
+	svg {
 		max-width: 100%;
 	}
 `
