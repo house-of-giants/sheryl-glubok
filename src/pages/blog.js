@@ -51,7 +51,7 @@ export default function Blog({ data }) {
 				<motion.div className="blog-wrap" variants={animList} initial="hidden" animate="visible" exit="hidden">
 					{ posts
 						.filter(edge => edge.node.fields.layout === 'blog')
-						.map(({ node: post }) =>
+						.map(({ node: post }, i) =>
 							<PostItem key={post.id} post={post} variants={animItem} i={i} />
 						)
 					}
