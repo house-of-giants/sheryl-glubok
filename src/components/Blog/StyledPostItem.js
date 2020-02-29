@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 import { colors, mq } from '../../styles/base/variables'
 
-const StyledPostItem = styled.article`
+const StyledPostItem = styled(motion.article)`
 	display: flex;
 	flex-direction: column;
 

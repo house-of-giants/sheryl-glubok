@@ -1,6 +1,5 @@
 import React, { Component, createRef } from 'react'
 import { Link } from 'gatsby'
-
 import { TweenMax } from 'gsap'
 
 import StyledFilm from './StyledFilm'

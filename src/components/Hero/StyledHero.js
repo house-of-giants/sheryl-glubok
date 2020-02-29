@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/base/variables'
+import { motion } from 'framer-motion'
+import { colors, bpMedium } from '../../styles/base/variables'
 
 const gapHor = '10px'
 const gapVer = '5px'
@@ -7,14 +8,13 @@ const time = '6000ms'
 const delay = '2000ms'
 const blend = 'overlay'
 
-export const StyledHero = styled.div`
+export const StyledHero = styled(motion.div)`
 	align-items: center;
 	background-color: ${colors.cosmic};
 	display: flex;
 	justify-content: center;
 	position: relative;
-	height: 70vh;
-	overflow: hidden;
+	height: 100vh;
 	margin-bottom: 5rem;
 
 	& img {
@@ -52,15 +52,18 @@ export const StyledHero = styled.div`
 		z-index: 1;
 
 		& p {
-			font-size: 1.5rem;
-			isolation: isolate;
+			display: inline-block;
+			font-size: 1rem;
 			letter-spacing: 0.5rem;
+			position: relative;
+
+			@media(${bpMedium}) {
+				font-size: 1.5rem;
+			}
 		}
-
-
 	}
 
-	& svg {
+	& .logo {
 		animation-name: glitch-text;
 		animation-delay: calc(${delay} * 2);
 		animation-duration: ${time};
@@ -70,6 +73,40 @@ export const StyledHero = styled.div`
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 		fill: ${colors.white};
 		overflow: visible;
+	}
+
+	& .words {
+		display: grid;
+		f
+		grid-template-columns: repeat(3, 1fr);
+
+		& span:nth-child(2) {
+			align-self: end;
+			grid-column: 2;
+			grid-row: 1;
+		}
+
+		& span:nth-child(3) {
+			grid-column: 3;
+			grid-row: 3;
+		}
+	}
+
+	& .line {
+		background-color: ${colors.white};
+		height: 35vh;
+		position: absolute;
+		right: 20%;
+		top: 100%;
+		width: 1px;
+
+		@media(${bpMedium}) {
+			right: -3rem;
+		}
+
+		& path {
+			height: 35vh;
+		}
 	}
 
 	@keyframes glitch-1 {

@@ -1,6 +1,6 @@
 import React from 'react'
-
 import { createGlobalStyle } from 'styled-components'
+
 import globalStyles from '../styles/styles'
 
 import Nav from '../components/Nav'

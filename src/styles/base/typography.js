@@ -44,6 +44,10 @@ export const Typography = css`
 		mix-blend-mode: overlay;
 	}
 
+	.-difference {
+		mix-blend-mode: difference;
+	}
+
 	.screen-reader-text {
 		clip: rect(1px, 1px, 1px, 1px);
 		clip-path: inset(50%);

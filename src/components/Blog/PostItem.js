@@ -3,12 +3,14 @@ import { Link } from 'gatsby'
 
 import StyledPostItem from './StyledPostItem'
 
-const PostItem = ({ post }) => {
+const PostItem = ({ post, variants, i }) => {
 	const postDate = new Date( Date.parse( post.frontmatter.date ) )
 	const formattedDate = postDate.toISOString()
+	console.log(variants)
+	console.log(i)
 
 	return(
-		<StyledPostItem itemScope itemType="https://schema.org/BlogPosting">
+		<StyledPostItem variants={variants} i={i} itemScope itemType="https://schema.org/BlogPosting">
 			<Link to={post.fields.slug}>
 				<div className="image" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
 					<img src={post.frontmatter.thumbnail} alt="" />

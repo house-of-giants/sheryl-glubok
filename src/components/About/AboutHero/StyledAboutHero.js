@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 import { white, bpMedium } from '../../../styles/base/variables'
 
-export const StyledAboutHero = styled.div`
+export const StyledAboutHero = styled(motion.div)`
 	display: grid;
 	grid-row-gap: 1rem;
 	grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
