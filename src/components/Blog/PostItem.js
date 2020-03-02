@@ -6,15 +6,14 @@ import StyledPostItem from './StyledPostItem'
 const PostItem = ({ post, variants, i }) => {
 	const postDate = new Date( Date.parse( post.frontmatter.date ) )
 	const formattedDate = postDate.toISOString()
-	console.log(variants)
-	console.log(i)
+	const thumb = post.frontmatter.thumbnail ? post.frontmatter.thumbnail : 'https://source.unsplash.com/user/claudiotesta/350x368'
 
 	return(
 		<StyledPostItem variants={variants} i={i} itemScope itemType="https://schema.org/BlogPosting">
 			<Link to={post.fields.slug}>
 				<div className="image" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-					<img src={post.frontmatter.thumbnail} alt="" />
-					<meta itemProp="url" content={post.frontmatter.thumbnail} />
+					<img src={thumb} alt="" />
+					<meta itemProp="url" content={thumb} />
 					<meta itemProp="width" content="100" />
 					<meta itemProp="height" content="100" />
 				</div>
