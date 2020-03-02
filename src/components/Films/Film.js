@@ -29,12 +29,6 @@ class Film extends Component {
 		const film = this.filmRef.current;
 		const els = film.querySelectorAll( `${StyledFilm} .film-wrap > *:not(.meta):not(.screen-reader-text)` )
 
-		const setBlur = () => {
-			for ( let i = 0, len = els.length; i < len; i++ ) {
-				els[i].style.filter = `blur(${1 * i }px)`
-			}
-		}
-
 		const handleHover = e => {
 			for ( let i = 1, len = els.length; i < len + 1; i++ ) {
 				this.parallaxIt( e, els[i - 1], ( -100 * ( i * .3 ) ), ( 1 * ( i - 1 ) ) )
