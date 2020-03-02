@@ -5,29 +5,31 @@ import Layout from '../theme/layout'
 import { StyledContainer } from '../styles/global/layout'
 
 export default function Post({ data }) {
-  const { markdownRemark: post } = data
+	const { markdownRemark: post } = data
+	const { html } = post
+	const { title, date, thumbnail } = post.frontmatter
 
-  return (
-    <Layout>
+	return (
+		<Layout>
 			<StyledContainer>
-				<h1>{post.frontmatter.title}</h1>
-				<h2>{post.frontmatter.date}</h2>
-				<img src={post.frontmatter.thumbnail} alt="" />
-				<div dangerouslySetInnerHTML={{ __html: post.html }} />
+				<h1>{title}</h1>
+				<h2>{date}</h2>
+				<img src={thumbnail} alt="" />
+				<div dangerouslySetInnerHTML={{ __html: html }} />
 			</StyledContainer>
 		</Layout>
-  )
+	)
 }
 
 export const pageQuery = graphql`
-  query BlogPostByPath($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
-        thumbnail
-      }
-    }
-  }
+	query BlogPostByPath($slug: String!) {
+		markdownRemark(fields: { slug: { eq: $slug } }) {
+			html
+			frontmatter {
+				date(formatString: "MMMM DD, YYYY")
+				title
+				thumbnail
+			}
+		}
+	}
 `

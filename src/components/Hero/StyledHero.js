@@ -77,7 +77,6 @@ export const StyledHero = styled(motion.div)`
 
 	& .words {
 		display: grid;
-		f
 		grid-template-columns: repeat(3, 1fr);
 
 		& span:nth-child(2) {

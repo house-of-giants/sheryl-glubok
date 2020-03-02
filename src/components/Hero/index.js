@@ -19,7 +19,7 @@ const Hero = () => (
 						<span className="words" aria-hidden="true">
 							<span>Writ-<br />er,</span><span>Director,</span><span>S<br />t<br />o<br />ryteller</span>
 						</span>
-						<motion.div className="line" style={{ originX: 0.5, originY: 0 }} initial={{ scaleY: 0 }} animate={{ scaleY: 1 }} exit={{ scaleY: 0 }} transition={{ duration: 1.7, delay: 2 }} />
+						<motion.div className="line" style={{ originX: 0.5, originY: 0 }} initial={{ scaleY: 0 }} animate={{ scaleY: 1 }} exit={{ scaleY: 0 }} transition={{ duration: 1.7, delay: 2.7 }} />
 					</p>
 				</motion.div>
 			</div>
