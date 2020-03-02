@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
+
 import { container, mq, colors } from '../base/variables'
 
 export const StyledContainer = styled.div`
@@ -11,7 +13,7 @@ export const StyledContainer = styled.div`
 	}
 `
 
-export const StyledBlogContainer = styled.section`
+export const StyledBlogContainer = styled(motion.section)`
 	margin: 0 auto;
 	max-width: ${ container.width };
 	padding: 0 1rem;
