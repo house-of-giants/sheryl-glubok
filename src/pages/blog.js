@@ -8,11 +8,6 @@ import NavLogo from '../components/Nav/NavLogo'
 import { StyledBlogContainer } from '../styles/global/layout'
 import { motion } from 'framer-motion'
 
-const animWrap = {
-	visible: { opacity: 1 },
-	hidden: { opacity: 0 }
-}
-
 const animList = {
 	visible: {
 		transition: { staggerChildren: 0.07, delayChildren: 0.2 }

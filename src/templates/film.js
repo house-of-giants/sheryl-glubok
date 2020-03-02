@@ -13,7 +13,7 @@ export default function Film({ data }) {
 				<h1>{post.frontmatter.title}</h1>
         <h2>{post.frontmatter.date}</h2>
         {post.frontmatter.vimeo_url ?
-          <iframe src={`https://player.vimeo.com/video/${post.frontmatter.vimeo_url}`} width="640" height="487" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> : ''
+          <iframe title={`Vimeo embed for ${post.frontmatter.title}`} src={`https://player.vimeo.com/video/${post.frontmatter.vimeo_url}`} width="640" height="487" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> : ''
         }
         <img src={post.frontmatter.thumbnail} alt="" />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
