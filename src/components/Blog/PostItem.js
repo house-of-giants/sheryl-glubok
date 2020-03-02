@@ -4,7 +4,8 @@ import { Link } from 'gatsby'
 import StyledPostItem from './StyledPostItem'
 
 const PostItem = ({ post, variants, i }) => {
-	const { slug, date, thumbnail, title } = post.frontmatter
+	const { date, thumbnail, title } = post.frontmatter
+	const { slug } = post.fields
 	const postDate = new Date( Date.parse( date ) )
 	const formattedDate = postDate.toISOString()
 	const thumb = thumbnail ? thumbnail : 'https://source.unsplash.com/user/claudiotesta/350x368'
