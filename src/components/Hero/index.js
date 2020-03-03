@@ -8,7 +8,7 @@ import { animPageDefault } from '../../utils/animationDefs'
 const Hero = () => (
 	<AnimatePresence exitBeforeEnter>
 		<StyledHero variants={animPageDefault} initial="in" animate="normal" exit="out">
-			<img src="/sheryl-glitched.jpg" alt=""/>
+			<img src="/sheryl-stretch.jpg" alt=""/>
 			<div className="wrap">
 				<motion.div className="content -difference" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ delay: 0.7 }}>
 					<Logo />
