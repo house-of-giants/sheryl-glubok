@@ -22,15 +22,9 @@ const animList = {
 const animItem = {
 	visible: {
 		opacity: 1,
-		transition: {
-			x: { stiffness: 1000, velocity: -100 }
-		}
 	},
 	hidden: {
 		opacity: 0,
-		transition: {
-			x: { stiffness: 1000 }
-		}
 	}
 }
 

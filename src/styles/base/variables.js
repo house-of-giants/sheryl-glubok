@@ -3,6 +3,7 @@ export const codGray = '#1a1a1a'
 export const white = '#ffffff'
 export const bossanova = '#4c2954'
 export const cosmic = '#774175'
+export const chateau = '#4eb955'
 export const revolver = '#281c3d'
 
 
@@ -12,7 +13,8 @@ export const colors = {
 	white,
 	bossanova,
 	cosmic,
-	revolver
+	revolver,
+	chateau,
 }
 
 export const bpTiny = 'min-width: 25em' /* 400px */
