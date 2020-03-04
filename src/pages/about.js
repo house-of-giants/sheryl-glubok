@@ -18,7 +18,7 @@ export default () => (
 		</StyledContainer>
 		<StyledContainer narrow>
 			<AnimatePresence>
-				<motion.div className="wrap" variants={animPageDefault} initial="in" animate="normal" exit="out" >
+				<motion.div className="wrap" variants={animPageDefault} initial="in" animate="normal" exit="out">
 					<h2>Stories</h2>
 					{ YAMLData.stories.map( story => (
 							<div key={story.id}>
