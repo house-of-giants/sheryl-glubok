@@ -1,6 +1,5 @@
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
-import Helmet from 'react-helmet'
 
 import globalStyles from '../styles/styles'
 
@@ -12,13 +11,10 @@ const GlobalStyle = createGlobalStyle`
 	${globalStyles}
 `
 
-const Layout = ({ pageTitle, children }) => (
+const Layout = ({ pageMeta = {}, children }) => (
 	<div className='app'>
 		<GlobalStyle />
-		<Helmet>
-			<title>Sheryl Glubok | {pageTitle ? `${pageTitle}` : 'Writer, Director, Storyteller'}</title>
-		</Helmet>
-		<Head />
+		<Head pageMeta={pageMeta} />
 		<Nav />
 		{children}
 		<Footer />
