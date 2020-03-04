@@ -36,41 +36,41 @@ export default function Post({ data }) {
 	return (
 		<Layout>
 			<NavLogo />
-			<StyledSinglePost variants={animPageDefault} initial="in" animate="normal" exit="out" itemScope itemType="https://schema.org/BlogPosting">
-				<div itemProp="mainEntityOfPage">
-					<header class="post-head">
-						<div className="meta">
-							<motion.h1 variants={animItem} initial="start" animate="finish" exit="start" itemProp="headline">{title}</motion.h1>
-							<meta itemProp="author" content="Sheryl Glubok" />
-							<div itemProp="publisher" itemScope itemType="https://schema.org/Organization">
-								<div itemProp="logo" itemScope itemType="https://schema.org/ImageObject">
-									<meta itemProp="url" content="/logo.png" />
-									<meta itemProp="width" content="600" />
-									<meta itemProp="height" content="60" />
+			<StyledContainer>
+				<StyledSinglePost variants={animPageDefault} initial="in" animate="normal" exit="out" itemScope itemType="https://schema.org/BlogPosting">
+					<div itemProp="mainEntityOfPage">
+						<header class="post-head">
+							<div className="meta">
+								<motion.h1 variants={animItem} initial="start" animate="finish" exit="start" itemProp="headline">{title}</motion.h1>
+								<meta itemProp="author" content="Sheryl Glubok" />
+								<div itemProp="publisher" itemScope itemType="https://schema.org/Organization">
+									<div itemProp="logo" itemScope itemType="https://schema.org/ImageObject">
+										<meta itemProp="url" content="/logo.png" />
+										<meta itemProp="width" content="600" />
+										<meta itemProp="height" content="60" />
+									</div>
+									<meta itemProp="name" content="Sheryl Glubok" />
 								</div>
-								<meta itemProp="name" content="Sheryl Glubok" />
+								<motion.p variants={animItem} initial="start" animate="finish" exit="start" itemProp="datePublished">
+									<time datetime={formattedDate}>{date}</time>
+								</motion.p>
 							</div>
-							<motion.p variants={animItem} initial="start" animate="finish" exit="start" itemProp="datePublished">
-								<time datetime={formattedDate}>{date}</time>
-							</motion.p>
-						</div>
-						<div className="hero" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-							<img src={thumb} alt="" />
-							<meta itemProp="url" content={thumb} />
-							<meta itemProp="width" content="100" />
-							<meta itemProp="height" content="100" />
-						</div>
-						<meta itemProp="dateModified" content={formattedDate} />
-					</header>
-					<StyledContainer>
-						<motion.div className="wrap" variants={animItem} initial="start" animate="finish" exit="start" itemProp="articleBody">
-							<Link className="back" to="/blog">&larr; All posts</Link>
-							<div dangerouslySetInnerHTML={{ __html: html }} />
-							<Link className="back" to="/blog">&larr; All posts</Link>
-						</motion.div>
-					</StyledContainer>
-				</div>
-			</StyledSinglePost>
+							<div className="hero" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+								<img src={thumb} alt="" />
+								<meta itemProp="url" content={thumb} />
+								<meta itemProp="width" content="100" />
+								<meta itemProp="height" content="100" />
+							</div>
+							<meta itemProp="dateModified" content={formattedDate} />
+						</header>
+							<motion.div className="wrap -center" variants={animItem} initial="start" animate="finish" exit="start" itemProp="articleBody">
+								<Link className="back" to="/blog">&larr; All posts</Link>
+								<div dangerouslySetInnerHTML={{ __html: html }} />
+								<Link className="back" to="/blog">&larr; All posts</Link>
+							</motion.div>
+					</div>
+				</StyledSinglePost>
+			</StyledContainer>
 		</Layout>
 	)
 }
