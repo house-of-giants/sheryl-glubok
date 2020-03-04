@@ -11,6 +11,10 @@ export const StyledContainer = styled.div`
 	& .wrap {
 		max-width: ${ container.widthNarrow };
 	}
+
+	& .-center {
+		margin: 0 auto;
+	}
 `
 
 export const StyledBlogContainer = styled(motion.section)`
