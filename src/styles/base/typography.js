@@ -1,16 +1,25 @@
 import { css } from 'styled-components'
+import { colors, mq } from './variables'
 
 export const Typography = css`
 	h1,
 	.h1 {
-		font-size: 5rem;
+		font-size: 3rem;
 		padding: 1.875rem 0;
+
+		@media(${mq.bpMedium}) {
+			font-size: 5rem;
+		}
 	}
 
 	h2,
 	.h2 {
-		font-size: 4.5rem;
+		font-size: 2.6rem;
 		letter-spacing: 1px;
+
+		@media(${mq.bpMedium}) {
+			font-size: 4.5rem;
+		}
 	}
 
 	h3,
@@ -29,6 +38,10 @@ export const Typography = css`
 
 		&:not(:last-of-type) {
 			padding-bottom: 2rem;
+		}
+
+		a {
+			color: ${colors.chateau};
 		}
 	}
 
