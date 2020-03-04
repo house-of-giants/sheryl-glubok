@@ -38,7 +38,7 @@ export default function Blog({ data }) {
 	const { edges: posts } = data.allMarkdownRemark
 
 	return (
-		<Layout>
+		<Layout pageTitle="Blog, Community, News">
 			<NavLogo />
 			<StyledBlogContainer itemScope itemType="https://schema.org/Blog" variants={animPageDefault} initial="in" animate="normal" exit="out">>
 				<div className="blog-heading">
