@@ -85,7 +85,7 @@ export const StyledNav = styled(motion.nav)`
 	}
 
 	& a {
-		box-shadow: inset 0 0 0 rgba(76, 41, 84, 0.3);
+		box-shadow: inset 0 0 0 rgba(200, 200, 200, 0.7);
 		color: ${colors.codGray};
 		display: inline-block;
 		font-size: 4rem;
