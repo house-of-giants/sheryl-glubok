@@ -9,6 +9,12 @@ require("dotenv").config({
 })
 
 module.exports = {
+	siteMetadata: {
+		title: 'Sheryl Glubok',
+		description: 'Sheryl Glubok is a writer, direcotr and story teller.',
+		author: 'Sheryl Glubok',
+		siteURL: 'https://sherylglubok.com',
+	},
 	plugins: [
 		{
 			resolve: `gatsby-plugin-styled-components`,
