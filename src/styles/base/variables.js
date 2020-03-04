@@ -5,7 +5,6 @@ export const bossanova = '#4c2954'
 export const cosmic = '#774175'
 export const revolver = '#281c3d'
 
-
 export const colors = {
 	black,
 	codGray,
@@ -13,6 +12,10 @@ export const colors = {
 	bossanova,
 	cosmic,
 	revolver
+}
+
+export const fonts = {
+	primary: `Roboto, sans-serif`,
 }
 
 export const bpTiny = 'min-width: 25em' /* 400px */
