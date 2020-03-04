@@ -11,9 +11,6 @@ import { AnimatePresence, motion } from 'framer-motion'
 export default () => (
 	<Layout pageMeta={{ title: 'Contact' }}>
 		<NavLogo />
-		<StyledContainer>
-			<Hero />
-		</StyledContainer>
 		<StyledContainer narrow>
 			<AnimatePresence>
 				<motion.div className="wrap" variants={animPageDefault} initial="in" animate="normal" exit="out" >
