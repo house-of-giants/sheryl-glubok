@@ -5,14 +5,16 @@ import globalStyles from '../styles/styles'
 
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import Head from '../components/Head'
 
 const GlobalStyle = createGlobalStyle`
 	${globalStyles}
 `
 
-const Layout = ({ children }) => (
+const Layout = ({ pageMeta = {}, children }) => (
 	<div className='app'>
 		<GlobalStyle />
+		<Head pageMeta={pageMeta} />
 		<Nav />
 		{children}
 		<Footer />

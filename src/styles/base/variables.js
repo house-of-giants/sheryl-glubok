@@ -6,7 +6,6 @@ export const cosmic = '#774175'
 export const chateau = '#4eb955'
 export const revolver = '#281c3d'
 
-
 export const colors = {
 	black,
 	codGray,
@@ -15,6 +14,10 @@ export const colors = {
 	cosmic,
 	revolver,
 	chateau,
+}
+
+export const fonts = {
+	primary: `Roboto, sans-serif`,
 }
 
 export const bpTiny = 'min-width: 25em' /* 400px */

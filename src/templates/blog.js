@@ -34,12 +34,12 @@ export default function Post({ data }) {
 	}
 
 	return (
-		<Layout>
+		<Layout pageMeta={{ title, thumbnail }}>
 			<NavLogo />
 			<StyledContainer>
 				<StyledSinglePost variants={animPageDefault} initial="in" animate="normal" exit="out" itemScope itemType="https://schema.org/BlogPosting">
 					<div itemProp="mainEntityOfPage">
-						<header class="post-head">
+						<header className="post-head">
 							<div className="meta">
 								<motion.h1 variants={animItem} initial="start" animate="finish" exit="start" itemProp="headline">{title}</motion.h1>
 								<meta itemProp="author" content="Sheryl Glubok" />
@@ -52,7 +52,7 @@ export default function Post({ data }) {
 									<meta itemProp="name" content="Sheryl Glubok" />
 								</div>
 								<motion.p variants={animItem} initial="start" animate="finish" exit="start" itemProp="datePublished">
-									<time datetime={formattedDate}>{date}</time>
+									<time dateTime={formattedDate}>{date}</time>
 								</motion.p>
 							</div>
 							<div className="hero" itemProp="image" itemScope itemType="https://schema.org/ImageObject">

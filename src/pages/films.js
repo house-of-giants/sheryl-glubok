@@ -11,7 +11,7 @@ export default function Blog({ data }) {
 	const { edges: posts } = data.allMarkdownRemark
 
 	return (
-		<Layout>
+		<Layout pageMeta={{ title: 'Films' }}>>
 			<NavLogo />
 			<StyledBlogContainer itemScope itemType="https://schema.org/Blog">
 				<div className="blog-heading">
