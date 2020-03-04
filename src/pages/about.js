@@ -9,7 +9,7 @@ import { animPageDefault } from '../utils/animationDefs'
 import { AnimatePresence, motion } from 'framer-motion'
 
 export default () => (
-	<Layout pageTitle="About">
+	<Layout pageMeta={{ title: 'About' }}>
 		<NavLogo />
 		<StyledContainer>
 			<AboutHero />

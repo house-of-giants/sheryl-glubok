@@ -10,7 +10,7 @@ export default function Post({ data }) {
 	const { title, date, thumbnail } = post.frontmatter
 
 	return (
-		<Layout pageTitle={title}>
+		<Layout pageMeta={{ title, thumbnail }}>
 			<StyledContainer>
 				<h1>{title}</h1>
 				<h2>{date}</h2>
