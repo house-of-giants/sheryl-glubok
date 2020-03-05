@@ -16,7 +16,7 @@ export default () => (
 				<motion.div className="wrap" variants={animPageDefault} initial="in" animate="normal" exit="out" >
 					<h2>Contact Sheryl</h2>
 					<form name="contact" method="post" data-netlify="true" action="/thank-you">
-					  <input type="hidden" name="form-name" value="Contact Form" />
+					  <input type="hidden" name="form-name" value="contact" />
 						<p>
 							<label>Name: <input type="text" name="name" /></label>   
 						</p>
