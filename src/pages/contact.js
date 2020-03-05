@@ -1,42 +1,57 @@
 import React from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 
 import Layout from '../theme/layout'
 import NavLogo from '../components/Nav/NavLogo'
-import Hero from '../components/Hero'
+import Button from '../components/Button'
 
-import { StyledContainer } from '../styles/global/layout'
 import { animPageDefault } from '../utils/animationDefs'
-import { AnimatePresence, motion } from 'framer-motion'
+import { StyledContainer } from '../styles/global/layout'
+import { StyledForm } from '../components/Form/StyledForm'
+
+const handleLabelActive = e => {
+	e.target.parentNode.classList.add( 'is-active' )
+}
+
+const handleLabelInactive = e => {
+	if( e.target.value == "" ) {
+		e.target.parentNode.classList.remove( 'is-active' )
+	}
+}
 
 export default () => (
 	<Layout pageMeta={{ title: 'Contact' }}>
 		<NavLogo />
-		<StyledContainer narrow>
+		<StyledContainer>
 			<AnimatePresence>
 				<motion.div className="wrap" variants={animPageDefault} initial="in" animate="normal" exit="out" >
 					<h2>Contact Sheryl</h2>
-					<form name="contact" method="post" data-netlify="true" action="/thank-you">
+					<StyledForm name="contact" method="post" data-netlify="true" action="/thank-you">
 					  <input type="hidden" name="form-name" value="contact" />
-						<p>
-							<label>Name: <input type="text" name="name" /></label>   
+						<p className="form-group">
+							<label htmlFor="name">Name</label>
+							<input id="name" type="text" name="name" onFocus={handleLabelActive} onBlur={handleLabelInactive} />
+						</p>
+						<p className="form-group">
+							<label htmlFor="email">Email</label>
+							<input id="email" type="email" name="email" onFocus={handleLabelActive} onBlur={handleLabelInactive} />
 						</p>
 						<p>
-							<label>Email: <input type="email" name="email" /></label>
-						</p>
-						<p>
-							<label>Interested in: <select name="interest[]" multiple>
+							<label htmlFor="interest">Interested in</label>
+							<select id="interest" name="interest[]" multiple>
 								<option value="show-film">Showing a Film</option>
 								<option value="create-film">Creating a Film with Sheryl</option>
 								<option value="chat">Chatting with Sheryl</option>
-							</select></label>
+							</select>
+						</p>
+						<p className="form-group -textarea">
+							<label htmlFor="message">Message</label>
+							<textarea id="message" name="message" rows="7"onFocus={handleLabelActive} onBlur={handleLabelInactive}></textarea>
 						</p>
 						<p>
-							<label>Message: <textarea name="message"></textarea></label>
+							<Button isButton type="submit">Send</Button>
 						</p>
-						<p>
-							<button type="submit">Send</button>
-						</p>
-					</form>
+					</StyledForm>
 				</motion.div>
 			</AnimatePresence>
 		</StyledContainer>
