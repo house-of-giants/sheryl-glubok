@@ -1,12 +1,10 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import { colors, bpMedium } from '../../styles/base/variables'
+import { bpMedium } from '../../styles/base/variables'
 
 const gapHor = '10px'
-const gapVer = '5px'
 const time = '6000ms'
 const delay = '2000ms'
-const blend = 'overlay'
 
 export const StyledHero = styled(motion.div)`
 	align-items: center;
