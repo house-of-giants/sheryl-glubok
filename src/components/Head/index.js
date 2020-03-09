@@ -7,7 +7,7 @@ const Head = ({ pageMeta }) => {
 	const { siteURL, description } = useSiteMeta();
 
 	const pageTitle = pageMeta.title ? pageMeta.title : 'Writer, Director, Storyteller'
-	const pageThumb = pageMeta.thumbnail ? pageMeta.thumbnail : '/social-image'
+	const pageThumb = pageMeta.thumbnail ? pageMeta.thumbnail : '/social-image.png'
 
 	return(
 		<Helmet>
