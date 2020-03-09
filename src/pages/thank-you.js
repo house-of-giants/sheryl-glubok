@@ -2,7 +2,6 @@ import React from 'react'
 
 import Layout from '../theme/layout'
 import NavLogo from '../components/Nav/NavLogo'
-import Hero from '../components/Hero'
 
 import { StyledContainer } from '../styles/global/layout'
 import { animPageDefault } from '../utils/animationDefs'
@@ -10,7 +9,6 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 export default () => (
 	<Layout pageMeta={{ title: 'Thank You' }}>
-		<Hero />
 		<NavLogo />
 		<StyledContainer narrow>
 			<AnimatePresence>
