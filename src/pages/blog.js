@@ -41,7 +41,6 @@ export default function Blog({ data }) {
 				</div>
 				<motion.div className="blog-wrap" variants={animList} initial="hidden" animate="visible" exit="hidden">
 					{ posts
-						.filter(edge => edge.node.fields.layout === 'blog')
 						.map(({ node: post }, i) =>
 							<PostItem key={post.id} post={post} variants={animItem} i={i} />
 						)
@@ -54,7 +53,10 @@ export default function Blog({ data }) {
 
 export const pageQuery = graphql`
 	query BlogListingQuery {
-		allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+		allMarkdownRemark(
+			sort: { order: DESC, fields: [frontmatter___date] }
+			filter: { fields: { layout: { eq: "blog" } } }
+		) {
 			edges {
 				node {
 					id

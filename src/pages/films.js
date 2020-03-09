@@ -20,7 +20,6 @@ export default function Blog({ data }) {
 				</div>
 				<div className="blog-wrap">
 					{ posts
-						.filter(edge => edge.node.fields.layout === 'film')
 						.map(({ node: post }) =>
 							<PostItem key={post.id} post={post} />
 						)
@@ -33,7 +32,10 @@ export default function Blog({ data }) {
 
 export const pageQuery = graphql`
 	query FilmsListingQuery {
-		allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+		allMarkdownRemark(
+			sort: { order: DESC, fields: [frontmatter___date] }
+			filter: { fields: { layout: { eq: "film" } } }
+		) {
 			edges {
 				node {
 					id
