@@ -11,7 +11,7 @@ require("dotenv").config({
 module.exports = {
 	siteMetadata: {
 		title: 'Sheryl Glubok',
-		description: 'Sheryl Glubok is a writer, direcotr and story teller.',
+		description: 'Sheryl Glubok is a Writer, Director and Storyteller.',
 		author: 'Sheryl Glubok',
 		siteURL: 'https://sherylglubok.com',
 	},
