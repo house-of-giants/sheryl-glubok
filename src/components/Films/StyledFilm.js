@@ -9,7 +9,6 @@ import { FishbowlStyles } from './Fishbowl'
 import { LilyNRoseStyles } from './LilyNRose'
 
 const StyledFilm = styled.div`
-	overflow-x: hidden;
 	padding-bottom: 13.25rem;
 
 	& .film-wrap {
