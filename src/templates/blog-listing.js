@@ -32,10 +32,10 @@ export default class BlogList extends React.Component {
 	render() {
 		const { edges: posts } = this.props.data.allMarkdownRemark
 		const { currentPage, numPages } = this.props.pageContext
-	  const isFirst = currentPage === 1
-	  const isLast = currentPage === numPages
-	  const prevPage = currentPage - 1 === 1 ? "/blog" : "/blog/" + (currentPage - 1).toString()
-	  const nextPage = "/blog/" + (currentPage + 1).toString()
+		const isFirst = currentPage === 1
+		const isLast = currentPage === numPages
+		const prevPage = currentPage - 1 === 1 ? "/blog" : "/blog/" + (currentPage - 1).toString()
+		const nextPage = "/blog/" + (currentPage + 1).toString()
 
 		return (
 			<Layout pageMeta={{ title: 'Blog, Community, News' }}>
@@ -53,16 +53,16 @@ export default class BlogList extends React.Component {
 						}
 
 						{!isFirst && (
-			        <Link to={prevPage} rel="prev">
-			          ← Previous Page
-			        </Link>
-			      )}
-			      
-			      {!isLast && (
-			        <Link to={nextPage} rel="next">
-			          Next Page →
-			        </Link>
-			      )}
+							<Link to={prevPage} rel="prev">
+								← Previous Page
+							</Link>
+						)}
+						
+						{!isLast && (
+							<Link to={nextPage} rel="next">
+								Next Page →
+							</Link>
+						)}
 					</motion.div>
 				</StyledBlogContainer>
 			</Layout>
