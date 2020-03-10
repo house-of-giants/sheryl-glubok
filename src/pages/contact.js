@@ -14,7 +14,7 @@ const handleLabelActive = e => {
 }
 
 const handleLabelInactive = e => {
-	if( e.target.value == "" ) {
+	if( e.target.value === "" ) {
 		e.target.parentNode.classList.remove( 'is-active' )
 	}
 }

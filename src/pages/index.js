@@ -9,16 +9,24 @@ import Sonnet98 from '../components/Films/Sonnet98'
 import Thaw from '../components/Films/Thaw'
 import Alexia from '../components/Films/Alexia'
 import AboutCTA from '../components/About/AboutCTA'
+import styled from 'styled-components'
+
+const OxHidden = styled.div`
+	overflow-x: hidden;
+	overflow-y: visible;
+`
 
 export default () => (
 	<Layout>
+		<OxHidden>
 		<Hero />
 		<NavLogo />
-		<Fishbowl />
-		<LilyNRose />
-		<Sonnet98 />
-		<Thaw />
-		<Alexia />
+			<Fishbowl />
+			<LilyNRose />
+			<Sonnet98 />
+			<Thaw />
+			<Alexia />
 		<AboutCTA />
+		</OxHidden>
 	</Layout>
 )
