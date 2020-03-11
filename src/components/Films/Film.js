@@ -40,15 +40,15 @@ const Film = ( { slug, children, title, director, date } ) => {
 
 	return(
 		<StyledFilm className={`film ${slug}`} ref={ filmRef } itemScope itemType="http://schema.org/Movie">
-			<div className="film-wrap">
+			<Link to={`/films/${slug}`} className="film-wrap">
 				{children}
 				<div className="meta">
 					<span className="screen-reader-text" itemProp="name">{title}</span>
 					<span className="screen-reader-text" itemProp="director">{director}</span>
 					<p itemProp="dateCreated">{date}</p>
-					<p><Link to={`/films/${slug}`}>View Film</Link></p>
+					<p>View Film</p>
 				</div>
-			</div>
+			</Link>
 		</StyledFilm>
 	)
 }

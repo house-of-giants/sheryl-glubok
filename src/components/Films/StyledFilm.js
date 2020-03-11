@@ -32,6 +32,10 @@ const StyledFilm = styled.div`
 		width: 100%
 	}
 
+	& a {
+		color: ${colors.white};
+	}
+
 	& .meta {
 		display: flex;
 		grid-column: -4 / span 3;
@@ -58,10 +62,6 @@ const StyledFilm = styled.div`
 				margin-right: 1rem;
 				width: 15px;
 			}
-		}
-
-		& a {
-			color: ${colors.white};
 		}
 	}
 `
