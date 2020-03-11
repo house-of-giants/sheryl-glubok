@@ -7,47 +7,47 @@ import NavLogo from '../components/Nav/NavLogo'
 
 import { StyledBlogContainer } from '../styles/global/layout'
 
-export default class FilmList extends React.Component {
-	render() {
-		const { edges: posts } = this.props.data.allMarkdownRemark
-		const { currentPage, numPages } = this.props.pageContext
-		const isFirst = currentPage === 1
-		const isLast = currentPage === numPages
-		const prevPage = currentPage - 1 === 1 ? "/films" : "/films/" + (currentPage - 1).toString()
-		const nextPage = "/films/" + (currentPage + 1).toString()
+const FilmList = ( { data, pageContext } ) => {
+	const { edges: posts } = data.allMarkdownRemark
+	const { currentPage, numPages } = pageContext
+	const isFirst = currentPage === 1
+	const isLast = currentPage === numPages
+	const prevPage = currentPage - 1 === 1 ? "/films" : "/films/" + (currentPage - 1).toString()
+	const nextPage = "/films/" + (currentPage + 1).toString()
 
-		return (
-			<Layout pageMeta={{ title: 'Films' }}>
-				<NavLogo />
-				<StyledBlogContainer itemScope itemType="https://schema.org/Blog">
-					<div className="blog-heading">
-						<h1 className="screen-reader-text">Films</h1>
-						<h1>Films</h1>
-					</div>
-					<div className="blog-wrap">
-						{ posts
-							.map(({ node: post }) =>
-								<PostItem key={post.id} post={post} />
-							)
-						}
+	return (
+		<Layout pageMeta={{ title: 'Films' }}>
+			<NavLogo />
+			<StyledBlogContainer itemScope itemType="https://schema.org/Blog">
+				<div className="blog-heading">
+					<h1 className="screen-reader-text">Films</h1>
+					<h1>Films</h1>
+				</div>
+				<div className="blog-wrap">
+					{ posts
+						.map(({ node: post }) =>
+							<PostItem key={post.id} post={post} />
+						)
+					}
 
-						{!isFirst && (
-							<Link to={prevPage} rel="prev">
-								← Previous Page
-							</Link>
-						)}
-						
-						{!isLast && (
-							<Link to={nextPage} rel="next">
-								Next Page →
-							</Link>
-						)}
-					</div>
-				</StyledBlogContainer>
-			</Layout>
-		)
-	}
+					{!isFirst && (
+						<Link to={prevPage} rel="prev">
+							← Previous Page
+						</Link>
+					)}
+					
+					{!isLast && (
+						<Link to={nextPage} rel="next">
+							Next Page →
+						</Link>
+					)}
+				</div>
+			</StyledBlogContainer>
+		</Layout>
+	)
 }
+
+export default FilmList
 
 export const pageQuery = graphql`
 	query FilmsListingQuery( $skip: Int!, $limit: Int! ) {
