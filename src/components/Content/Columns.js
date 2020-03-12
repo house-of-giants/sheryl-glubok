@@ -21,7 +21,6 @@ const StyledColumns = styled.div`
 	}
 
 	& p {
-		font-weight: 100;
 		margin: 0;
 		padding: 0;
 

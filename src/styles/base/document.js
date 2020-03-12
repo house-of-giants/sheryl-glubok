@@ -15,7 +15,6 @@ export const DocStyles = css`
 		max-width: 100%;
 	}
 
-
 	iframe {
 		display: block;
 		margin: 0 auto;

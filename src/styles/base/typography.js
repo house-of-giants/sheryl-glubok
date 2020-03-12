@@ -63,14 +63,14 @@ export const Typography = css`
 			letter-spacing: 4px;
 			margin: 0;
 			text-align: center;
-		}
 
-		& p::before {
-			content: "\201C";
-		}
+			&::before {
+				content: open-quote;
+			}
 
-		& p::after {
-			content: "\201D";
+			&::after {
+				content: close-quote;
+			}
 		}
 	}
 
