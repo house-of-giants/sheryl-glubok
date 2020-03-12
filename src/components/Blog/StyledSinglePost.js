@@ -39,12 +39,6 @@ const StyledSinglePost = styled(motion.article)`
 		}
 	}
 
-	& iframe {
-		display: block;
-		margin: 0 auto;
-		max-width: 100%;
-	}
-
 	& .back {
 		color: ${colors.chateau};
 		display: block;
