@@ -14,4 +14,11 @@ export const DocStyles = css`
 	svg {
 		max-width: 100%;
 	}
+
+
+	iframe {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
 `

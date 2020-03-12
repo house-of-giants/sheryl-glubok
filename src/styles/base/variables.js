@@ -7,17 +7,17 @@ export const chateau = '#4eb955'
 export const revolver = '#281c3d'
 
 export const colors = {
-	black,
-	codGray,
-	white,
-	bossanova,
-	cosmic,
-	revolver,
-	chateau,
+  black,
+  codGray,
+  white,
+  bossanova,
+  cosmic,
+  revolver,
+  chateau,
 }
 
 export const fonts = {
-	primary: `Roboto, sans-serif`,
+  primary: `Roboto, sans-serif`,
 }
 
 export const bpTiny = 'min-width: 25em' /* 400px */
@@ -26,19 +26,18 @@ export const bpMedium = 'min-width: 53.125em' /* 850px */
 export const bpLarge = 'min-width: 62.5em' /* 1000px */
 export const bpXLarge = 'min-width: 90em' /* 1440px */
 
-
 export const mq = {
-	bpTiny,
-	bpSmall,
-	bpMedium,
-	bpLarge,
-	bpXLarge,
+  bpTiny,
+  bpSmall,
+  bpMedium,
+  bpLarge,
+  bpXLarge,
 }
 
 export const containerWidth = '85.333em' /* 1024px */
 export const containerWidthNarrow = '51.3125em' /* 821px */
 
 export const container = {
-	width: containerWidth,
-	widthNarrow: containerWidthNarrow
+  width: containerWidth,
+  widthNarrow: containerWidthNarrow,
 }

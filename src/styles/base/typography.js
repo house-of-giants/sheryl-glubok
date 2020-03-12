@@ -53,6 +53,27 @@ export const Typography = css`
 		}
 	}
 
+	blockquote {
+		padding: 0;
+		text-align: center;
+
+		& p {
+			font-size: 5rem;
+			font-weight: 900;
+			letter-spacing: 4px;
+			margin: 0;
+			text-align: center;
+		}
+
+		& p::before {
+			content: "\201C";
+		}
+
+		& p::after {
+			content: "\201D";
+		}
+	}
+
 	.-overlay {
 		mix-blend-mode: overlay;
 	}
