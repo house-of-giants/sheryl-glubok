@@ -8,9 +8,9 @@ anticipated_release: true
 runtime: 141 mins
 written_by: Kelly Bleck
 directed_by: Dominic Magnifico
-produced:
+produced_by:
   - Kelly Bleck
-  - Lauren Bleck
+  - Dominic
 starring:
   - Lauren Bleck
   - Kelly Bleck
