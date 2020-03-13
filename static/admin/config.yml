@@ -56,11 +56,7 @@ collections:
       - {label: "Runtime", name: "runtime", widget: "string"}
       - {label: "Written By", name: "written_by", widget: "string"}
       - {label: "Directed By", name: "directed_by", widget: "string"}
-      - {label: "Produced By", name: "produced_by", widget: "string"}
-      - label: "Starring"
-        name: "starring"
-        collapsed: false
-        widget: "list"
-        field: {label: "Name", name: "item", widget: "string"}
+      - {label: "Produced By", name: "produced_by", widget: "list"}
+      - {label: "Starring", name: "starring", widget: "list", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Pull Quote", name: "pullquote", "string"}
+      - {label: "Pull Quote", name: "pullquote", required: false, "string"}

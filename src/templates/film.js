@@ -48,7 +48,7 @@ const Film = ({ data }) => {
 	const [ isVideo, showVideo ] = useState( false )
 	const { markdownRemark: post } = data
 	const { html } = post
-	const { title, vimeo_url, thumbnail } = post.frontmatter
+	const { title, vimeo_url, thumbnail, date, anticipated_release, runtime, written_by, produced_by, directed_by, starring, pullquote } = post.frontmatter
 
 	return (
 		<Layout pageMeta={{ title, thumbnail }}>
@@ -64,51 +64,43 @@ const Film = ({ data }) => {
 							: <FilmHero isVideo={isVideo} showVideo={showVideo} thumbnail={thumbnail} />
 						}
 					</AspectRatioBox>
-					{/* @TODO :: Meta section */}
 					<Columns cols="repeat(auto-fit, minmax(341px, 1fr))">
 						<div>
-							<p><strong>Date Released</strong></p>
-							<p>March 22, 2019</p>
+							<p><strong>{ anticipated_release ? "Anticipated Release Date" : "Date Released" }</strong></p>
+							<p>{ date }</p>
 						</div>
 						<div>
 							<p><strong>Runtime</strong></p>
-							<p itemProp="duration" content={MinutesToDuration(121)}>121 Minutes</p>
+						{/* @TODO: How do we want to handle mins - just have them include the number and not the "141 minutes"? */}
+							<p itemProp="duration" content={MinutesToDuration(121)}>{ runtime }</p>
 						</div>
 						<div>
 							<p ><strong>Written by</strong></p>
 							<p itemProp="author" itemScope itemType="http://schema.org/Person">
-								<span itemProp="name">Sheryl Glubok</span>
+								<span itemProp="name">{ written_by }</span>
 							</p>
 						</div>
 						<div>
 							<p><strong>Directed by</strong></p>
 							<p itemProp="director" itemScope itemType="http://schema.org/Person">
-								<span itemProp="name">Sheryl Glubok</span>
+								<span itemProp="name">{ directed_by }</span>
 							</p>
 						</div>
 						<div>
 							<p><strong>Produced by</strong></p>
-							<p itemProp="producer" itemScope itemType="http://schema.org/Person">
-								<span itemProp="name">Sheryl Glubok</span>
-							</p>
-							<p itemProp="producer" itemScope itemType="http://schema.org/Person">
-								<span itemProp="name">Wesley Matheny</span>
-							</p>
+							{produced_by.map( person => (
+								<p itemProp="producer" itemScope itemType="http://schema.org/Person">
+									<span itemProp="name">{ person }</span>
+								</p>
+		        	))}
 						</div>
 						<div>
 							<p><strong>Starring</strong></p>
-							<p itemProp="actor" itemScope itemType="http://schema.org/Person">
-								<span itemProp="name">Marina Leo</span>
-							</p>
-							<p itemProp="actor" itemScope itemType="http://schema.org/Person">
-								<span itemProp="name">Aicha Bleers</span>
-							</p>
-							<p itemProp="actor" itemScope itemType="http://schema.org/Person">
-								<span itemProp="name">Grace Dotson</span>
-							</p>
-							<p itemProp="actor" itemScope itemType="http://schema.org/Person">
-								<span itemProp="name">Maggy Stacy</span>
-							</p>
+							{starring.map( person => (
+								<p itemProp="actor" itemScope itemType="http://schema.org/Person">
+									<span itemProp="name">{ person }</span>
+								</p>
+		        	))}
 						</div>
 					</Columns>
 					<Columns cols="2fr 1fr" colGap="4rem">
@@ -176,9 +168,11 @@ const Film = ({ data }) => {
 						</Team>
 					</Columns>
 					{/* :: Pullquote */}
-					<blockquote>
-						<p>Right on, here's a big ol' pullquote from the content above</p>
-					</blockquote>
+					{ pullquote &&
+						<blockquote>
+							<p>{ pullquote }</p>
+						</blockquote>
+					}
 				</StyledContainer>
 			</motion.div>
 		</Layout>
@@ -190,10 +184,17 @@ export const pageQuery = graphql`
 		markdownRemark(fields: { slug: { eq: $slug } }) {
 			html
 			frontmatter {
-				date(formatString: "MMMM DD, YYYY")
 				title
 				thumbnail
 				vimeo_url
+				date(formatString: "MMMM DD, YYYY")
+				anticipated_release
+				runtime
+				written_by
+				directed_by
+				produced_by
+				starring
+				pullquote
 			}
 		}
 	}
