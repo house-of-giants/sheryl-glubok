@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import Layout from '../theme/layout'
 import PostItem from '../components/Blog/PostItem'
@@ -7,8 +7,13 @@ import NavLogo from '../components/Nav/NavLogo'
 
 import { StyledBlogContainer } from '../styles/global/layout'
 
-export default function Blog({ data }) {
+const FilmList = ( { data, pageContext } ) => {
 	const { edges: posts } = data.allMarkdownRemark
+	const { currentPage, numPages } = pageContext
+	const isFirst = currentPage === 1
+	const isLast = currentPage === numPages
+	const prevPage = currentPage - 1 === 1 ? "/films" : "/films/" + (currentPage - 1).toString()
+	const nextPage = "/films/" + (currentPage + 1).toString()
 
 	return (
 		<Layout pageMeta={{ title: 'Films' }}>
@@ -20,20 +25,38 @@ export default function Blog({ data }) {
 				</div>
 				<div className="blog-wrap">
 					{ posts
-						.filter(edge => edge.node.fields.layout === 'film')
 						.map(({ node: post }) =>
 							<PostItem key={post.id} post={post} />
 						)
 					}
+
+					{!isFirst && (
+						<Link to={prevPage} rel="prev">
+							← Previous Page
+						</Link>
+					)}
+					
+					{!isLast && (
+						<Link to={nextPage} rel="next">
+							Next Page →
+						</Link>
+					)}
 				</div>
 			</StyledBlogContainer>
 		</Layout>
 	)
 }
 
+export default FilmList
+
 export const pageQuery = graphql`
-	query FilmsListingQuery {
-		allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+	query FilmsListingQuery( $skip: Int!, $limit: Int! ) {
+		allMarkdownRemark(
+			sort: { order: DESC, fields: [frontmatter___date] }
+			filter: { fields: { layout: { eq: "film" } } }
+			limit: $limit
+			skip: $skip
+		) {
 			edges {
 				node {
 					id
