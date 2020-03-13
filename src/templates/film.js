@@ -72,42 +72,42 @@ const Film = ({ data }) => {
 						</div>
 						<div>
 							<p><strong>Runtime</strong></p>
-							<p itemprop="duration" content={MinutesToDuration(121)}>121 Minutes</p>
+							<p itemProp="duration" content={MinutesToDuration(121)}>121 Minutes</p>
 						</div>
 						<div>
 							<p ><strong>Written by</strong></p>
-							<p itemprop="author" itemscope itemtype="http://schema.org/Person">
-								<span itemprop="name">Sheryl Glubok</span>
+							<p itemProp="author" itemScope itemType="http://schema.org/Person">
+								<span itemProp="name">Sheryl Glubok</span>
 							</p>
 						</div>
 						<div>
 							<p><strong>Directed by</strong></p>
-							<p itemprop="director" itemscope itemtype="http://schema.org/Person">
-								<span itemprop="name">Sheryl Glubok</span>
+							<p itemProp="director" itemScope itemType="http://schema.org/Person">
+								<span itemProp="name">Sheryl Glubok</span>
 							</p>
 						</div>
 						<div>
 							<p><strong>Produced by</strong></p>
-							<p itemprop="producer" itemscope itemtype="http://schema.org/Person">
-								<span itemprop="name">Sheryl Glubok</span>
+							<p itemProp="producer" itemScope itemType="http://schema.org/Person">
+								<span itemProp="name">Sheryl Glubok</span>
 							</p>
-							<p itemprop="producer" itemscope itemtype="http://schema.org/Person">
-								<span itemprop="name">Wesley Matheny</span>
+							<p itemProp="producer" itemScope itemType="http://schema.org/Person">
+								<span itemProp="name">Wesley Matheny</span>
 							</p>
 						</div>
 						<div>
 							<p><strong>Starring</strong></p>
-							<p itemprop="actor" itemscope itemtype="http://schema.org/Person">
-								<span itemprop="name">Marina Leo</span>
+							<p itemProp="actor" itemScope itemType="http://schema.org/Person">
+								<span itemProp="name">Marina Leo</span>
 							</p>
-							<p itemprop="actor" itemscope itemtype="http://schema.org/Person">
-								<span itemprop="name">Aicha Bleers</span>
+							<p itemProp="actor" itemScope itemType="http://schema.org/Person">
+								<span itemProp="name">Aicha Bleers</span>
 							</p>
-							<p itemprop="actor" itemscope itemtype="http://schema.org/Person">
-								<span itemprop="name">Grace Dotson</span>
+							<p itemProp="actor" itemScope itemType="http://schema.org/Person">
+								<span itemProp="name">Grace Dotson</span>
 							</p>
-							<p itemprop="actor" itemscope itemtype="http://schema.org/Person">
-								<span itemprop="name">Maggy Stacy</span>
+							<p itemProp="actor" itemScope itemType="http://schema.org/Person">
+								<span itemProp="name">Maggy Stacy</span>
 							</p>
 						</div>
 					</Columns>
