@@ -22,7 +22,12 @@ const StyledColumns = styled.div`
 		padding-bottom: 8rem;
 	}
 
-	& p {
+	& > * {
+		padding-bottom: 2rem;
+	}
+
+	& p,
+	& p:not(:last-of-type) {
 		margin: 0;
 		padding: 0;
 
