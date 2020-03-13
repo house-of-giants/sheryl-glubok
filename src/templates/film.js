@@ -1,14 +1,15 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { useState } from 'react'
 
+import { StyledContainer } from '../styles/global/layout'
 import Layout from '../theme/layout'
+
+import { FishbowlTitle } from '../components/SVG'
 import AspectRatioBox from '../components/Content/AspectRatioBox'
 import FilmHero from '../components/Hero/FilmHero'
-import { FishbowlLogo } from '../components/Films/Fishbowl'
 import NavLogo from '../components/Nav/NavLogo'
-
-import { StyledContainer } from '../styles/global/layout'
 import Columns from '../components/Content/Columns'
 import Team from '../components/Films/Team'
 
@@ -19,11 +20,11 @@ const Film = ({ data }) => {
 	const { title, vimeo_url, thumbnail } = post.frontmatter
 
 	return (
-		<Layout>
+		<Layout pageMeta={{ title, thumbnail }}>
 			<NavLogo />
 			<StyledContainer>
 				{/* @TODO :: Dynamically add the SVG logo for each film */}
-				<FishbowlLogo />
+				<FishbowlTitle />
 				<AspectRatioBox ratio="16/9">
 					{ isVideo && vimeo_url
 						? <iframe title={title} src={`https://player.vimeo.com/video/${vimeo_url}?autoplay=1`} width="640" height="487" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
@@ -147,5 +148,9 @@ export const pageQuery = graphql`
 		}
 	}
 `
+
+Film.propTypes = {
+	data: PropTypes.object.isRequired
+}
 
 export default Film

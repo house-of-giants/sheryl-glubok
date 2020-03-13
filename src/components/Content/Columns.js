@@ -1,5 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
+
 import { bpMedium } from '../../styles/base/variables'
 
 const StyledColumns = styled.div`
@@ -45,5 +47,16 @@ const Columns = ({ cols = 'auto', rows = 'auto', colGap = '0', rowGap = '0', chi
 		{children}
 	</StyledColumns>
 )
+
+Columns.propTypes = {
+	cols: PropTypes.string,
+	rows: PropTypes.string,
+	colGap: PropTypes.string,
+	rowGap: PropTypes.string,
+	children: PropTypes.oneOfType([
+		PropTypes.arrayOf(PropTypes.node),
+		PropTypes.node
+	]).isRequired,
+}
 
 export default Columns

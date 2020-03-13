@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 
 import { animPageDefault } from '../utils/animationDefs'
@@ -73,6 +74,14 @@ export default function Post({ data }) {
 			</StyledContainer>
 		</Layout>
 	)
+}
+
+Post.propTypes = {
+	data: PropTypes.shape({
+		allMarkdownRemark: PropTypes.shape({
+			edges: PropTypes.arrayOf(PropTypes.object).isRequired,
+		})
+	})
 }
 
 export const pageQuery = graphql`

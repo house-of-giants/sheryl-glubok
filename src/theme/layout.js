@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { createGlobalStyle } from 'styled-components'
 
 import globalStyles from '../styles/styles'
@@ -11,7 +12,12 @@ const GlobalStyle = createGlobalStyle`
 	${globalStyles}
 `
 
-const Layout = ({ pageMeta = {}, children }) => (
+const defaultMeta = {
+	title: 'Writer, Director, Storyteller',
+	thumbnail: '/social-image.png'
+}
+
+const Layout = ({ pageMeta = { defaultMeta }, children }) => (
 	<div className='app'>
 		<GlobalStyle />
 		<Head pageMeta={pageMeta} />
@@ -20,5 +26,16 @@ const Layout = ({ pageMeta = {}, children }) => (
 		<Footer />
 	</div>
 )
+
+Layout.propTypes = {
+	pageMeta: PropTypes.shape({
+		title: PropTypes.string,
+		thumbnail: PropTypes.string,
+	}),
+	children: PropTypes.oneOfType([
+		PropTypes.arrayOf(PropTypes.node),
+		PropTypes.node,
+	]).isRequired
+}
 
 export default Layout

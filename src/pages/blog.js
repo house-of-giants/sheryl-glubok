@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 
 import { animPageDefault } from '../utils/animationDefs'
 
@@ -50,6 +51,14 @@ export default function Blog({ data }) {
 			</StyledBlogContainer>
 		</Layout>
 	)
+}
+
+Blog.propTypes = {
+	data: PropTypes.shape({
+		allMarkdownRemark: PropTypes.shape({
+			edges: PropTypes.arrayOf(PropTypes.object).isRequired,
+		})
+	})
 }
 
 export const pageQuery = graphql`

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
 import StyledPostItem from './StyledPostItem'
@@ -39,4 +40,15 @@ const PostItem = ({ post, variants, i }) => {
 		</StyledPostItem>
 	)
 }
+
+PostItem.propTypes ={
+	post: PropTypes.shape({
+		id: PropTypes.string.isRequired,
+		fields: PropTypes.object.isRequired,
+		frontmatter: PropTypes.object.isRequired,
+	}),
+	variants: PropTypes.object,
+	i: PropTypes.number,
+}
+
 export default PostItem

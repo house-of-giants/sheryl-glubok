@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Button from '../Button'
 import StyledFilmHero from './StyledFilmHero'
@@ -11,5 +12,11 @@ const FilmHero = ({ isVideo, showVideo, thumbnail }) => (
 		</Button>
 	</StyledFilmHero>
 )
+
+FilmHero.propTypes ={
+	isVideo: PropTypes.bool.isRequired,
+	showVideo: PropTypes.func.isRequired,
+	thumbnail: PropTypes.string.isRequired,
+}
 
 export default FilmHero
