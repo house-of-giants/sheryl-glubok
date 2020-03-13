@@ -69,13 +69,20 @@ const BlogList = ( { data, pageContext } ) => {
 	)
 }
 
-Blog.propTypes = {
+BlogList.propTypes = {
 	data: PropTypes.shape({
 		allMarkdownRemark: PropTypes.shape({
 			edges: PropTypes.arrayOf(PropTypes.object).isRequired,
 		})
-	})
+	}),
+	pageContext: PropTypes.shape({
+		limit: PropTypes.number.isRequired,
+		skip: PropTypes.number.isRequired,
+		numPages: PropTypes.number.isRequired,
+		currentPage: PropTypes.number.isRequired,
+	}).isRequired
 }
+
 export default BlogList
 
 export const pageQuery = graphql`
