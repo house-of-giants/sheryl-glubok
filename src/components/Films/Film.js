@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { TweenMax } from 'gsap'
 
@@ -51,6 +52,17 @@ const Film = ( { slug, children, title, director, date } ) => {
 			</Link>
 		</StyledFilm>
 	)
+}
+
+Film.propTypes = {
+	slug: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
+	director: PropTypes.string.isRequired,
+	date: PropTypes.string.isRequired,
+	children: PropTypes.oneOfType([
+		PropTypes.arrayOf(PropTypes.node),
+		PropTypes.node
+	]).isRequired,
 }
 
 export default Film
