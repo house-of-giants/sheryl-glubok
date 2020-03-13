@@ -1,6 +1,7 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
+import { graphql, Link } from 'gatsby'
+import { motion } from 'framer-motion'
 
 import { animPageDefault } from '../utils/animationDefs'
 
@@ -9,7 +10,6 @@ import PostItem from '../components/Blog/PostItem'
 import NavLogo from '../components/Nav/NavLogo'
 
 import { StyledBlogContainer } from '../styles/global/layout'
-import { motion } from 'framer-motion'
 
 const animList = {
 	visible: {
@@ -29,8 +29,13 @@ const animItem = {
 	}
 }
 
-export default function Blog({ data }) {
+const BlogList = ( { data, pageContext } ) => {
 	const { edges: posts } = data.allMarkdownRemark
+	const { currentPage, numPages } = pageContext
+	const isFirst = currentPage === 1
+	const isLast = currentPage === numPages
+	const prevPage = currentPage - 1 === 1 ? "/blog" : "/blog/" + (currentPage - 1).toString()
+	const nextPage = "/blog/" + (currentPage + 1).toString()
 
 	return (
 		<Layout pageMeta={{ title: 'Blog, Community, News' }}>
@@ -42,11 +47,22 @@ export default function Blog({ data }) {
 				</div>
 				<motion.div className="blog-wrap" variants={animList} initial="hidden" animate="visible" exit="hidden">
 					{ posts
-						.filter(edge => edge.node.fields.layout === 'blog')
 						.map(({ node: post }, i) =>
 							<PostItem key={post.id} post={post} variants={animItem} i={i} />
 						)
 					}
+
+					{!isFirst && (
+						<Link to={prevPage} rel="prev">
+							← Previous Page
+						</Link>
+					)}
+
+					{!isLast && (
+						<Link to={nextPage} rel="next">
+							Next Page →
+						</Link>
+					)}
 				</motion.div>
 			</StyledBlogContainer>
 		</Layout>
@@ -60,10 +76,16 @@ Blog.propTypes = {
 		})
 	})
 }
+export default BlogList
 
 export const pageQuery = graphql`
-	query BlogListingQuery {
-		allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+	query BlogListingQuery( $skip: Int!, $limit: Int! ) {
+		allMarkdownRemark(
+			sort: { order: DESC, fields: [frontmatter___date] }
+			filter: { fields: { layout: { eq: "blog" } } }
+			limit: $limit
+			skip: $skip
+		) {
 			edges {
 				node {
 					id
