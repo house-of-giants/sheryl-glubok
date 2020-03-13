@@ -92,7 +92,7 @@ const Film = ({ data }) => {
 								<p itemProp="producer" itemScope itemType="http://schema.org/Person">
 									<span itemProp="name">{ person }</span>
 								</p>
-		        	))}
+							))}
 						</div>
 						<div>
 							<p><strong>Starring</strong></p>
@@ -100,7 +100,7 @@ const Film = ({ data }) => {
 								<p itemProp="actor" itemScope itemType="http://schema.org/Person">
 									<span itemProp="name">{ person }</span>
 								</p>
-		        	))}
+							))}
 						</div>
 					</Columns>
 					<Columns cols="2fr 1fr" colGap="4rem">
