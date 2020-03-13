@@ -1,15 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
+import { motion } from 'framer-motion'
 
 import { animPageDefault } from '../utils/animationDefs'
-
-import Layout from '../theme/layout'
-import NavLogo from '../components/Nav/NavLogo'
-
-import StyledSinglePost from '../components/Blog/StyledSinglePost'
 import { StyledContainer } from '../styles/global/layout'
-import { motion } from 'framer-motion'
+import Layout from '../theme/layout'
+
+import NavLogo from '../components/Nav/NavLogo'
+import StyledSinglePost from '../components/Blog/StyledSinglePost'
 
 export default function Post({ data }) {
 	const { markdownRemark: post } = data
