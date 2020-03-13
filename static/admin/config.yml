@@ -49,7 +49,18 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "film"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Vimeo Link", name: "vimeo_url", widget: "string"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Release Date", name: "date", widget: "datetime"}
+      - {label: "Is this an anticipated release date?", name: "anticipated_release", widget: "boolean"}
+      - {label: "Runtime", name: "runtime", widget: "string"}
+      - {label: "Written By", name: "written_by", widget: "string"}
+      - {label: "Directed By", name: "directed_by", widget: "string"}
+      - {label: "Produced By", name: "produced_by", widget: "string"}
+      - label: "Starring"
+        name: "starring"
+        collapsed: false
+        widget: "list"
+        field: {label: "Name", name: "item", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Pull Quote", name: "pullquote", "string"}
