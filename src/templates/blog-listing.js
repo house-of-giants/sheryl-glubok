@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import { motion } from 'framer-motion'
 
@@ -56,7 +57,7 @@ const BlogList = ( { data, pageContext } ) => {
 							← Previous Page
 						</Link>
 					)}
-					
+
 					{!isLast && (
 						<Link to={nextPage} rel="next">
 							Next Page →
@@ -66,6 +67,20 @@ const BlogList = ( { data, pageContext } ) => {
 			</StyledBlogContainer>
 		</Layout>
 	)
+}
+
+BlogList.propTypes = {
+	data: PropTypes.shape({
+		allMarkdownRemark: PropTypes.shape({
+			edges: PropTypes.arrayOf(PropTypes.object).isRequired,
+		})
+	}),
+	pageContext: PropTypes.shape({
+		limit: PropTypes.number.isRequired,
+		skip: PropTypes.number.isRequired,
+		numPages: PropTypes.number.isRequired,
+		currentPage: PropTypes.number.isRequired,
+	}).isRequired
 }
 
 export default BlogList

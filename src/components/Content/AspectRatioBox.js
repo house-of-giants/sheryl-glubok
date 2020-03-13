@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const StyledAspectRatioBox = styled.div`
@@ -27,5 +28,13 @@ const AspectRatioBox = ({ ratio, children }) => (
 		{children}
 	</StyledAspectRatioBox>
 )
+
+AspectRatioBox.propTypes = {
+	ratio: PropTypes.string.isRequired,
+	children: PropTypes.oneOfType([
+		PropTypes.arrayOf(PropTypes.node),
+		PropTypes.node
+	]).isRequired,
+}
 
 export default AspectRatioBox
