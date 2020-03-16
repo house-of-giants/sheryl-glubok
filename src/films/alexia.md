@@ -3,7 +3,7 @@ layout: film
 title: Alexia
 thumbnail: /images/about-2.jpg
 date: 1993-01-01T22:35:00.000Z
-anticipated_release: true
+anticipated_release: false
 runtime: 11
 written_by:
   - Sheryl Glubok
