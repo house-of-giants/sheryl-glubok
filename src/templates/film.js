@@ -71,51 +71,66 @@ const Film = ({ data }) => {
 						</div>
 						<div>
 							<p><strong>Runtime</strong></p>
-						{/* @TODO: How do we want to handle mins - just have them include the number and not the "141 minutes"? */}
-							<p itemProp="duration" content={MinutesToDuration(121)}>{ runtime }</p>
+							<p itemProp="duration" content={MinutesToDuration({ runtime })}>{ runtime } minutes</p>
 						</div>
-						<div>
-							<p ><strong>Written by</strong></p>
-							<p itemProp="author" itemScope itemType="http://schema.org/Person">
-								<span itemProp="name">{ written_by }</span>
-							</p>
-						</div>
-						<div>
-							<p><strong>Directed by</strong></p>
-							<p itemProp="director" itemScope itemType="http://schema.org/Person">
-								<span itemProp="name">{ directed_by }</span>
-							</p>
-						</div>
-						<div>
-							<p><strong>Produced by</strong></p>
-							{produced_by.map( person => (
-								<p itemProp="producer" itemScope itemType="http://schema.org/Person">
-									<span itemProp="name">{ person }</span>
-								</p>
-							))}
-						</div>
-						<div>
-							<p><strong>Starring</strong></p>
-							{starring.map( person => (
-								<p itemProp="actor" itemScope itemType="http://schema.org/Person">
-									<span itemProp="name">{ person }</span>
-								</p>
-							))}
-						</div>
+						{ written_by &&
+							<div>
+								<p><strong>Written by</strong></p>
+								{written_by.map( person => (
+									<p itemProp="author" itemScope itemType="http://schema.org/Person">
+										<span itemProp="name">{ person }</span>
+									</p>
+								))}
+							</div>
+						}
+						{ directed_by && 
+							<div>
+								<p><strong>Directed by</strong></p>
+								{directed_by.map( person => (
+									<p itemProp="director" itemScope itemType="http://schema.org/Person">
+										<span itemProp="name">{ person }</span>
+									</p>
+								))}
+							</div>
+						}
+						{ produced_by && 
+							<div>
+								<p><strong>Produced by</strong></p>
+								{produced_by.map( person => (
+									<p itemProp="producer" itemScope itemType="http://schema.org/Person">
+										<span itemProp="name">{ person }</span>
+									</p>
+								))}
+							</div>
+						}
+						{ starring && 
+							<div>
+								<p><strong>Starring</strong></p>
+								{starring.map( person => (
+									<p itemProp="actor" itemScope itemType="http://schema.org/Person">
+										<span itemProp="name">{ person }</span>
+									</p>
+								))}
+							</div>
+						}
 					</Columns>
 					<Columns cols="2fr 1fr" colGap="4rem">
 						{/* @TODO :: Can CMS align images left /right? Or do we need to implement columns */}
 						<div dangerouslySetInnerHTML={{ __html: html }} />
 						<img src="https://source.unsplash.com/random/341x502" alt="" />
 					</Columns>
-					{/* @TODO :: Laurels */}
-					<Columns cols="repeat(auto-fit, minmax(300px, 1fr))" colGap="2rem" rowGap="2rem">
-						<img src="https://source.unsplash.com/random/192x94" alt="" />
-						<img src="https://source.unsplash.com/random/192x94" alt="" />
-						<img src="https://source.unsplash.com/random/192x94" alt="" />
-						<img src="https://source.unsplash.com/random/192x94" alt="" />
-						<img src="https://source.unsplash.com/random/192x94" alt="" />
-					</Columns>
+					{ awards &&
+						<Columns cols="repeat(auto-fit, minmax(300px, 1fr))" colGap="2rem" rowGap="2rem">
+							{awards.map( award => {
+								const url = award.logo_link
+								return (
+									<a href={ award.logo_link }>
+										<img src={ award.logo } alt="" />
+									</a>
+								)
+							})}
+						</Columns>
+					}
 					{/* @TODO :: Team */}
 					<Columns cols="repeat(2, 1fr)" colGap="4rem">
 						<Team>
@@ -195,6 +210,10 @@ export const pageQuery = graphql`
 				produced_by
 				starring
 				pullquote
+				awards {
+					logo
+					logo_link
+				}
 			}
 		}
 	}
