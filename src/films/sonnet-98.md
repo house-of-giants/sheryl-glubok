@@ -25,6 +25,12 @@ awards:
     logo_link: https://source.unsplash.com/random/219x222
   - logo: https://source.unsplash.com/random/219x222
     logo_link: https://source.unsplash.com/random/219x222
+team:
+  - member_name: Team Member
+    member_title: Member Title
+    member_excerpt: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.
+    member_headshot: https://source.unsplash.com/random/219x222
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.
 

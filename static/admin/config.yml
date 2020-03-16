@@ -72,7 +72,7 @@ collections:
         widget: "list"
         required: false
         fields:
-          - {label: "Member Name", name: "member_name", widget: "string", required: false}
+          - {label: "Member Name", name: "member_name", widget: "string"}
           - {label: "Member Title", name: "member_title", widget: "string", required: false}
           - {label: "Member Excerpt", name: "member_excerpt", widget: "text", required: false}
           - {label: "Member Headshot", name: "member_headshot", widget: "image", required: false}

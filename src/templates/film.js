@@ -48,7 +48,7 @@ const Film = ({ data }) => {
 	const [ isVideo, showVideo ] = useState( false )
 	const { markdownRemark: post } = data
 	const { html } = post
-	const { title, vimeo_url, thumbnail, date, anticipated_release, runtime, written_by, produced_by, directed_by, starring, pullquote } = post.frontmatter
+	const { title, vimeo_url, thumbnail, date, anticipated_release, runtime, written_by, produced_by, directed_by, starring, pullquote, awards, team } = post.frontmatter
 
 	return (
 		<Layout pageMeta={{ title, thumbnail }}>
@@ -114,74 +114,45 @@ const Film = ({ data }) => {
 							</div>
 						}
 					</Columns>
+
 					<Columns cols="2fr 1fr" colGap="4rem">
 						{/* @TODO :: Can CMS align images left /right? Or do we need to implement columns */}
 						<div dangerouslySetInnerHTML={{ __html: html }} />
 						<img src="https://source.unsplash.com/random/341x502" alt="" />
 					</Columns>
+
+					{/* :: Awards */}
 					{ awards &&
 						<Columns cols="repeat(auto-fit, minmax(300px, 1fr))" colGap="2rem" rowGap="2rem">
 							{awards.map( award => {
-								const url = award.logo_link
-								return (
+								return award.logo_link ?
 									<a href={ award.logo_link }>
 										<img src={ award.logo } alt="" />
-									</a>
-								)
+									</a> : 
+									<img src={ award.logo } alt="" />
 							})}
 						</Columns>
 					}
-					{/* @TODO :: Team */}
-					<Columns cols="repeat(2, 1fr)" colGap="4rem">
-						<Team>
-							<img src="https://source.unsplash.com/random/219x222" alt=""/>
-							<div className="meta">
-								<h3 className="name">Member Name</h3>
-								<p className="title">Member position</p>
-								<p className="blurb">Short little few line blurb about that member and the awesome work they did on the project!</p>
-							</div>
-						</Team>
-						<Team>
-							<img src="https://source.unsplash.com/random/219x222" alt=""/>
-							<div className="meta">
-								<h3 className="name">Member Name</h3>
-								<p className="title">Member position</p>
-								<p className="blurb">Short little few line blurb about that member and the awesome work they did on the project!</p>
-							</div>
-						</Team>
-						<Team>
-							<img src="https://source.unsplash.com/random/219x222" alt=""/>
-							<div className="meta">
-								<h3 className="name">Member Name</h3>
-								<p className="title">Member position</p>
-								<p className="blurb">Short little few line blurb about that member and the awesome work they did on the project!</p>
-							</div>
-						</Team>
-						<Team>
-							<img src="https://source.unsplash.com/random/219x222" alt=""/>
-							<div className="meta">
-								<h3 className="name">Member Name</h3>
-								<p className="title">Member position</p>
-								<p className="blurb">Short little few line blurb about that member and the awesome work they did on the project!</p>
-							</div>
-						</Team>
-						<Team>
-							<img src="https://source.unsplash.com/random/219x222" alt=""/>
-							<div className="meta">
-								<h3 className="name">Member Name</h3>
-								<p className="title">Member position</p>
-								<p className="blurb">Short little few line blurb about that member and the awesome work they did on the project!</p>
-							</div>
-						</Team>
-						<Team>
-							<img src="https://source.unsplash.com/random/219x222" alt=""/>
-							<div className="meta">
-								<h3 className="name">Member Name</h3>
-								<p className="title">Member position</p>
-								<p className="blurb">Short little few line blurb about that member and the awesome work they did on the project!</p>
-							</div>
-						</Team>
-					</Columns>
+
+					{/* :: Team */}
+					{ team &&
+						<Columns cols="repeat(2, 1fr)" colGap="4rem">
+							{team.map( ( { member_headshot, member_name, member_title, member_excerpt } ) => (
+								<Team>
+									<img src={ member_headshot } alt={ member_name } />
+									<div className="meta">
+										<h3 className="name">{ member_name }</h3>
+										{ member_title && 
+											<p className="title">{ member_title }</p>
+										}
+										{ member_excerpt && 
+											<p className="blurb">{ member_excerpt }</p>
+										}
+									</div>
+								</Team>	
+							))}
+						</Columns>
+					}
 					{/* :: Pullquote */}
 					{ pullquote &&
 						<blockquote>
@@ -213,6 +184,12 @@ export const pageQuery = graphql`
 				awards {
 					logo
 					logo_link
+				}
+				team {
+					member_name
+					member_title
+					member_excerpt
+					member_headshot
 				}
 			}
 		}
