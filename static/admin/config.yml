@@ -49,14 +49,30 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "film"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Vimeo Link", name: "vimeo_url", widget: "string"}
+      - {label: "Vimeo Link", name: "vimeo_url", widget: "string", required: false}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Release Date", name: "date", widget: "datetime"}
       - {label: "Is this an anticipated release date?", name: "anticipated_release", widget: "boolean"}
-      - {label: "Runtime", name: "runtime", widget: "string"}
-      - {label: "Written By", name: "written_by", widget: "string"}
-      - {label: "Directed By", name: "directed_by", widget: "string"}
-      - {label: "Produced By", name: "produced_by", widget: "list"}
+      - {label: "Runtime", name: "runtime", widget: "number", valueType: "int"}
+      - {label: "Written By", name: "written_by", widget: "list", required: false}
+      - {label: "Directed By", name: "directed_by", widget: "list", required: false}
+      - {label: "Produced By", name: "produced_by", widget: "list", required: false}
       - {label: "Starring", name: "starring", widget: "list", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Pull Quote", name: "pullquote", required: false, "string"}
+      - {label: "Pull Quote", name: "pullquote", widget: "string", required: false}
+      - label: "Awards"
+        name: "awards"
+        widget: "list"
+        required: false
+        fields: 
+          - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Link to external site", name: "logo_link", widget: "string", required: false}
+      - label: "Team"
+        name: "team"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Member Name", name: "member_name", widget: "string", required: false}
+          - {label: "Member Title", name: "member_title", widget: "string", required: false}
+          - {label: "Member Excerpt", name: "member_excerpt", widget: "text", required: false}
+          - {label: "Member Headshot", name: "member_headshot", widget: "image", required: false}
