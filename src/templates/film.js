@@ -49,8 +49,6 @@ const Film = ({ data }) => {
 	const { markdownRemark: post } = data
 	const { html } = post
 	const { title, vimeo_url, thumbnail, date, anticipated_release, runtime, written_by, produced_by, directed_by, starring, pullquote, awards, team } = post.frontmatter
-	const postDate = new Date( Date.parse( date ) )
-	const formattedDate = postDate.getFullYear()
 
 	return (
 		<Layout pageMeta={{ title, thumbnail }}>
@@ -69,7 +67,7 @@ const Film = ({ data }) => {
 					<Columns cols="repeat(auto-fit, minmax(341px, 1fr))">
 						<div>
 							<p><strong>{ anticipated_release ? "Anticipated Release Date" : "Date Released" }</strong></p>
-							<p>{ formattedDate }</p>
+							<p>{ date }</p>
 						</div>
 						<div>
 							<p><strong>Runtime</strong></p>
