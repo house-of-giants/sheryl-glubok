@@ -16,6 +16,7 @@ starring:
   - Sheryl Glubok
 awards:
   - logo: /images/THAW.jpeg
+    logo_link: 'https://google.com'
 team:
   - member_excerpt: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis
