@@ -17,7 +17,8 @@ starring:
 awards:
   - logo: /images/THAW.jpeg
 team:
-  - member_name: Sheryl Glubok
+  - member_headshot: /images/about-1.jpg
+    member_name: Sheryl Glubok
 ---
 WELCOME TO THE FISHBOWL is a Screwball Road Comedy\
 Written by Sheryl Glubok and Donald Rae\
