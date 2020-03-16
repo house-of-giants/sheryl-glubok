@@ -8,6 +8,12 @@ anticipated_release: false
 runtime: 10
 written_by:
   - Sheryl Glubok
+directed_by:
+produced_by:
+starring:
+pullquote:
+awards:
+team:
 ---
 Having found a great filmmaking team through SONNET, I felt ready to tackle my most ambitious project yet. I’d written this short script in 2011 just for fun. I had no expectations I would ever make it. I thought of myself as a writer then, directing was something I had wanted to do from the beginning, but had gotten lost on the way. My new friend Jessica Ticktin and I had bonded over being writers and mothers of young children and thought it would be fun to have coffee once a week and make up a story. It was! I loved this script of first best friends growing apart. That first heartbreak is so palpable and one Jessica and I both remembered with such clarity nearly 30 years later. I wanted LNR to be done professionally (paying people!) and on the scale of a feature meaning: we’d have a proper budget, the best cast and crew we could attract, and all the departments from composer to colorist.
 
