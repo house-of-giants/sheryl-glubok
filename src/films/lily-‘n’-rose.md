@@ -1,6 +1,6 @@
 ---
 layout: film
-title: LILY ‘N’ ROSE
+title: Lily 'N' Rose
 vimeo_url: '283566827'
 thumbnail: /images/about-2.jpg
 date: 2018-03-16T21:44:00.000Z
