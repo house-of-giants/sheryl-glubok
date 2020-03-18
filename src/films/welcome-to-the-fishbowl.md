@@ -2,7 +2,7 @@
 layout: film
 title: Welcome to the Fishbowl
 thumbnail: /images/welcome to the fishbowl.jpeg
-date: 2021-01-01T22:45:45.076Z
+date: '2021'
 anticipated_release: true
 runtime: 15
 written_by:
