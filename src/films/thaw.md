@@ -1,6 +1,6 @@
 ---
 layout: film
-title: THAW
+title: Thaw
 vimeo_url: '101800925'
 thumbnail: /images/about-2.jpg
 date: 2014-01-01T22:39:00.000Z
