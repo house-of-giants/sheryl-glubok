@@ -167,7 +167,12 @@ const Film = ({ data }) => {
 
 export const pageQuery = graphql`
 	query FilmPostByPath($slug: String!) {
-		markdownRemark(fields: { slug: { eq: $slug } }) {
+		markdownRemark(
+			fields: { 
+				slug: { eq: $slug }
+			}
+			frontmatter: { layout: { eq: "film" } }
+		) {
 			html
 			frontmatter {
 				title

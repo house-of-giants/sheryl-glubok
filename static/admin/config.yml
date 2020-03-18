@@ -3,6 +3,9 @@ backend:
   repo: house-of-giants/sheryl-glubok
 media_folder: "static/images"
 public_folder: "/images"
+slug:
+  encoding: "ascii"
+  clean_accents: true
 collections:
   - name: "Pages"
     label: "Pages"
