@@ -85,10 +85,15 @@ Post.propTypes = {
 
 export const pageQuery = graphql`
 	query BlogPostByPath($slug: String!) {
-		markdownRemark(fields: { slug: { eq: $slug } }) {
+		markdownRemark(
+			fields: { 
+				slug: { eq: $slug } 
+			}
+			frontmatter: { layout: { eq: "blog" } }
+		) {
 			html
 			frontmatter {
-				date(formatString: "MMMM DD, YYYY")
+				date
 				title
 				thumbnail
 			}
