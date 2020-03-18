@@ -167,13 +167,18 @@ const Film = ({ data }) => {
 
 export const pageQuery = graphql`
 	query FilmPostByPath($slug: String!) {
-		markdownRemark(fields: { slug: { eq: $slug } }) {
+		markdownRemark(
+			fields: { 
+				slug: { eq: $slug }
+			}
+			frontmatter: { layout: { eq: "film" } }
+		) {
 			html
 			frontmatter {
 				title
 				thumbnail
 				vimeo_url
-				date(formatString: "MMMM DD, YYYY")
+				date
 				anticipated_release
 				runtime
 				written_by
