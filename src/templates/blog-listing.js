@@ -89,7 +89,7 @@ export const pageQuery = graphql`
 	query BlogListingQuery( $skip: Int!, $limit: Int! ) {
 		allMarkdownRemark(
 			sort: { order: DESC, fields: [frontmatter___date] }
-			filter: { fields: { layout: { eq: "blog" } } }
+			filter: { frontmatter: { layout: { eq: "blog" } } }
 			limit: $limit
 			skip: $skip
 		) {
@@ -98,11 +98,11 @@ export const pageQuery = graphql`
 					id
 					fields {
 						slug
-						layout
 					}
 					frontmatter {
 						title
-						date(formatString: "MMMM DD, YYYY")
+						layout
+						date
 						thumbnail
 					}
 				}
