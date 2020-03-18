@@ -23,7 +23,6 @@ module.exports = {
 				pure: true,
 			},
 		},
-		`gatsby-plugin-netlify-cms`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -31,6 +30,7 @@ module.exports = {
 				path: `${__dirname}/src`,
 			},
 		},
+		`gatsby-plugin-netlify-cms`,
 		`gatsby-transformer-remark`,
 		`gatsby-plugin-react-helmet`,
 	],
