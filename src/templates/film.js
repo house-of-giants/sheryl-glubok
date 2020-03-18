@@ -173,7 +173,7 @@ export const pageQuery = graphql`
 				title
 				thumbnail
 				vimeo_url
-				date(formatString: "MMMM DD, YYYY")
+				date
 				anticipated_release
 				runtime
 				written_by
