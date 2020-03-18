@@ -1,6 +1,6 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
-import { graphql, Link } from 'gatsby'
 import { motion } from 'framer-motion'
 
 import { animPageDefault } from '../utils/animationDefs'
@@ -8,6 +8,7 @@ import { animPageDefault } from '../utils/animationDefs'
 import Layout from '../theme/layout'
 import PostItem from '../components/Blog/PostItem'
 import NavLogo from '../components/Nav/NavLogo'
+import Pagination from '../components/Pagination'
 
 import { StyledBlogContainer } from '../styles/global/layout'
 
@@ -32,10 +33,6 @@ const animItem = {
 const BlogList = ( { data, pageContext } ) => {
 	const { edges: posts } = data.allMarkdownRemark
 	const { currentPage, numPages } = pageContext
-	const isFirst = currentPage === 1
-	const isLast = currentPage === numPages
-	const prevPage = currentPage - 1 === 1 ? "/blog" : "/blog/" + (currentPage - 1).toString()
-	const nextPage = "/blog/" + (currentPage + 1).toString()
 
 	return (
 		<Layout pageMeta={{ title: 'Blog, Community, News' }}>
@@ -51,19 +48,10 @@ const BlogList = ( { data, pageContext } ) => {
 							<PostItem key={post.id} post={post} variants={animItem} i={i} />
 						)
 					}
-
-					{!isFirst && (
-						<Link to={prevPage} rel="prev">
-							← Previous Page
-						</Link>
-					)}
-
-					{!isLast && (
-						<Link to={nextPage} rel="next">
-							Next Page →
-						</Link>
-					)}
 				</motion.div>
+				{ numPages > 1 &&
+					<Pagination currentPage={currentPage} numPages={numPages} />
+				}
 			</StyledBlogContainer>
 		</Layout>
 	)

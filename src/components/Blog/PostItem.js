@@ -2,13 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
+import { formatDateString, formatDateISO } from '../../utils/formatDate'
+
 import StyledPostItem from './StyledPostItem'
 
 const PostItem = ({ post, variants, i }) => {
 	const { date, thumbnail, title } = post.frontmatter
 	const { slug } = post.fields
-	const postDate = new Date( Date.parse( date ) )
-	const formattedDate = postDate.toISOString()
+	const dateString = formatDateString( date )
+	const dateISO = formatDateISO( date )
 	const thumb = thumbnail ? thumbnail : 'https://source.unsplash.com/user/claudiotesta/350x368'
 
 	return(
@@ -32,9 +34,9 @@ const PostItem = ({ post, variants, i }) => {
 						<meta itemProp="name" content="Sheryl Glubok" />
 					</div>
 					<p className="date" itemProp="datePublished">
-						<time dateTime={formattedDate}>{date}</time>
+						<time dateTime={dateISO}>{dateString}</time>
 					</p>
-					<meta itemProp="dateModified" content={formattedDate} />
+					<meta itemProp="dateModified" content={dateISO} />
 				</header>
 			</Link>
 		</StyledPostItem>
