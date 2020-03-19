@@ -53,6 +53,7 @@ const Film = ({ data }) => {
 	const { markdownRemark: post } = data
 	const { html } = post
 	const { title, vimeo_url, thumbnail, date, anticipated_release, runtime, written_by, produced_by, directed_by, starring, pullquote, awards, team } = post.frontmatter
+	const hasVideo = vimeo_url ? true : false
 
 	return (
 		<Layout pageMeta={{ title, thumbnail }}>
@@ -65,7 +66,7 @@ const Film = ({ data }) => {
 					<AspectRatioBox ratio="16/9">
 						{ isVideo && vimeo_url
 							? <iframe title={title} src={`https://player.vimeo.com/video/${vimeo_url}?autoplay=1`} width="640" height="487" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
-							: <FilmHero isVideo={isVideo} showVideo={showVideo} thumbnail={thumbnail} />
+							: <FilmHero hasVideo={hasVideo} isVideo={isVideo} showVideo={showVideo} thumbnail={thumbnail} />
 						}
 					</AspectRatioBox>
 					<Columns cols="repeat(auto-fit, minmax(341px, 1fr))">
@@ -142,7 +143,7 @@ const Film = ({ data }) => {
 					{ team &&
 						<Columns cols="repeat(2, 1fr)" colGap="4rem">
 							{team.map( ( { member_headshot, member_name, member_title, member_excerpt } ) => (
-								<Team>
+								<Team key={member_name}>
 									<img src={ member_headshot } alt={ member_name } />
 									<div className="meta">
 										<h3 className="name">{ member_name }</h3>
