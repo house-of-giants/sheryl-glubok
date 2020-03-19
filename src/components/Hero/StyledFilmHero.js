@@ -3,7 +3,7 @@ import { colors } from '../../styles/base/variables'
 
 const StyledFilmHero = styled.div`
 	align-items: center;
-	cursor: pointer;
+	cursor: ${props => props.hasVideo ? 'pointer' : 'default'};
 	display: flex;
 	height: calc(100vh - 10rem);
 	justify-content: center;

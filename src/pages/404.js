@@ -13,8 +13,8 @@ export default () => (
 		<StyledContainer narrow>
 			<AnimatePresence exitBeforeEnter>
 				<motion.div className="wrap" variants={animPageDefault} initial="in" animate="normal" exit="out" >
-					<h2>Thank You</h2>
-					<p>Thank you for getting in touch! Sheryl will be in contact as soon as she can.</p>
+					<div className="blockquote"><h1>404</h1></div>
+					<p>Looks like the page you're looking for doesn't exist. Try navigating to another page.</p>
 				</motion.div>
 			</AnimatePresence>
 		</StyledContainer>

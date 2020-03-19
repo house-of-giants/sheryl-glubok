@@ -18,6 +18,10 @@ import Team from '../components/Films/Team'
 const StyledFilmTitle = styled.div`
 	margin: 0 auto;
 	max-width: 60%;
+
+	& svg {
+		max-height: 500px;
+	}
 `
 
 const MinutesToDuration = (s) => {
@@ -36,7 +40,7 @@ const MinutesToDuration = (s) => {
 
 
 const FilmTitle = ({ title }) => {
-	if ( title === 'Alexia' ) return <AlexiaTitleLg />
+	if ( title === 'Alexia' ) return <AlexiaTitleLg rotate />
 	if ( title === 'Welcome to the Fishbowl' ) return <FishbowlTitle />
 	if ( title === 'Lily \'N\' Rose' ) return <LilyNRoseTitle />
 	if ( title === 'Sonnet 98' ) return <Sonnet98Title />
@@ -49,6 +53,7 @@ const Film = ({ data }) => {
 	const { markdownRemark: post } = data
 	const { html } = post
 	const { title, vimeo_url, thumbnail, date, anticipated_release, runtime, written_by, produced_by, directed_by, starring, pullquote, awards, team } = post.frontmatter
+	const hasVideo = vimeo_url ? true : false
 
 	return (
 		<Layout pageMeta={{ title, thumbnail }}>
@@ -61,53 +66,53 @@ const Film = ({ data }) => {
 					<AspectRatioBox ratio="16/9">
 						{ isVideo && vimeo_url
 							? <iframe title={title} src={`https://player.vimeo.com/video/${vimeo_url}?autoplay=1`} width="640" height="487" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
-							: <FilmHero isVideo={isVideo} showVideo={showVideo} thumbnail={thumbnail} />
+							: <FilmHero hasVideo={hasVideo} isVideo={isVideo} showVideo={showVideo} thumbnail={thumbnail} />
 						}
 					</AspectRatioBox>
 					<Columns cols="repeat(auto-fit, minmax(341px, 1fr))">
-						<div>
+						<div className="col">
 							<p><strong>{ anticipated_release ? "Anticipated Release Date" : "Date Released" }</strong></p>
 							<p>{ date }</p>
 						</div>
-						<div>
+						<div className="col">
 							<p><strong>Runtime</strong></p>
 							<p itemProp="duration" content={MinutesToDuration({ runtime })}>{ runtime } minutes</p>
 						</div>
 						{ written_by &&
-							<div>
+							<div className="col">
 								<p><strong>Written by</strong></p>
 								{written_by.map( person => (
-									<p itemProp="author" itemScope itemType="http://schema.org/Person">
+									<p key={person} itemProp="author" itemScope itemType="http://schema.org/Person">
 										<span itemProp="name">{ person }</span>
 									</p>
 								))}
 							</div>
 						}
-						{ directed_by && 
-							<div>
+						{ directed_by &&
+							<div className="col">
 								<p><strong>Directed by</strong></p>
 								{directed_by.map( person => (
-									<p itemProp="director" itemScope itemType="http://schema.org/Person">
+									<p key={person} itemProp="director" itemScope itemType="http://schema.org/Person">
 										<span itemProp="name">{ person }</span>
 									</p>
 								))}
 							</div>
 						}
-						{ produced_by && 
-							<div>
+						{ produced_by &&
+							<div className="col">
 								<p><strong>Produced by</strong></p>
 								{produced_by.map( person => (
-									<p itemProp="producer" itemScope itemType="http://schema.org/Person">
+									<p key={person} itemProp="producer" itemScope itemType="http://schema.org/Person">
 										<span itemProp="name">{ person }</span>
 									</p>
 								))}
 							</div>
 						}
-						{ starring && 
-							<div>
+						{ starring &&
+							<div className="col">
 								<p><strong>Starring</strong></p>
 								{starring.map( person => (
-									<p itemProp="actor" itemScope itemType="http://schema.org/Person">
+									<p key={person} itemProp="actor" itemScope itemType="http://schema.org/Person">
 										<span itemProp="name">{ person }</span>
 									</p>
 								))}
@@ -117,19 +122,19 @@ const Film = ({ data }) => {
 
 					<Columns cols="2fr 1fr" colGap="4rem">
 						{/* @TODO :: Can CMS align images left /right? Or do we need to implement columns */}
-						<div dangerouslySetInnerHTML={{ __html: html }} />
+						<div className="col content" dangerouslySetInnerHTML={{ __html: html }} />
 						<img src="https://source.unsplash.com/random/341x502" alt="" />
 					</Columns>
 
 					{/* :: Awards */}
 					{ awards &&
-						<Columns cols="repeat(auto-fit, minmax(300px, 1fr))" colGap="2rem" rowGap="2rem">
-							{awards.map( award => {
+						<Columns cols="repeat(auto-fill, minmax(300px, 1fr))" colGap="2rem" rowGap="2rem">
+							{awards.map( (award, i) => {
 								return award.logo_link ?
-									<a href={ award.logo_link }>
+									<a key={`award-${i}`} href={ award.logo_link }>
 										<img src={ award.logo } alt="" />
-									</a> : 
-									<img src={ award.logo } alt="" />
+									</a> :
+									<img key={`award-${i}`} src={ award.logo } alt="" />
 							})}
 						</Columns>
 					}
@@ -138,18 +143,18 @@ const Film = ({ data }) => {
 					{ team &&
 						<Columns cols="repeat(2, 1fr)" colGap="4rem">
 							{team.map( ( { member_headshot, member_name, member_title, member_excerpt } ) => (
-								<Team>
+								<Team key={member_name}>
 									<img src={ member_headshot } alt={ member_name } />
 									<div className="meta">
 										<h3 className="name">{ member_name }</h3>
-										{ member_title && 
+										{ member_title &&
 											<p className="title">{ member_title }</p>
 										}
-										{ member_excerpt && 
+										{ member_excerpt &&
 											<p className="blurb">{ member_excerpt }</p>
 										}
 									</div>
-								</Team>	
+								</Team>
 							))}
 						</Columns>
 					}
@@ -168,7 +173,7 @@ const Film = ({ data }) => {
 export const pageQuery = graphql`
 	query FilmPostByPath($slug: String!) {
 		markdownRemark(
-			fields: { 
+			fields: {
 				slug: { eq: $slug }
 			}
 			frontmatter: { layout: { eq: "film" } }
