@@ -17,7 +17,7 @@ const defaultMeta = {
 	thumbnail: '/social-image.png'
 }
 
-const Layout = ({ pageMeta = { defaultMeta }, children }) => (
+const Layout = ({ pageMeta = defaultMeta, children }) => (
 	<div className='app'>
 		<GlobalStyle />
 		<Head pageMeta={pageMeta} />
