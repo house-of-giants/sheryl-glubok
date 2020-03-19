@@ -20,7 +20,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
 	const { createPage } = actions
-	
+
 	// Get all Blog Posts
 	const blogResults = await graphql(`
 		{
@@ -88,7 +88,7 @@ exports.createPages = async ({ graphql, actions }) => {
 		return
 	}
 
-	// Create Film Listing Pages 
+	// Create Film Listing Pages
 	const films = filmResults.data.allMarkdownRemark.edges
 	const filmsPerPage = 8
 	const numFilmPages = Math.ceil(films.length / filmsPerPage)

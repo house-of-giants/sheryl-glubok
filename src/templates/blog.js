@@ -4,18 +4,20 @@ import { graphql, Link } from 'gatsby'
 import { motion } from 'framer-motion'
 
 import { animPageDefault } from '../utils/animationDefs'
-import { StyledContainer } from '../styles/global/layout'
-import Layout from '../theme/layout'
+import { formatDateString, formatDateISO } from '../utils/formatDate'
 
 import NavLogo from '../components/Nav/NavLogo'
 import StyledSinglePost from '../components/Blog/StyledSinglePost'
+
+import { StyledContainer } from '../styles/global/layout'
+import Layout from '../theme/layout'
 
 export default function Post({ data }) {
 	const { markdownRemark: post } = data
 	const { html } = post
 	const { title, date, thumbnail } = post.frontmatter
-	const postDate = new Date( Date.parse( date ) )
-	const formattedDate = postDate.toISOString()
+	const dateString = formatDateString( date )
+	const dateISO = formatDateISO( date )
 	const thumb = thumbnail ? thumbnail : 'https://source.unsplash.com/user/claudiotesta/1350x478'
 
 	const animItem = {
@@ -52,7 +54,7 @@ export default function Post({ data }) {
 									<meta itemProp="name" content="Sheryl Glubok" />
 								</div>
 								<motion.p variants={animItem} initial="start" animate="finish" exit="start" itemProp="datePublished">
-									<time dateTime={formattedDate}>{date}</time>
+									<time dateTime={dateISO}>{dateString}</time>
 								</motion.p>
 							</div>
 							<div className="hero" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
@@ -61,7 +63,7 @@ export default function Post({ data }) {
 								<meta itemProp="width" content="100" />
 								<meta itemProp="height" content="100" />
 							</div>
-							<meta itemProp="dateModified" content={formattedDate} />
+							<meta itemProp="dateModified" content={dateISO} />
 						</header>
 							<motion.div className="wrap -center" variants={animItem} initial="start" animate="finish" exit="start" itemProp="articleBody">
 								<Link className="back" to="/blog">&larr; All posts</Link>
@@ -86,8 +88,8 @@ Post.propTypes = {
 export const pageQuery = graphql`
 	query BlogPostByPath($slug: String!) {
 		markdownRemark(
-			fields: { 
-				slug: { eq: $slug } 
+			fields: {
+				slug: { eq: $slug }
 			}
 			frontmatter: { layout: { eq: "blog" } }
 		) {
