@@ -5,7 +5,7 @@ import { FishbowlTitle } from '../SVG'
 import Film from './Film'
 
 export const FishbowlStyles = css`
-	&.fishbowl {
+	&.welcome-to-the-fishbowl {
 
 		& .film-wrap {
 			grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
@@ -41,7 +41,7 @@ export const FishbowlStyles = css`
 `
 
 const Fishbowl = () => (
-	<Film title="Welcome to the Fishbowl" date="2020" director="Sheryl Glubok" slug="fishbowl">
+	<Film title="Welcome to the Fishbowl" date="2020" director="Sheryl Glubok" slug="welcome-to-the-fishbowl">
 		<FishbowlTitle />
 		<div className="img-1">
 			<img itemProp="image" src="/water.jpg" alt="" />
