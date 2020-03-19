@@ -11,7 +11,7 @@ export default () => (
 	<Layout pageMeta={{ title: 'Thank You' }}>
 		<NavLogo />
 		<StyledContainer narrow>
-			<AnimatePresence>
+			<AnimatePresence exitBeforeEnter>
 				<motion.div className="wrap" variants={animPageDefault} initial="in" animate="normal" exit="out" >
 					<h2>Thank You</h2>
 					<p>Thank you for getting in touch! Sheryl will be in contact as soon as she can.</p>

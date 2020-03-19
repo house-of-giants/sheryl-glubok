@@ -23,7 +23,7 @@ export default () => (
 	<Layout pageMeta={{ title: 'Contact' }}>
 		<NavLogo />
 		<StyledContainer>
-			<AnimatePresence>
+			<AnimatePresence exitBeforeEnter>
 				<motion.div className="wrap" variants={animPageDefault} initial="in" animate="normal" exit="out" >
 					<h2>Contact Sheryl</h2>
 					<StyledForm name="contact" method="post" data-netlify="true" action="/thank-you">
