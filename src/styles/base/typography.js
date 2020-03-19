@@ -53,23 +53,43 @@ export const Typography = css`
 		}
 	}
 
-	blockquote {
-		padding: 0;
-		text-align: center;
+	.content {
+		& blockquote {
+			border-bottom-width: 8px;
+			margin-bottom: 4rem;
 
-		& p {
+			& p {
+				font-size: 3rem;
+			}
+		}
+	}
+
+	blockquote,
+	.blockquote {
+		border-bottom: 16px solid ${colors.white};
+		margin: 0;
+		padding: 0 0 2rem 0;
+		text-align: left;
+
+		&:not(:last-child) {
+			margin-bottom: 4rem;
+		}
+
+		& > * {
 			font-size: 5rem;
 			font-weight: 900;
 			letter-spacing: 4px;
+			line-height: 1.2;
+			letter-spacing: 8px;
 			margin: 0;
-			text-align: center;
+			text-align: left;
 
 			&::before {
-				content: open-quote;
+				content: "\\201C";
 			}
 
 			&::after {
-				content: close-quote;
+				content: "\\201D";
 			}
 		}
 	}
