@@ -26,13 +26,15 @@ const StyledColumns = styled.div`
 		padding-bottom: 2rem;
 	}
 
-	& p,
-	& p:not(:last-of-type) {
-		margin: 0;
-		padding: 0;
+	& div:not(.content) {
+		& p,
+		& p:not(:last-of-type) {
+			margin: 0;
+			padding: 0;
 
-		&:last-child {
-			margin-bottom: 1rem;
+			&:last-child {
+				margin-bottom: 1rem;
+			}
 		}
 	}
 
