@@ -53,7 +53,7 @@ const Film = ({ data }) => {
 	const [ isVideo, showVideo ] = useState( false )
 	const { markdownRemark: post } = data
 	const { html } = post
-	const { title, vimeo_url, thumbnail, date, anticipated_release, runtime, written_by, produced_by, directed_by, starring, pullquote, awards, team } = post.frontmatter
+	const { title, vimeo_url, thumbnail, date, anticipated_release, runtime, written_by, produced_by, directed_by, starring, poster, awards, team } = post.frontmatter
 	const hasVideo = vimeo_url ? true : false
 
 	return (
@@ -70,7 +70,7 @@ const Film = ({ data }) => {
 							: <FilmHero hasVideo={hasVideo} isVideo={isVideo} showVideo={showVideo} thumbnail={thumbnail} />
 						}
 					</AspectRatioBox>
-					<Columns cols="3fr 1fr" separator nopad>
+					<Columns cols="3fr 1fr" colGab="4rem" separator nopad>
 						<Columns cols="repeat(auto-fit, minmax(341px, 1fr))">
 							<div className="col">
 								<p><strong>{ anticipated_release ? "Anticipated Release Date" : "Date Released" }</strong></p>
@@ -121,7 +121,9 @@ const Film = ({ data }) => {
 								</div>
 							}
 						</Columns>
-						<img className="col poster" src="https://source.unsplash.com/random/341x502" alt="" />
+						{ poster &&
+							<img className="col poster" src={poster} alt="" />
+						}
 					</Columns>
 
 					<Columns cols="2fr 1fr" colGap="4rem">
@@ -163,12 +165,6 @@ const Film = ({ data }) => {
 							))}
 						</Columns>
 					}
-					{/* :: Pullquote */}
-					{ pullquote &&
-						<blockquote>
-							<p>{ pullquote }</p>
-						</blockquote>
-					}
 				</StyledContainer>
 			</motion.div>
 		</Layout>
@@ -195,7 +191,7 @@ export const pageQuery = graphql`
 				directed_by
 				produced_by
 				starring
-				pullquote
+				poster
 				awards {
 					logo
 					logo_link
