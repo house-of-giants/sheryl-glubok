@@ -65,8 +65,8 @@ collections:
       - {label: "Directed By", name: "directed_by", widget: "list", required: false, default: null}
       - {label: "Produced By", name: "produced_by", widget: "list", required: false, default: null}
       - {label: "Starring", name: "starring", widget: "list", required: false, default: null}
+      - {label: "Poster", name: "poster", widget: "image", requred: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Pull Quote", name: "pullquote", widget: "string", required: false, default: null}
       - label: "Awards"
         name: "awards"
         widget: "list"
