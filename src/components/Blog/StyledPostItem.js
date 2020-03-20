@@ -6,8 +6,11 @@ import { colors, mq } from '../../styles/base/variables'
 const StyledPostItem = styled(motion.article)`
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 4rem;
 
 	@media (${ mq.bpLarge }) {
+		padding-bottom: 0;
+
 		&:first-child,
 		&:last-child,
 		&:nth-child(4),
