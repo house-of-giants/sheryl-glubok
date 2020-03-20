@@ -76,13 +76,17 @@ export const Typography = css`
 		}
 
 		& > * {
-			font-size: 5rem;
+			font-size: 3rem;
 			font-weight: 900;
 			letter-spacing: 4px;
 			line-height: 1.2;
 			letter-spacing: 8px;
 			margin: 0;
 			text-align: left;
+
+			@media (${mq.bpMedium}) {
+				font-size: 5rem;
+			}
 
 			&::before {
 				content: "\\201C";
