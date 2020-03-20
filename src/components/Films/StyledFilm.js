@@ -41,6 +41,7 @@ const StyledFilm = styled.div`
 		grid-column: -4 / span 3;
 		grid-row: -1;
 		justify-content: space-between;
+		padding-right: 2rem;
 		position: relative;
 		z-index: 2;
 
