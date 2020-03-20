@@ -2,14 +2,26 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { bpMedium } from '../../styles/base/variables'
+import { bpMedium, colors } from '../../styles/base/variables'
 
 const StyledColumns = styled.div`
 	display: grid;
 	grid-column-gap: var(--colGap);
 	grid-row-gap: var(--rowGap);
 	grid-template-columns: 1fr;
-	padding-bottom: 4rem;
+	${props => {
+		if( !props.nopad ) {
+			return 'padding-bottom: 4rem;'
+		} else {
+			return 'margin-bottom: 4rem;'
+		}
+ 	} }
+
+	${props => {
+		if( props.separator ) {
+			return `border-bottom: 1px dashed ${colors.white};`
+		}
+ 	} }
 
 	@media (${bpMedium}) {
 		--cols: ${props => props.cols};
@@ -19,7 +31,13 @@ const StyledColumns = styled.div`
 
 		grid-template-columns: var(--cols);
 		grid-template-rows: var(--rows);
-		padding-bottom: 8rem;
+		${props => {
+			if( !props.nopad ) {
+				return 'padding-bottom: 8rem;'
+			} else {
+				return 'margin-bottom: 8rem;'
+			}
+		} }
 	}
 
 	& > * {
@@ -27,8 +45,8 @@ const StyledColumns = styled.div`
 	}
 
 	& div:not(.content) {
-		& p,
-		& p:not(:last-of-type) {
+		& > p,
+		& > p:not(:last-of-type) {
 			margin: 0;
 			padding: 0;
 
@@ -36,6 +54,10 @@ const StyledColumns = styled.div`
 				margin-bottom: 1rem;
 			}
 		}
+	}
+
+	& .content > p:first-child {
+		padding-top: 2rem;
 	}
 
 	& strong {
@@ -49,8 +71,8 @@ const StyledColumns = styled.div`
 	}
 `
 
-const Columns = ({ cols = 'auto', rows = 'auto', colGap = '0', rowGap = '0', children }) => (
-	<StyledColumns cols={cols} rows={rows} colGap={colGap} rowGap={rowGap}>
+const Columns = ({ cols = 'auto', rows = 'auto', colGap = '0', rowGap = '0', children, separator, nopad }) => (
+	<StyledColumns cols={cols} rows={rows} colGap={colGap} rowGap={rowGap} separator={separator} nopad={nopad}>
 		{children}
 	</StyledColumns>
 )
