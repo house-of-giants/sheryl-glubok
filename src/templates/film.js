@@ -14,6 +14,7 @@ import NavLogo from '../components/Nav/NavLogo'
 import FilmHero from '../components/Hero/FilmHero'
 import Columns from '../components/Content/Columns'
 import Team from '../components/Films/Team'
+import { AboutFilmTitle } from '../components/SVG/AboutFilmTitle'
 
 const StyledFilmTitle = styled.div`
 	margin: 0 auto;
@@ -69,61 +70,65 @@ const Film = ({ data }) => {
 							: <FilmHero hasVideo={hasVideo} isVideo={isVideo} showVideo={showVideo} thumbnail={thumbnail} />
 						}
 					</AspectRatioBox>
-					<Columns cols="repeat(auto-fit, minmax(341px, 1fr))">
-						<div className="col">
-							<p><strong>{ anticipated_release ? "Anticipated Release Date" : "Date Released" }</strong></p>
-							<p>{ date }</p>
-						</div>
-						<div className="col">
-							<p><strong>Runtime</strong></p>
-							<p itemProp="duration" content={MinutesToDuration({ runtime })}>{ runtime } minutes</p>
-						</div>
-						{ written_by &&
+					<Columns cols="3fr 1fr" separator nopad>
+						<Columns cols="repeat(auto-fit, minmax(341px, 1fr))">
 							<div className="col">
-								<p><strong>Written by</strong></p>
-								{written_by.map( person => (
-									<p key={person} itemProp="author" itemScope itemType="http://schema.org/Person">
-										<span itemProp="name">{ person }</span>
-									</p>
-								))}
+								<p><strong>{ anticipated_release ? "Anticipated Release Date" : "Date Released" }</strong></p>
+								<p>{ date }</p>
 							</div>
-						}
-						{ directed_by &&
 							<div className="col">
-								<p><strong>Directed by</strong></p>
-								{directed_by.map( person => (
-									<p key={person} itemProp="director" itemScope itemType="http://schema.org/Person">
-										<span itemProp="name">{ person }</span>
-									</p>
-								))}
+								<p><strong>Runtime</strong></p>
+								<p itemProp="duration" content={MinutesToDuration({ runtime })}>{ runtime } minutes</p>
 							</div>
-						}
-						{ produced_by &&
-							<div className="col">
-								<p><strong>Produced by</strong></p>
-								{produced_by.map( person => (
-									<p key={person} itemProp="producer" itemScope itemType="http://schema.org/Person">
-										<span itemProp="name">{ person }</span>
-									</p>
-								))}
-							</div>
-						}
-						{ starring &&
-							<div className="col">
-								<p><strong>Starring</strong></p>
-								{starring.map( person => (
-									<p key={person} itemProp="actor" itemScope itemType="http://schema.org/Person">
-										<span itemProp="name">{ person }</span>
-									</p>
-								))}
-							</div>
-						}
+							{ written_by &&
+								<div className="col">
+									<p><strong>Written by</strong></p>
+									{written_by.map( person => (
+										<p key={person} itemProp="author" itemScope itemType="http://schema.org/Person">
+											<span itemProp="name">{ person }</span>
+										</p>
+									))}
+								</div>
+							}
+							{ directed_by &&
+								<div className="col">
+									<p><strong>Directed by</strong></p>
+									{directed_by.map( person => (
+										<p key={person} itemProp="director" itemScope itemType="http://schema.org/Person">
+											<span itemProp="name">{ person }</span>
+										</p>
+									))}
+								</div>
+							}
+							{ produced_by &&
+								<div className="col">
+									<p><strong>Produced by</strong></p>
+									{produced_by.map( person => (
+										<p key={person} itemProp="producer" itemScope itemType="http://schema.org/Person">
+											<span itemProp="name">{ person }</span>
+										</p>
+									))}
+								</div>
+							}
+							{ starring &&
+								<div className="col">
+									<p><strong>Starring</strong></p>
+									{starring.map( person => (
+										<p key={person} itemProp="actor" itemScope itemType="http://schema.org/Person">
+											<span itemProp="name">{ person }</span>
+										</p>
+									))}
+								</div>
+							}
+						</Columns>
+						<img className="col poster" src="https://source.unsplash.com/random/341x502" alt="" />
 					</Columns>
 
 					<Columns cols="2fr 1fr" colGap="4rem">
-						{/* @TODO :: Can CMS align images left /right? Or do we need to implement columns */}
-						<div className="col content" dangerouslySetInnerHTML={{ __html: html }} />
-						<img src="https://source.unsplash.com/random/341x502" alt="" />
+						<div className="col">
+							<AboutFilmTitle />
+							<div className="content" dangerouslySetInnerHTML={{ __html: html }} />
+						</div>
 					</Columns>
 
 					{/* :: Awards */}
