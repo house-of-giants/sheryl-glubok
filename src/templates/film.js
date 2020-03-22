@@ -126,11 +126,9 @@ const Film = ({ data }) => {
 						}
 					</Columns>
 
-					<Columns cols="2fr 1fr" colGap="4rem">
-						<div className="col">
-							<AboutFilmTitle />
-							<div className="content" dangerouslySetInnerHTML={{ __html: html }} />
-						</div>
+					<Columns cols="1fr">
+						<AboutFilmTitle />
+						<div className="content -film" dangerouslySetInnerHTML={{ __html: html }} />
 					</Columns>
 
 					{/* :: Awards */}
