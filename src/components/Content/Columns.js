@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { bpMedium, colors } from '../../styles/base/variables'
+import { bpMedium, colors, containerWidthNarrow } from '../../styles/base/variables'
 
 const StyledColumns = styled.div`
 	display: grid;
@@ -56,8 +56,20 @@ const StyledColumns = styled.div`
 		}
 	}
 
-	& .content > p:first-child {
-		padding-top: 2rem;
+	& .content {
+		& p:first-child {
+			padding-top: 2rem;
+		}
+
+		& > p {
+			font-size: 1.5rem;
+		}
+	}
+
+	& .-film {
+		& > *:not(img):not(blockquote) {
+			max-width: 39.9125em;
+		}
 	}
 
 	& strong {
