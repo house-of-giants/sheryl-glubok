@@ -4,7 +4,7 @@ title: Thaw
 vimeo_url: '101800925'
 thumbnail: /images/about-2.jpg
 date: 'Jan 01, 2014'
-anticipated_release: false
+in_production: false
 runtime: 10
 written_by:
   - Sheryl Glubok
