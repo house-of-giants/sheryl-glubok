@@ -20,11 +20,11 @@ const ContactForm = ({ interests = false, invert = false }) => (
 		<input type="hidden" name="form-name" value="contact" />
 		<p className="form-group">
 			<label htmlFor="name">Name</label>
-			<input id="name" type="text" name="name" onFocus={handleLabelActive} onBlur={handleLabelInactive} />
+			<input id="name" type="text" name="name" onFocus={handleLabelActive} onBlur={handleLabelInactive} required />
 		</p>
 		<p className="form-group">
 			<label htmlFor="email">Email</label>
-			<input id="email" type="email" name="email" onFocus={handleLabelActive} onBlur={handleLabelInactive} />
+			<input id="email" type="email" name="email" onFocus={handleLabelActive} onBlur={handleLabelInactive} required />
 		</p>
 		{ interests &&
 			<p>
