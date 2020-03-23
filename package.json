@@ -20,6 +20,7 @@
     "gatsby-plugin-netlify-cms": "^4.1.42",
     "gatsby-plugin-react-helmet": "^3.1.24",
     "gatsby-plugin-styled-components": "^3.1.21",
+    "gatsby-remark-unwrap-images": "^1.0.1",
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-remark": "^2.6.59",
     "gsap": "^3.2.4",

@@ -31,7 +31,12 @@ module.exports = {
 			},
 		},
 		`gatsby-plugin-netlify-cms`,
-		`gatsby-transformer-remark`,
 		`gatsby-plugin-react-helmet`,
+		{
+        resolve: "gatsby-transformer-remark",
+        options: {
+            plugins: ["gatsby-remark-unwrap-images"],
+        },
+    },
 	],
 }
