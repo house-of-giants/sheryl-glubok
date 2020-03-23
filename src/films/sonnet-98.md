@@ -3,7 +3,7 @@ layout: film
 title: Sonnet 98
 vimeo_url: '185687306'
 thumbnail: /images/sonnet-98-1.jpg
-date: 'Mar 16, 2016'
+release_date: 'Mar 16, 2016'
 anticipated_release: false
 runtime: 5
 ---

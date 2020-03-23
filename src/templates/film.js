@@ -52,7 +52,7 @@ const Film = ({ data }) => {
 	const [ isVideo, showVideo ] = useState( false )
 	const { markdownRemark: post } = data
 	const { html } = post
-	const { title, vimeo_url, thumbnail, date, anticipated_release, runtime, written_by, produced_by, directed_by, starring, poster, awards, team } = post.frontmatter
+	const { title, vimeo_url, thumbnail, release_date, anticipated_release, runtime, written_by, produced_by, directed_by, starring, poster, awards, team } = post.frontmatter
 	const hasVideo = vimeo_url ? true : false
 
 	return (
@@ -73,7 +73,7 @@ const Film = ({ data }) => {
 						<Columns cols="repeat(auto-fit, minmax(341px, 1fr))">
 							<div className="col">
 								<p><strong>{ anticipated_release ? "Anticipated Release Date" : "Date Released" }</strong></p>
-								<p>{ date }</p>
+								<p>{ release_date }</p>
 							</div>
 							<div className="col">
 								<p><strong>Runtime</strong></p>
@@ -129,7 +129,7 @@ const Film = ({ data }) => {
 					<div className="col content" dangerouslySetInnerHTML={{ __html: html }} />
 
 					{/* :: Awards */}
-					{ awards &&
+					{ awards.length &&
 						<Columns cols="repeat(auto-fill, minmax(300px, 1fr))" colGap="2rem" rowGap="2rem">
 							{awards.map( (award, i) => {
 								return award.logo_link ?
@@ -142,7 +142,7 @@ const Film = ({ data }) => {
 					}
 
 					{/* :: Team */}
-					{ team &&
+					{ team.length &&
 						<Columns cols="repeat(2, 1fr)" colGap="4rem">
 							{team.map( ( { member_headshot, member_name, member_title, member_excerpt } ) => (
 								<Team key={member_name}>
@@ -179,7 +179,7 @@ export const pageQuery = graphql`
 				title
 				thumbnail
 				vimeo_url
-				date
+				release_date
 				anticipated_release
 				runtime
 				written_by

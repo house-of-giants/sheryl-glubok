@@ -3,7 +3,7 @@ layout: film
 title: Lily 'N' Rose
 vimeo_url: '283566827'
 thumbnail: /images/lily-n-rose.jpg
-date: 'April 14, 2018'
+release_date: 'April 14, 2018'
 anticipated_release: false
 runtime: 13
 written_by:
