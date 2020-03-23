@@ -87,7 +87,7 @@ const Film = ({ data }) => {
 									<p itemProp="d`uration" content={MinutesToDuration({ runtime })}>{ runtime } minutes</p>
 								</div>
 							}
-							{ written_by[0] !== '' &&
+							{ written_by &&
 								<div className="col">
 									<p><strong>Written by</strong></p>
 									{written_by.map( person => (
@@ -97,7 +97,7 @@ const Film = ({ data }) => {
 									))}
 								</div>
 							}
-							{ directed_by[0] !== '' &&
+							{ directed_by &&
 								<div className="col">
 									<p><strong>Directed by</strong></p>
 									{directed_by.map( person => (
@@ -107,7 +107,7 @@ const Film = ({ data }) => {
 									))}
 								</div>
 							}
-							{ produced_by[0] !== '' &&
+							{ produced_by &&
 								<div className="col">
 									<p><strong>Produced by</strong></p>
 									{produced_by.map( person => (
@@ -117,7 +117,7 @@ const Film = ({ data }) => {
 									))}
 								</div>
 							}
-							{ starring[0] !== '' &&
+							{ starring &&
 								<div className="col">
 									<p><strong>Starring</strong></p>
 									{starring.map( person => (
