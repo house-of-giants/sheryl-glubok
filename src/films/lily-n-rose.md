@@ -27,13 +27,6 @@ starring:
   - Marina Leo
   - Maggy Stacy
 poster: /images/lily-n-rose-poster.jpg
-awards:
-  - logo: /images/THAW.jpeg
-  - logo: /images/THAW.jpeg
-  - logo: /images/THAW.jpeg
-  - logo: /images/THAW.jpeg
-  - logo: /images/THAW.jpeg
-  - logo: /images/THAW.jpeg
 team:
   - member_name: Jasanna Britton
     member_title: Associate Producer
