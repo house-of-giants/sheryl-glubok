@@ -28,7 +28,7 @@ starring:
   - Maggy Stacy
 poster: /images/lnr-poster-27x40-revised-oct-2019.jpg
 awards:
-  - logo: /images/THAW.jpeg
+  - logo: /images/w-f-laurels_black.png
   - logo: /images/THAW.jpeg
   - logo: /images/THAW.jpeg
   - logo: /images/THAW.jpeg
