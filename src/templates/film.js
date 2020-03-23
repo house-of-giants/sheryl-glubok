@@ -55,6 +55,8 @@ const Film = ({ data }) => {
 	const { title, vimeo_url, thumbnail, release_date, anticipated_release, runtime, written_by, produced_by, directed_by, starring, poster, awards, team } = post.frontmatter
 	const hasVideo = vimeo_url ? true : false
 
+	console.log(awards)
+
 	return (
 		<Layout pageMeta={{ title, thumbnail }}>
 			<NavLogo />
@@ -129,7 +131,7 @@ const Film = ({ data }) => {
 					<div className="col content" dangerouslySetInnerHTML={{ __html: html }} />
 
 					{/* :: Awards */}
-					{ awards &&
+					{ awards.length &&
 						<Columns cols="repeat(auto-fill, minmax(300px, 1fr))" colGap="2rem" rowGap="2rem">
 							{awards.map( (award, i) => {
 								return award.logo_link ?
@@ -142,7 +144,7 @@ const Film = ({ data }) => {
 					}
 
 					{/* :: Team */}
-					{ team &&
+					{ team.length &&
 						<Columns cols="repeat(2, 1fr)" colGap="4rem">
 							{team.map( ( { member_headshot, member_name, member_title, member_excerpt } ) => (
 								<Team key={member_name}>
