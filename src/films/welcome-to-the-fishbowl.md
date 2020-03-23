@@ -2,20 +2,10 @@
 layout: film
 title: Welcome to the Fishbowl
 thumbnail: /images/welcome-to-the-fishbowl.jpg
-date: '2021'
+release_date: '2021'
 anticipated_release: true
-runtime: ''
-written_by:
-  - ''
-directed_by:
-  - ''
-produced_by:
-  - ''
-starring:
-  - ''
+runtime: 0
 poster: /images/welcome-to-the-fishbowl-poster.jpg
-awards: []
-team: []
 ---
 With 40 receding in the rearview mirror, Elizabeth Ford, mother of two, gets a career-making opportunity. All she has to do is chaperone the manic, narcissistic literary legend, Storm Grandquist, to an awards ceremony in Telluride. But he has another plot up his sleeve.
 
