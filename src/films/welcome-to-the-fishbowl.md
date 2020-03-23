@@ -5,9 +5,13 @@ thumbnail: /images/welcome-to-the-fishbowl.jpg
 release_date: '2021'
 in_production: true
 runtime: 0
-written_by: []
-directed_by: []
-produced_by: []
+written_by:
+  - Sheryl Glubok & Donald Rae
+directed_by:
+  - Sheryl Glubok
+produced_by:
+  - Iana Dontcheva
+  - Sterling Cook
 starring: []
 poster: /images/welcome-to-the-fishbowl-poster.jpg
 awards: []
