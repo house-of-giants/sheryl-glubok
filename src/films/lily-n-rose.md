@@ -30,10 +30,6 @@ poster: /images/lily-n-rose-poster.jpg
 awards:
   - logo: /images/THAW.jpeg
   - logo: /images/THAW.jpeg
-  - logo: /images/THAW.jpeg
-  - logo: /images/THAW.jpeg
-  - logo: /images/THAW.jpeg
-  - logo: /images/THAW.jpeg
 team:
   - member_excerpt: >-
       Did you hear that? They've shut down the main reactor. We'll be destroyed
