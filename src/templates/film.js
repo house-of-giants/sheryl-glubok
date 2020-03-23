@@ -14,6 +14,9 @@ import NavLogo from '../components/Nav/NavLogo'
 import FilmHero from '../components/Hero/FilmHero'
 import Columns from '../components/Content/Columns'
 import Team from '../components/Films/Team'
+import { AboutFilmTitle } from '../components/SVG/AboutFilmTitle'
+import Support from '../components/Content/Support'
+import SupportCTA from '../components/Content/SupportCTA'
 
 const StyledFilmTitle = styled.div`
 	margin: 0 auto;
@@ -52,7 +55,7 @@ const Film = ({ data }) => {
 	const [ isVideo, showVideo ] = useState( false )
 	const { markdownRemark: post } = data
 	const { html } = post
-	const { title, vimeo_url, thumbnail, release_date, anticipated_release, runtime, written_by, produced_by, directed_by, starring, poster, awards, team } = post.frontmatter
+	const { title, vimeo_url, thumbnail, release_date, in_production, runtime, written_by, produced_by, directed_by, starring, poster, awards, team } = post.frontmatter
 	const hasVideo = vimeo_url ? true : false
 
 	console.log(awards)
@@ -71,16 +74,19 @@ const Film = ({ data }) => {
 							: <FilmHero hasVideo={hasVideo} isVideo={isVideo} showVideo={showVideo} thumbnail={thumbnail} />
 						}
 					</AspectRatioBox>
-					<Columns cols="2fr 1fr" colGap="4rem">
+					<SupportCTA />
+					<Columns cols="3fr 1fr" colGab="4rem" separator nopad>
 						<Columns cols="repeat(auto-fit, minmax(341px, 1fr))">
 							<div className="col">
-								<p><strong>{ anticipated_release ? "Anticipated Release Date" : "Date Released" }</strong></p>
+								<p><strong>{ in_production ? "Anticipated Release Date" : "Date Released" }</strong></p>
 								<p>{ release_date }</p>
 							</div>
-							<div className="col">
-								<p><strong>Runtime</strong></p>
-								<p itemProp="duration" content={MinutesToDuration({ runtime })}>{ runtime } minutes</p>
-							</div>
+							{ runtime > 0 &&
+								<div className="col">
+									<p><strong>Runtime</strong></p>
+									<p itemProp="d`uration" content={MinutesToDuration({ runtime })}>{ runtime } minutes</p>
+								</div>
+							}
 							{ written_by &&
 								<div className="col">
 									<p><strong>Written by</strong></p>
@@ -122,13 +128,15 @@ const Film = ({ data }) => {
 								</div>
 							}
 						</Columns>
-						
 						{ poster &&
-							<img src={poster} alt="" />
+							<img className="col poster" src={poster} alt="" />
 						}
 					</Columns>
 
-					<div className="col content" dangerouslySetInnerHTML={{ __html: html }} />
+					<Columns cols="1fr">
+						<AboutFilmTitle />
+						<div className="content -film" dangerouslySetInnerHTML={{ __html: html }} />
+					</Columns>
 
 					{/* :: Awards */}
 					{ awards &&
@@ -163,6 +171,9 @@ const Film = ({ data }) => {
 						</Columns>
 					}
 				</StyledContainer>
+				{in_production &&
+					<Support />
+				}
 			</motion.div>
 		</Layout>
 	)
@@ -182,7 +193,7 @@ export const pageQuery = graphql`
 				thumbnail
 				vimeo_url
 				release_date
-				anticipated_release
+				in_production
 				runtime
 				written_by
 				directed_by

@@ -4,7 +4,7 @@ title: Lily 'N' Rose
 vimeo_url: '283566827'
 thumbnail: /images/lily-n-rose.jpg
 release_date: 'April 14, 2018'
-anticipated_release: false
+in_production: false
 runtime: 13
 written_by:
   - Sheryl Glubok
@@ -40,13 +40,13 @@ team:
     member_excerpt: >-
       Did you hear that? They've shut down the main reactor. We'll be destroyed
       for sure. This is madness! We're doomed! There'll be no escape for the
-      Princess this time. 
+      Princess this time.
     member_headshot: /images/kelly.jpg
   - member_title: Producer
     member_excerpt: >-
       Did you hear that? They've shut down the main reactor. We'll be destroyed
       for sure. This is madness! We're doomed! There'll be no escape for the
-      Princess this time. 
+      Princess this time.
     member_name: Sterling Cook
     member_headshot: /images/kelly.jpg
   - member_title: Executive Producer
@@ -54,34 +54,34 @@ team:
     member_excerpt: >-
       Did you hear that? They've shut down the main reactor. We'll be destroyed
       for sure. This is madness! We're doomed! There'll be no escape for the
-      Princess this time. 
+      Princess this time.
     member_headshot: /images/kelly.jpg
   - member_name: Wesley Matheny
     member_title: Producer
     member_excerpt: >-
       Did you hear that? They've shut down the main reactor. We'll be destroyed
       for sure. This is madness! We're doomed! There'll be no escape for the
-      Princess this time. 
+      Princess this time.
     member_headshot: /images/kelly.jpg
   - member_name: Lesley Owen Disbrow
     member_title: Executive Producer
     member_excerpt: >-
       Did you hear that? They've shut down the main reactor. We'll be destroyed
       for sure. This is madness! We're doomed! There'll be no escape for the
-      Princess this time. 
+      Princess this time.
     member_headshot: /images/kelly.jpg
   - member_name: Steve Palmer
     member_title: Associate Producer
     member_excerpt: >-
       Did you hear that? They've shut down the main reactor. We'll be destroyed
       for sure. This is madness! We're doomed! There'll be no escape for the
-      Princess this time. 
+      Princess this time.
     member_headshot: /images/kelly.jpg
   - member_name: Anna Rosenblum Palmer
     member_excerpt: >-
       Did you hear that? They've shut down the main reactor. We'll be destroyed
       for sure. This is madness! We're doomed! There'll be no escape for the
-      Princess this time. 
+      Princess this time.
     member_headshot: /images/kelly.jpg
     member_title: Associate Producer
 ---

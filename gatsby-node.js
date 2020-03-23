@@ -121,18 +121,18 @@ exports.createPages = async ({ graphql, actions }) => {
 }
 
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions
-  const typeDefs = `
-    type MarkdownRemark implements Node {
-      frontmatter: Frontmatter
-    }
-    type Frontmatter {
-      title: String!
-      date: Date!
-      release_date: String!
-      thumbnail: String
-      vimeo_url: String
-      anticipated_release: Boolean
+	const { createTypes } = actions
+	const typeDefs = `
+		type MarkdownRemark implements Node {
+			frontmatter: Frontmatter
+		}
+		type Frontmatter {
+			title: String!
+			date: Date!
+			release_date: String!
+			thumbnail: String
+			vimeo_url: String
+			in_production: Boolean
 			runtime: Int
 			written_by: [String]
 			directed_by: [String]
@@ -141,7 +141,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 			poster: String
 			awards: [Awards]
 			team: [Team]
-    }
+		}
 		type Awards {
 			logo: String
 			logo_link: String
@@ -152,6 +152,6 @@ exports.createSchemaCustomization = ({ actions }) => {
 			member_excerpt: String
 			member_headshot: String
 		}
-  `
-  createTypes(typeDefs)
+	`
+	createTypes(typeDefs)
 }
