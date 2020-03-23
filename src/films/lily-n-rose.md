@@ -3,7 +3,11 @@ layout: film
 title: Lily 'N' Rose
 vimeo_url: '283566827'
 thumbnail: /images/lily-n-rose.jpg
+<<<<<<< HEAD
 release_date: 'April 14, 2018'
+=======
+release_date: '2020'
+>>>>>>> master
 anticipated_release: false
 runtime: 13
 written_by:
@@ -27,6 +31,59 @@ starring:
   - Marina Leo
   - Maggy Stacy
 poster: /images/lily-n-rose-poster.jpg
+awards:
+  - logo: /images/THAW.jpeg
+  - logo: /images/THAW.jpeg
+team:
+  - member_excerpt: >-
+      Did you hear that? They've shut down the main reactor. We'll be destroyed
+      for sure. This is madness! We're doomed! There'll be no escape for the
+      Princess this time. 
+    member_headshot: /images/kelly.jpg
+    member_name: Jasanna Britton
+    member_title: Associate Producer
+  - member_excerpt: >-
+      Did you hear that? They've shut down the main reactor. We'll be destroyed
+      for sure. This is madness! We're doomed! There'll be no escape for the
+      Princess this time. 
+    member_headshot: /images/kelly.jpg
+    member_name: Sterling Cook
+    member_title: Producer
+  - member_excerpt: >-
+      Did you hear that? They've shut down the main reactor. We'll be destroyed
+      for sure. This is madness! We're doomed! There'll be no escape for the
+      Princess this time. 
+    member_headshot: /images/kelly.jpg
+    member_name: Josh Disbrow
+    member_title: Executive Producer
+  - member_excerpt: >-
+      Did you hear that? They've shut down the main reactor. We'll be destroyed
+      for sure. This is madness! We're doomed! There'll be no escape for the
+      Princess this time. 
+    member_headshot: /images/kelly.jpg
+    member_name: Wesley Matheny
+    member_title: Producer
+  - member_excerpt: >-
+      Did you hear that? They've shut down the main reactor. We'll be destroyed
+      for sure. This is madness! We're doomed! There'll be no escape for the
+      Princess this time. 
+    member_headshot: /images/kelly.jpg
+    member_name: Lesley Owen Disbrow
+    member_title: Executive Producer
+  - member_excerpt: >-
+      Did you hear that? They've shut down the main reactor. We'll be destroyed
+      for sure. This is madness! We're doomed! There'll be no escape for the
+      Princess this time. 
+    member_headshot: /images/kelly.jpg
+    member_name: Steve Palmer
+    member_title: Associate Producer
+  - member_excerpt: >-
+      Did you hear that? They've shut down the main reactor. We'll be destroyed
+      for sure. This is madness! We're doomed! There'll be no escape for the
+      Princess this time. 
+    member_headshot: /images/kelly.jpg
+    member_name: Anna Rosenblum Palmer
+    member_title: Associate Producer
 ---
 Having found a great filmmaking team through SONNET, I felt ready to tackle my most ambitious project yet. I’d written this short script in 2011 just for fun. I had no expectations I would ever make it. I thought of myself as a writer then, directing was something I had wanted to do from the beginning, but had gotten lost on the way. My new friend Jessica Ticktin and I had bonded over being writers and mothers of young children and thought it would be fun to have coffee once a week and make up a story. It was! I loved this script of first best friends growing apart. That first heartbreak is so palpable and one Jessica and I both remembered with such clarity nearly 30 years later. I wanted LNR to be done professionally (paying people!) and on the scale of a feature meaning: we’d have a proper budget, the best cast and crew we could attract, and all the departments from composer to colorist.
 
