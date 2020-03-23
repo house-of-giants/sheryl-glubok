@@ -55,8 +55,10 @@ const Film = ({ data }) => {
 	const [ isVideo, showVideo ] = useState( false )
 	const { markdownRemark: post } = data
 	const { html } = post
-	const { title, vimeo_url, thumbnail, date, in_production, runtime, written_by, produced_by, directed_by, starring, poster, awards, team } = post.frontmatter
+	const { title, vimeo_url, thumbnail, release_date, in_production, runtime, written_by, produced_by, directed_by, starring, poster, awards, team } = post.frontmatter
 	const hasVideo = vimeo_url ? true : false
+
+	console.log(awards)
 
 	return (
 		<Layout pageMeta={{ title, thumbnail }}>
@@ -77,9 +79,9 @@ const Film = ({ data }) => {
 						<Columns cols="repeat(auto-fit, minmax(341px, 1fr))">
 							<div className="col">
 								<p><strong>{ in_production ? "Anticipated Release Date" : "Date Released" }</strong></p>
-								<p>{ date }</p>
+								<p>{ release_date }</p>
 							</div>
-							{ runtime &&
+							{ runtime > 0 &&
 								<div className="col">
 									<p><strong>Runtime</strong></p>
 									<p itemProp="d`uration" content={MinutesToDuration({ runtime })}>{ runtime } minutes</p>
@@ -190,7 +192,7 @@ export const pageQuery = graphql`
 				title
 				thumbnail
 				vimeo_url
-				date
+				release_date
 				in_production
 				runtime
 				written_by

@@ -3,7 +3,7 @@ layout: film
 title: Alexia
 vimeo_url: '168465882'
 thumbnail: /images/about-2.jpg
-date: '1993'
+release_date: '1993'
 in_production: false
 runtime: 12
 written_by:
