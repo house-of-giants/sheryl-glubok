@@ -61,17 +61,17 @@ collections:
       - {label: "Release Date", name: "release_date", widget: "string"}
       - {label: "Is this an anticipated release date?", name: "in_production", widget: "boolean", default: false}
       - {label: "Runtime", name: "runtime", widget: "number", valueType: "float", required: false, default: 0}
-      - {label: "Written By", name: "written_by", widget: "list", required: false, default: null}
-      - {label: "Directed By", name: "directed_by", widget: "list", required: false, default: null}
-      - {label: "Produced By", name: "produced_by", widget: "list", required: false, default: null}
-      - {label: "Starring", name: "starring", widget: "list", required: false, default: null}
+      - {label: "Written By", name: "written_by", widget: "list", required: false, default: []}
+      - {label: "Directed By", name: "directed_by", widget: "list", required: false, default: []}
+      - {label: "Produced By", name: "produced_by", widget: "list", required: false, default: []}
+      - {label: "Starring", name: "starring", widget: "list", required: false, default: []}
       - {label: "Poster", name: "poster", widget: "image", requred: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Awards"
         name: "awards"
         widget: "list"
         required: false
-        default: null
+        default: []
         fields:
           - {label: "Logo", name: "logo", widget: "image", required: false, default: null}
           - {label: "Link to external site", name: "logo_link", widget: "string", required: false, default: null}
@@ -79,7 +79,7 @@ collections:
         name: "team"
         widget: "list"
         required: false
-        default: null
+        default: []
         fields:
           - {label: "Member Name", name: "member_name", widget: "string", required: false, default: null}
           - {label: "Member Title", name: "member_title", widget: "string", required: false}
