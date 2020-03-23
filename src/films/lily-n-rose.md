@@ -97,7 +97,7 @@ I feel like this is the film where it all came together: desire, craft, resource
 
 > I feel like this is the film where it all came together: desire, craft, resources, and belief.
 
-Our young teen cast of Marina Leo, Aicha Bleers, Grace Dotson, Eliza Disbrow, and Tessa Maruyama give me hope that all will be well in this world as they grow up more self-aware and empowered than my generation. To work with Maggy Stacy again who embodied Lily’s grown-up self (literally or figuratively, your choice ;) was a joy. As was working with up-and-coming cinematographer [Johanna Coelho](https://www.johannacoelho.com/work). That Alexa Mini with Vintage Cook lenses were worth all those pennies.
+Our young teen cast of Marina Leo, Aicha Bleers, Grace Dotson, Eliza Disbrow, and Tessa Maruyama give me hope that all will be well in this world as they grow up more self-aware and empowered than my generation. To work with Maggy Stacy again who embodied Lily’s grown-up self (literally or figuratively, your choice ;) was a joy. As was working with up-and-coming cinematographer [Johanna Coelho](https://www.johannacoelho.com/work). That Alexa Mini with Vintage Cooke lenses were worth all those pennies.
 
 ![](/images/lily-n-rose-2.jpg)
 
