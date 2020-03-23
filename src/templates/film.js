@@ -55,8 +55,6 @@ const Film = ({ data }) => {
 	const { title, vimeo_url, thumbnail, release_date, anticipated_release, runtime, written_by, produced_by, directed_by, starring, poster, awards, team } = post.frontmatter
 	const hasVideo = vimeo_url ? true : false
 
-	console.log(awards)
-
 	return (
 		<Layout pageMeta={{ title, thumbnail }}>
 			<NavLogo />
