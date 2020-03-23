@@ -26,7 +26,7 @@ starring:
   - Cordelia Horne
   - Marina Leo
   - Maggy Stacy
-poster: /images/lily-n-rose-poster.jpg
+poster: /images/lnr-poster-27x40-revised-oct-2019.jpg
 awards:
   - logo: /images/THAW.jpeg
   - logo: /images/THAW.jpeg
