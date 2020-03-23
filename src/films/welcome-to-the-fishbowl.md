@@ -4,7 +4,7 @@ title: Welcome to the Fishbowl
 thumbnail: /images/welcome-to-the-fishbowl.jpg
 date: '2021'
 anticipated_release: true
-runtime: ''
+runtime: 0
 written_by:
   - ''
 directed_by:
