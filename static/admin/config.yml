@@ -71,6 +71,7 @@ collections:
         name: "awards"
         widget: "list"
         required: false
+        default: null
         fields: 
           - {label: "Logo", name: "logo", widget: "image"}
           - {label: "Link to external site", name: "logo_link", widget: "string", required: false, default: null}
@@ -78,6 +79,7 @@ collections:
         name: "team"
         widget: "list"
         required: false
+        default: null
         fields:
           - {label: "Member Name", name: "member_name", widget: "string"}
           - {label: "Member Title", name: "member_title", widget: "string", required: false}

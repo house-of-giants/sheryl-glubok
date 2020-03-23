@@ -131,7 +131,7 @@ const Film = ({ data }) => {
 					<div className="col content" dangerouslySetInnerHTML={{ __html: html }} />
 
 					{/* :: Awards */}
-					{ awards.length &&
+					{ awards &&
 						<Columns cols="repeat(auto-fill, minmax(300px, 1fr))" colGap="2rem" rowGap="2rem">
 							{awards.map( (award, i) => {
 								return award.logo_link ?
@@ -144,7 +144,7 @@ const Film = ({ data }) => {
 					}
 
 					{/* :: Team */}
-					{ team.length &&
+					{ team &&
 						<Columns cols="repeat(2, 1fr)" colGap="4rem">
 							{team.map( ( { member_headshot, member_name, member_title, member_excerpt } ) => (
 								<Team key={member_name}>
