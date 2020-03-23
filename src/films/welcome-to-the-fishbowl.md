@@ -29,6 +29,8 @@ In short, it's the tale of a woman who becomes the PROTAGONIST of her own story.
 
 Imagine if MRS. MAISEL went on a roadtrip like SIDEWAYS with some antics of GET HIM TO THE GREEK but for the BRIDESMAIDS audience.
 
+There’s no speed limit when you’re trying to put yourself on the map.
+
 > In short, it's the tale of a woman who becomes the PROTAGONIST of her own story.
 
 ![](/images/car.jpg)
