@@ -58,8 +58,6 @@ const Film = ({ data }) => {
 	const { title, vimeo_url, thumbnail, release_date, in_production, runtime, written_by, produced_by, directed_by, starring, poster, awards, team } = post.frontmatter
 	const hasVideo = vimeo_url ? true : false
 
-	console.log(awards)
-
 	return (
 		<Layout pageMeta={{ title, thumbnail }}>
 			<NavLogo />
@@ -84,10 +82,10 @@ const Film = ({ data }) => {
 							{ runtime > 0 &&
 								<div className="col">
 									<p><strong>Runtime</strong></p>
-									<p itemProp="d`uration" content={MinutesToDuration({ runtime })}>{ runtime } minutes</p>
+									<p itemProp="duration" content={MinutesToDuration({ runtime })}>{ runtime } minutes</p>
 								</div>
 							}
-							{ written_by &&
+							{ written_by.length > 0 &&
 								<div className="col">
 									<p><strong>Written by</strong></p>
 									{written_by.map( person => (
@@ -97,7 +95,7 @@ const Film = ({ data }) => {
 									))}
 								</div>
 							}
-							{ directed_by &&
+							{ directed_by.length > 0 &&
 								<div className="col">
 									<p><strong>Directed by</strong></p>
 									{directed_by.map( person => (
@@ -107,7 +105,7 @@ const Film = ({ data }) => {
 									))}
 								</div>
 							}
-							{ produced_by &&
+							{ produced_by.length > 0 &&
 								<div className="col">
 									<p><strong>Produced by</strong></p>
 									{produced_by.map( person => (
@@ -117,7 +115,7 @@ const Film = ({ data }) => {
 									))}
 								</div>
 							}
-							{ starring &&
+							{ starring.length > 0 &&
 								<div className="col">
 									<p><strong>Starring</strong></p>
 									{starring.map( person => (
@@ -139,7 +137,7 @@ const Film = ({ data }) => {
 					</Columns>
 
 					{/* :: Awards */}
-					{ awards &&
+					{ awards.length > 0 &&
 						<Columns cols="repeat(auto-fill, minmax(300px, 1fr))" colGap="2rem" rowGap="2rem">
 							{awards.map( (award, i) => {
 								return award.logo_link ?
@@ -152,7 +150,7 @@ const Film = ({ data }) => {
 					}
 
 					{/* :: Team */}
-					{ team &&
+					{ team.length > 0 &&
 						<Columns cols="repeat(2, 1fr)" colGap="4rem">
 							{team.map( ( { member_headshot, member_name, member_title, member_excerpt } ) => (
 								<Team key={member_name}>
