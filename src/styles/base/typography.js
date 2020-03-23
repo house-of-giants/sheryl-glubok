@@ -53,17 +53,6 @@ export const Typography = css`
 		}
 	}
 
-	.content {
-		& blockquote {
-			border-bottom-width: 8px;
-			margin-bottom: 4rem;
-
-			& p {
-				font-size: 3rem;
-			}
-		}
-	}
-
 	blockquote,
 	.blockquote {
 		border-bottom: 16px solid ${colors.white};
@@ -85,7 +74,7 @@ export const Typography = css`
 			text-align: left;
 
 			@media (${mq.bpMedium}) {
-				font-size: 5rem;
+				font-size: 4.5rem;
 			}
 
 			&::before {

@@ -15,6 +15,7 @@ const StyledTeam = styled.div`
 	}
 
 	& img {
+		max-width: 220px;
 		object-fit: cover;
 		width: 100%;
 	}
