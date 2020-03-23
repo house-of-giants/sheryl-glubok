@@ -139,8 +139,8 @@ exports.createSchemaCustomization = ({ actions }) => {
 			produced_by: [String]
 			starring: [String]
 			poster: String
-			awards: Awards
-			team: Team
+			awards: [Awards]
+			team: [Team]
     }
 		type Awards {
 			logo: String

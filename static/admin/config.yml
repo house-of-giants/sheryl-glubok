@@ -73,7 +73,7 @@ collections:
         required: false
         default: null
         fields: 
-          - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Logo", name: "logo", widget: "image", required: false, default: null}
           - {label: "Link to external site", name: "logo_link", widget: "string", required: false, default: null}
       - label: "Team"
         name: "team"
@@ -81,7 +81,7 @@ collections:
         required: false
         default: null
         fields:
-          - {label: "Member Name", name: "member_name", widget: "string"}
+          - {label: "Member Name", name: "member_name", widget: "string", required: false, default: null}
           - {label: "Member Title", name: "member_title", widget: "string", required: false}
           - {label: "Member Excerpt", name: "member_excerpt", widget: "text", required: false}
           - {label: "Member Headshot", name: "member_headshot", widget: "image", required: false}
