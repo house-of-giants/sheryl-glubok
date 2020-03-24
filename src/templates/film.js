@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { motion } from 'framer-motion'
@@ -53,10 +53,33 @@ const FilmTitle = ({ title }) => {
 
 const Film = ({ data }) => {
 	const [ isVideo, showVideo ] = useState( false )
+	const contentEl = useRef( null )
 	const { markdownRemark: post } = data
 	const { html } = post
 	const { title, vimeo_url, thumbnail, release_date, in_production, runtime, written_by, produced_by, directed_by, starring, poster, awards, team } = post.frontmatter
 	const hasVideo = vimeo_url ? true : false
+
+	useEffect(() => {
+		let imgGroups = []
+		const insertAfter = (referenceNode, newNode) => {
+			referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling)
+		}
+		const images = contentEl.current.querySelectorAll('img');
+
+		images.forEach(img => {
+			const nextEl = img.nextElementSibling
+			const prevEl = img.previousElementSibling
+			const wrapper = document.createElement('div')
+			if(nextEl && nextEl.nodeName === 'IMG' ) {
+				imgGroups = [img.cloneNode(), nextEl]
+				img.remove()
+				imgGroups.forEach(imgGroup => wrapper.appendChild(imgGroup))
+				wrapper.classList.add(`grid-${imgGroups.length}`)
+
+				insertAfter(prevEl, wrapper)
+			}
+		} )
+	}, [])
 
 	return (
 		<Layout pageMeta={{ title, thumbnail }}>
@@ -72,7 +95,9 @@ const Film = ({ data }) => {
 							: <FilmHero hasVideo={hasVideo} isVideo={isVideo} showVideo={showVideo} thumbnail={thumbnail} />
 						}
 					</AspectRatioBox>
-					<SupportCTA />
+					{in_production &&
+						<SupportCTA />
+					}
 					<Columns cols="3fr 1fr" colGab="4rem" separator nopad>
 						<Columns cols="repeat(auto-fit, minmax(341px, 1fr))">
 							<div className="col">
@@ -131,14 +156,14 @@ const Film = ({ data }) => {
 						}
 					</Columns>
 
-					<Columns cols="1fr">
+					<Columns cols="1fr" separator nopad>
 						<AboutFilmTitle />
-						<div className="content -film" dangerouslySetInnerHTML={{ __html: html }} />
+						<div className="content -film" ref={contentEl} dangerouslySetInnerHTML={{ __html: html }} />
 					</Columns>
 
 					{/* :: Awards */}
 					{ awards.length > 0 &&
-						<Columns cols="repeat(auto-fill, minmax(300px, 1fr))" colGap="2rem" rowGap="2rem">
+						<Columns cols="repeat(auto-fill, minmax(200px, 204px))" colGap="2rem" rowGap="2rem">
 							{awards.map( (award, i) => {
 								return award.logo_link ?
 									<a key={`award-${i}`} href={ award.logo_link }>
