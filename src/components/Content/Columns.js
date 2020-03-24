@@ -38,8 +38,7 @@ const StyledColumns = styled.div`
 	}
 
 	& div:not(.content) {
-		& > p,
-		& > p:not(:last-of-type) {
+		& > p:not(.title):not(:last-of-type) {
 			margin: 0;
 			padding: 0;
 
