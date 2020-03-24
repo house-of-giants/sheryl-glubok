@@ -15,29 +15,40 @@ const StyledTeam = styled.div`
 	}
 
 	& img {
-		max-width: 220px;
+		max-height: 300px;
 		object-fit: cover;
 		width: 100%;
+
+		@media(${bpLarge}) {
+			max-height: none;
+			max-width: 220px;
+		}
 	}
 
 	& .meta {
-		padding-left: 2rem;
+		@media(${bpLarge}) {
+			padding-left: 2rem;
+		}
 	}
 
 	& .name {
+		font-size: 1.5rem;
 		margin-bottom: 0.5rem;
 		margin-top: 0.5rem;
 	}
 
 	& .title {
 		color: #777;
+		font-size: 0.75rem;
+		letter-spacing: 1.2px;
 		margin-bottom: 2rem;
+		margin-top: 0;
 		padding: 0;
 		text-transform: uppercase;
 	}
 
 	& .blurb {
-		font-size: 1.2rem;
+		font-size: 0.875rem;
 		margin: 0;
 	}
 `
