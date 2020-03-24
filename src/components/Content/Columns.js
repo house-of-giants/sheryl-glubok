@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { bpMedium, colors, containerWidthNarrow } from '../../styles/base/variables'
+import { bpMedium, colors } from '../../styles/base/variables'
 
 const StyledColumns = styled.div`
 	display: grid;
@@ -31,13 +31,6 @@ const StyledColumns = styled.div`
 
 		grid-template-columns: var(--cols);
 		grid-template-rows: var(--rows);
-		${props => {
-			if( !props.nopad ) {
-				return 'padding-bottom: 8rem;'
-			} else {
-				return 'margin-bottom: 8rem;'
-			}
-		} }
 	}
 
 	& > * {
@@ -67,8 +60,47 @@ const StyledColumns = styled.div`
 	}
 
 	& .-film {
-		& > *:not(img):not(blockquote) {
+		& > *:not(img):not(blockquote):not(.grid-2) {
 			max-width: 39.9125em;
+		}
+
+		& > p {
+			margin: 0;
+		}
+
+		& > p:not(:last-child) {
+			padding-bottom: 2rem;
+		}
+
+		& > img {
+			padding-bottom: 2rem;
+		}
+
+		& .grid-2 {
+			display: grid;
+			grid-template-rows: 2fr 3fr 1fr;
+			grid-template-columns: 3fr 60px 2fr;
+			padding-bottom: 2rem;
+
+			img {
+				object-fit: cover;
+				position: relative;
+			}
+
+			& img:first-child {
+				grid-row: 1 / span 2;
+				grid-column: 1 / span 2;
+			}
+
+			& img:last-child {
+				grid-row: 2 / span 3;
+				grid-column: 2 / -1;
+				z-index: -1;
+			}
+		}
+
+		& blockquote:last-child {
+			margin-bottom: 2rem;
 		}
 	}
 
