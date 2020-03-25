@@ -12,14 +12,9 @@ written_by:
 directed_by:
   - Sheryl Glubok
 produced_by:
-  - Jasanna Britton
   - Sterling Cook
-  - Josh Disbrow
   - Sheryl Glubok
   - Wesley Matheny
-  - Lesley Owen Disbrow
-  - Steve Palmer
-  - Anna Rosenblum Palmer
 starring:
   - Aicha Bleers
   - Grace Dotson
