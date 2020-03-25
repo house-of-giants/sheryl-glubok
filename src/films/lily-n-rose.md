@@ -86,7 +86,7 @@ Having found a great filmmaking team through SONNET 98, I felt ready to tackle m
 
 ![](/images/lily-n-rose-1.jpg)
 
-I knew we had something special just making our pitch video for the Seed & Spark campaign. It helped us create a dedicated community that is still with us today. Check it out [here](https://vimeo.com/214587886) for a bit of 80s nostalgia care of [5280s, A Totally Awesome Shop.](http://the80sareawesome.com/)
+I knew we had something special just making our pitch video for the Seed & Spark campaign. It helped us create a dedicated community that is still with us today. Check it out [here](https://vimeo.com/214587886) along with a bit of 80s nostalgia care of [5280s.](http://the80sareawesome.com/)
 
 I feel like this is the film where it all came together: desire, craft, resources, and belief. Producer Sterling Cook and I have had so much joy sharing this film with festival audiences from east to west, from Toronto to Killarney. Many a teary eyed viewer has come up after a screening at being reminded of their childhood best friend. One older woman’s image burns particularly bright in my mind. “Thank you,” she said, "for helping me heal."
 
