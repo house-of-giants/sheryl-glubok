@@ -16,10 +16,9 @@ produced_by:
   - Sheryl Glubok
   - Wesley Matheny
 starring:
+  - Marina Leo
   - Aicha Bleers
   - Grace Dotson
-  - Cordelia Horne
-  - Marina Leo
   - Maggy Stacy
 poster: /images/lnr-poster-27x40-revised-oct-2019.jpg
 awards:
