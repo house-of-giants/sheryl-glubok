@@ -8,9 +8,14 @@ in_production: false
 runtime: 10
 written_by:
   - Sheryl Glubok
-directed_by: []
-produced_by: []
-starring: []
+directed_by:
+  - Sheryl Glubok
+produced_by:
+  - Sheryl Glubok
+  - Macrina Newhouse
+starring:
+  - Molly Walsh
+  - Lowell Thompson
 poster: /images/about-1.jpg
 awards:
   - logo: /images/THAW.jpeg
