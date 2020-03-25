@@ -91,11 +91,11 @@ I feel like this is the film where it all came together: desire, craft, resource
 
 > I feel like this is the film where it all came together: desire, craft, resources, and belief.
 
-Our young teen cast of Marina Leo, Aicha Bleers, Grace Dotson, Eliza Disbrow, and Tessa Maruyama give me hope that all will be well in this world as they grow up more self-aware and empowered than my generation. To work with Maggy Stacy again who embodied Lily’s grown-up self (literally or figuratively, your choice ;) was a joy. As was working with up-and-coming cinematographer [Johanna Coelho](https://www.johannacoelho.com/work). That Alexa Mini with Vintage Cooke lenses were worth all those pennies.
+Our young teen cast of Marina Leo, Aicha Bleers, Grace Dotson, Eliza Disbrow, and Tessa Maruyama give me hope that all will be well in this world as they grow up more self-aware and empowered than my generation. To work with Maggy Stacy again who embodied Lily’s grown-up self (literally or figuratively, your choice ;) was a joy. As was working with the brilliant cinematographer [Johanna Coelho](https://www.johannacoelho.com/work). That Alexa Mini with Vintage Cooke lenses were worth all those pennies.
 
 ![](/images/lily-n-rose-2.jpg)
 
-So was writing the 80s throwback *Steel Heart* with Neil Lyons, Reed Fox, and Megan Crooks of Denver’s own music collective [Moon Magnet](https://www.moonmagnetmusic.com/). There’s such amazing talent here in Denver, I love connecting with our creative community!!!
+So was writing the 80s throwback *Steel Heart* with Neil Lyons, Reed Fox, and Megan Crooks of Denver’s own music collective [Moon Magnet](https://www.moonmagnetmusic.com/). There’s such amazing talent here in Denver, I love connecting with our creative community.
 
 Speaking of community, Paonia, Colorado rocked. They were the consummate hosts as our film crew who came from all over the state as well as LA and Boston. We planted ourselves there for a week and enjoyed every minute. Did you know we make wine country in Colorado? They do in Paonia!
 
