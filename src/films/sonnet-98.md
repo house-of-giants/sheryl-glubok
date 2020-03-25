@@ -6,10 +6,19 @@ thumbnail: /images/sonnet-98-1.jpg
 release_date: 'Mar 16, 2016'
 in_production: false
 runtime: 5
-written_by: []
-directed_by: []
-produced_by: []
-starring: []
+written_by:
+  - William Shakespeare
+  - Sheryl Glubok
+  - Maggy Stacy
+directed_by:
+  - Sheryl Glubok
+produced_by:
+  - Sheryl Glubok
+  - Wesley Matheny
+starring:
+  - Maggy Stacy
+  - Matt Block
+poster: /images/fb-team-photo.jpg
 awards: []
 team: []
 ---
