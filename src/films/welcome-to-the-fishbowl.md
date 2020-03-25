@@ -11,6 +11,7 @@ directed_by:
   - Sheryl Glubok
 produced_by:
   - Iana Dontcheva
+  - Sheryl Glubok
   - Sterling Cook
 starring: []
 poster: /images/welcome-to-the-fishbowl-poster.jpg
