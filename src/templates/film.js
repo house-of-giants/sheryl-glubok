@@ -98,18 +98,8 @@ const Film = ({ data }) => {
 					{in_production &&
 						<SupportCTA />
 					}
-					<Columns cols="3fr 1fr" colGab="4rem" separator nopad>
-						<Columns cols="repeat(auto-fit, minmax(341px, 1fr))">
-							<div className="col">
-								<p><strong>{ in_production ? "Anticipated Release Date" : "Date Released" }</strong></p>
-								<p>{ release_date }</p>
-							</div>
-							{ runtime > 0 &&
-								<div className="col">
-									<p><strong>Runtime</strong></p>
-									<p itemProp="duration" content={MinutesToDuration({ runtime })}>{ runtime } minutes</p>
-								</div>
-							}
+					<Columns cols={poster ? '3fr 1fr' : '1fr'} colGap="4rem" separator nopad>
+						<Columns className="film-meta" cols="repeat(auto-fit, minmax(285px, 1fr))" colGap="2rem">
 							{ written_by.length > 0 &&
 								<div className="col">
 									<p><strong>Written by</strong></p>
@@ -148,6 +138,18 @@ const Film = ({ data }) => {
 											<span itemProp="name">{ person }</span>
 										</p>
 									))}
+								</div>
+							}
+							{ release_date &&
+								<div className="col">
+									<p><strong>{ in_production ? "Anticipated Release Date" : "Date Released" }</strong></p>
+									<p>{ release_date }</p>
+								</div>
+							}
+							{ runtime > 0 &&
+								<div className="col">
+									<p><strong>Runtime</strong></p>
+									<p itemProp="duration" content={MinutesToDuration({ runtime })}>{ runtime } minutes</p>
 								</div>
 							}
 						</Columns>

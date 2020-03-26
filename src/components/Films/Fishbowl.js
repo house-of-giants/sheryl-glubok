@@ -41,7 +41,7 @@ export const FishbowlStyles = css`
 `
 
 const Fishbowl = () => (
-	<Film title="Welcome to the Fishbowl" date="2020" director="Sheryl Glubok" slug="welcome-to-the-fishbowl">
+	<Film title="Welcome to the Fishbowl" date="2021" director="Sheryl Glubok" slug="welcome-to-the-fishbowl">
 		<FishbowlTitle />
 		<div className="img-1">
 			<img itemProp="image" src="/water.jpg" alt="" />
