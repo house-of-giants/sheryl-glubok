@@ -3,15 +3,15 @@ layout: blog
 title: Patricia Arquette is my hero
 date: '2015-03-03 07:58'
 ---
-Patricia Arquette's acceptance speeches were hands-down thehighlights of the Golden Globes and Oscars. First, let's not forget what won her those moments: her stellar performance in BOYHOOD. She and writer/director Richard Linklater showed us a woman not just aging, but maturing. It was revolutionary.
+Patricia Arquette's acceptance speeches were hands-down the highlights of the Golden Globes and Oscars. First, let's not forget what won her those moments: her stellar performance in BOYHOOD. She and writer/director Richard Linklater showed us a woman not just aging, but maturing. It was revolutionary.
 
 Perfect too was Amy Poehler's quip at the Globes about the dearth of parts for women over 40: "Even Patricia Arquette had to get her role in Boyhood while in her 20's."
 
-I admit I was disheartened when the Oscar noms came out and not one female writer or director was nominated. Then I noticed not one of the Best Picture nominees had a female protagonist. This is even true for THE THEORY OF EVERYTHING, based on Jane Hawking's memoir about her marriage to and divorce from Stephen. Written as her story, her husband ultimately steals the show (and wins the Oscar).
+I admit I was disheartened when the Oscar noms came out and not one female writer or director was nominated. Then I noticed not one of the Best Picture nominees had a female protagonist. This is even true for THE THEORY OF EVERYTHING, based on Jane Hawking's memoir about her marriage to, and divorce from, Stephen. Written as her story, her husband ultimately steals the show (and wins the Oscar).
 
 In a very telling piece by Dan Kois of Slate's BROWBEAT [column](http://www.slate.com/blogs/browbeat/2015/01/15/wild_oscar_snub_reese_witherspoon_and_laura_dern_got_nominated_but_movie.html), he points out that "In the past 20 years, only 21 movies that tell stories of women have been nominated for Best Picture, out of 125 nominated overall." That's just 6%.
 
-Women are 51% of the population yet only 6% of the most acclaimed movies of the last 20 years are female-driven narratives. The number gets only slightly bigger, 12%, for the top 100 grossing films. (see study[here](http://www.indiewire.com/article/sorry-ladies-study-on-women-in-film-and-television-confirms-the-worst-20150210))
+Women are 51% of the population yet only 6% of the most acclaimed movies of the last 20 years are female-driven narratives. The number gets only slightly bigger, 12%, for the top 100 grossing films. (see study [here](http://www.indiewire.com/article/sorry-ladies-study-on-women-in-film-and-television-confirms-the-worst-20150210))
 
 No wonder there are so few female directors in Hollywood.
 
