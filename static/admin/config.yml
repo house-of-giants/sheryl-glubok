@@ -12,7 +12,7 @@ collections:
     files:
       - label: "Home - About Section"
         name: "/"
-        file: "src/content/home.yml"
+        file: "src/content/home.md"
         fields:
           - {label: "Column One Image", name: "column_one_img", widget: "image"}
           - {label: "Column Two Image", name: "column_two_img", widget: "image"}
@@ -21,7 +21,7 @@ collections:
           - {label: "Button Label", name: "button_label", widget: "string"}
       - label: "About"
         name: "/about"
-        file: "src/content/about.yml"
+        file: "src/content/about.md"
         fields:
           - {label: "Intro", name: "intro", widget: "markdown"}
           - {label: "Intro Image", name: "intro_image", widget: "image"}
