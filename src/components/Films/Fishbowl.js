@@ -43,8 +43,8 @@ export const FishbowlStyles = css`
 
 const Fishbowl = () => (
 	<StaticQuery
-    query={graphql`
-      query FilmDetail {
+		query={graphql`
+			query FilmDetail {
 				markdownRemark(
 					fields: { slug: { eq: "/films/welcome-to-the-fishbowl/" } }
 				) {
@@ -55,12 +55,12 @@ const Fishbowl = () => (
 					}
 				}
 			}
-    `}
-    render={data => {
-    	const { markdownRemark: post } = data
+		`}
+		render={data => {
+			const { markdownRemark: post } = data
 			const { title, release_date, directed_by } = post.frontmatter
 
-    	return (
+			return (
 				<Film title={title} date={release_date} director={directed_by} slug="welcome-to-the-fishbowl">
 					<FishbowlTitle />
 					<div className="img-1">
@@ -70,8 +70,8 @@ const Fishbowl = () => (
 						<img itemProp="image" src="/water-lg.jpg" alt="" />
 					</div>
 				</Film>
-	  	)
-	  }}
+			)
+		}}
 	/>
 )
 
