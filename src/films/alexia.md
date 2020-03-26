@@ -15,7 +15,7 @@ starring:
   - Alexia Stresi
   - Jiri Menzel
   - Jiri Steffl
-poster: /images/about-3.jpg
+poster: ''
 awards: []
 team: []
 ---
