@@ -5,6 +5,11 @@ import styled from 'styled-components'
 import { bpMedium, colors } from '../../styles/base/variables'
 
 const StyledColumns = styled.div`
+	--cols: ${props => props.cols};
+	--rows: ${props => props.rows};
+	--colGap: ${props => props.colGap};
+	--rowGap: ${props => props.rowGap};
+
 	display: grid;
 	grid-column-gap: var(--colGap);
 	grid-row-gap: var(--rowGap);
@@ -24,13 +29,21 @@ const StyledColumns = styled.div`
  	} }
 
 	@media (${bpMedium}) {
-		--cols: ${props => props.cols};
-		--rows: ${props => props.rows};
-		--colGap: ${props => props.colGap};
-		--rowGap: ${props => props.rowGap};
-
 		grid-template-columns: var(--cols);
 		grid-template-rows: var(--rows);
+	}
+
+	&.film-meta {
+		grid-template-columns: repeat(auto-fit,minmax(170px,1fr));
+
+		@media (${bpMedium}) {
+			grid-template-columns: var(--cols);
+			grid-template-rows: var(--rows);
+		}
+
+		p {
+			margin: 0;
+		}
 	}
 
 	& > * {
@@ -114,8 +127,8 @@ const StyledColumns = styled.div`
 	}
 `
 
-const Columns = ({ cols = 'auto', rows = 'auto', colGap = '0', rowGap = '0', children, separator, nopad }) => (
-	<StyledColumns cols={cols} rows={rows} colGap={colGap} rowGap={rowGap} separator={separator} nopad={nopad}>
+const Columns = ({ cols = 'auto', rows = 'auto', colGap = '0', rowGap = '0', children, separator, nopad, className }) => (
+	<StyledColumns className={className} cols={cols} rows={rows} colGap={colGap} rowGap={rowGap} separator={separator} nopad={nopad}>
 		{children}
 	</StyledColumns>
 )

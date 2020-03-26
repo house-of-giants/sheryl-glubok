@@ -14,9 +14,9 @@ const OxHidden = styled.div`
 
 export default () => (
 	<Layout>
+		<Hero />
+		<NavLogo />
 		<OxHidden>
-			<Hero />
-			<NavLogo />
 			<FilmList />
 			<AboutCTA />
 		</OxHidden>

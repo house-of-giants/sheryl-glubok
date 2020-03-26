@@ -20,6 +20,10 @@ export const StyledButton = styled.button`
 		background-color: ${colors.bossanova};
 		border-color: ${colors.cosmic};
 	}
+
+	&.mb {
+		margin-bottom: 4rem;
+	}
 `
 
 export const StyledButtonLink = styled( props => <Link {...props} /> )`
@@ -36,5 +40,9 @@ export const StyledButtonLink = styled( props => <Link {...props} /> )`
 		text-decoration: none;
 		background-color: ${colors.bossanova};
 		border-color: ${colors.cosmic};
+	}
+
+	&.mb {
+		margin-bottom: 4rem;
 	}
 `

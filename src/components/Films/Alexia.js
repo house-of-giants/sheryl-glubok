@@ -37,7 +37,7 @@ export const AlexiaStyles = css`
 `
 
 const Alexia = () => (
-	<Film title="Alexia" date="2014" director="Sheryl Glubok" slug="alexia">
+	<Film title="Alexia" date="1993" director="Sheryl Glubok" slug="alexia">
 		<AlexiaTitleLg />
 		<AlexiaTitleSm />
 		<div className="img">
