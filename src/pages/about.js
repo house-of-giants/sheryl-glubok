@@ -20,13 +20,6 @@ export default () => (
 			<AnimatePresence exitBeforeEnter>
 				<motion.div className="wrap" variants={animPageDefault} initial="in" animate="normal" exit="out">
 					<h2>Stories</h2>
-					// { YAMLData.stories.map( story => (
-					// 		<div key={story.story_title}>
-					// 			<h3>{story.story_title}</h3>
-					// 			<p>{story.story_excerpt}</p>
-					// 		</div>
-					// 	) )
-					// }
 				</motion.div>
 			</AnimatePresence>
 		</StyledContainer>
