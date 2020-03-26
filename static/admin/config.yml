@@ -14,6 +14,7 @@ collections:
         name: "/"
         file: "src/content/home.md"
         fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
           - {label: "Column One Image", name: "column_one_img", widget: "image"}
           - {label: "Column Two Image", name: "column_two_img", widget: "image"}
           - {label: "Column Three Image", name: "column_three_img", widget: "image"}
@@ -23,6 +24,7 @@ collections:
         name: "/about"
         file: "src/content/about.md"
         fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "about"}
           - {label: "Intro", name: "intro", widget: "markdown"}
           - {label: "Intro Image", name: "intro_image", widget: "image"}
           - {label: "Button Label", name: "button_label", required: false, widget: "string", default: "Contact Sheryl"}

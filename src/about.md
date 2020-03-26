@@ -1,4 +1,5 @@
 ---
+layout: about
 intro: >-
   Ugh, bios! It is so hard to convey in a few hundred words who I am. I’m not
   some list of accomplishments that check off this box or that. I’m a Gen X’er
@@ -7,6 +8,8 @@ intro: >-
   number, but we’re also not ready to fade off into the sunset. I’m here to make
   my mark.
 intro_image: /images/about-1.jpg
+button_label: ""
+button_link: ""
 ---
 
 
