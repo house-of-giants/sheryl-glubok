@@ -45,7 +45,7 @@ const Film = ( { slug, children, title, director, date } ) => {
 				{children}
 				<div className="meta">
 					<span className="screen-reader-text" itemProp="name">{title}</span>
-					<span className="screen-reader-text" itemProp="director">{director}</span>
+					<span className="screen-reader-text" itemProp="director">{director[0]}</span>
 					<p itemProp="dateCreated">{date}</p>
 					<p>View Film</p>
 				</div>
@@ -57,7 +57,7 @@ const Film = ( { slug, children, title, director, date } ) => {
 Film.propTypes = {
 	slug: PropTypes.string.isRequired,
 	title: PropTypes.string.isRequired,
-	director: PropTypes.string.isRequired,
+	director: PropTypes.array.isRequired,
 	date: PropTypes.string.isRequired,
 	children: PropTypes.oneOfType([
 		PropTypes.arrayOf(PropTypes.node),
