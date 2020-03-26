@@ -17,6 +17,7 @@ import Team from '../components/Films/Team'
 import { AboutFilmTitle } from '../components/SVG/AboutFilmTitle'
 import Support from '../components/Content/Support'
 import SupportCTA from '../components/Content/SupportCTA'
+import Button from '../components/Button'
 
 const StyledFilmTitle = styled.div`
 	margin: 0 auto;
@@ -195,6 +196,9 @@ const Film = ({ data }) => {
 							))}
 						</Columns>
 					}
+
+					<Button className="mb" to="/films">Back to All Films</Button>
+
 				</StyledContainer>
 				{in_production &&
 					<Support />

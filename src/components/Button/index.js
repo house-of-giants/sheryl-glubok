@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 
 import { StyledButton, StyledButtonLink } from './StyledButton'
 
-const Button = ( { to, children, isButton, onClick } ) => (
+const Button = ( { to, children, isButton, onClick, className } ) => (
 	<>
 			{isButton ? (
-				<StyledButton className="btn" onClick={onClick}>
+				<StyledButton className={`btn ${className}`} onClick={onClick}>
 					{children}
 				</StyledButton>
 			) : (
-				<StyledButtonLink className="btn" to={to}>
+				<StyledButtonLink className={`btn ${className}`} to={to}>
 					{children}
 				</StyledButtonLink>
 			) }
