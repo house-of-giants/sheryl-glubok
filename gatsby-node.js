@@ -118,6 +118,40 @@ exports.createPages = async ({ graphql, actions }) => {
 			},
 		})
 	})
+
+	const aboutResult = await graphql(`
+    {
+      allMarkdownRemark(
+				sort: { order: DESC, fields: [frontmatter___date] }
+				filter: { fields: { layout: { eq: "about" } } }
+				limit: 1
+			) {
+        edges {
+					node {
+						fields {
+							slug
+							layout
+						}
+					}
+				}
+      }
+    }
+  `)
+
+	// Handle errors
+  if (aboutResult.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+  aboutResult.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`src/templates/about.js`),
+      context: {
+      	slug: node.fields.slug
+      },
+    })
+  })
 }
 
 exports.createSchemaCustomization = ({ actions }) => {
