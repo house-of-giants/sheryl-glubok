@@ -10,16 +10,6 @@ collections:
   - name: "Pages"
     label: "Pages"
     files:
-      - label: "Home - About Section"
-        name: "/"
-        file: "src/content/home.md"
-        fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
-          - {label: "Column One Image", name: "column_one_img", widget: "image"}
-          - {label: "Column Two Image", name: "column_two_img", widget: "image"}
-          - {label: "Column Three Image", name: "column_three_img", widget: "image"}
-          - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Button Label", name: "button_label", widget: "string"}
       - label: "About"
         name: "/about"
         file: "src/content/about.md"
@@ -30,6 +20,17 @@ collections:
           - {label: "Button Label", name: "button_label", required: false, widget: "string", default: "Contact Sheryl"}
           - {label: "Button Link", name: "button_link", required: false, widget: "string", default: "/contact"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Home - About Section"
+            name: "home_about"
+            widget: "list"
+            allow_add: false
+            collapsed: false
+            fields:
+              - {label: "Column One Image", name: "column_one_img", widget: "image"}
+              - {label: "Column Two Image", name: "column_two_img", widget: "image"}
+              - {label: "Column Three Image", name: "column_three_img", widget: "image"}
+              - {label: "Body", name: "body", widget: "markdown"}
+              - {label: "Button Label", name: "button_label", widget: "string", required: false}
   - name: "blog"
     label: "Blog"
     folder: "src/blog"
