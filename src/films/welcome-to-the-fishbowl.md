@@ -15,7 +15,7 @@ produced_by:
   - Sheryl Glubok
   - Sterling Cook
 starring: []
-poster: /images/welcome-to-the-fishbowl-poster.jpg
+poster: ''
 awards: []
 team: []
 ---
