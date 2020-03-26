@@ -6,7 +6,8 @@ release_date: '2021'
 in_production: true
 runtime: 0
 written_by:
-  - Sheryl Glubok & Donald Rae
+  - Sheryl Glubok
+  - Donald Rae
 directed_by:
   - Sheryl Glubok
 produced_by:
