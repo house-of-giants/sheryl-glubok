@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticQuery, graphql } from "gatsby"
 import { css } from 'styled-components'
 
 import { AlexiaTitleLg, AlexiaTitleSm } from '../SVG'
@@ -37,13 +38,35 @@ export const AlexiaStyles = css`
 `
 
 const Alexia = () => (
-	<Film title="Alexia" date="1993" director="Sheryl Glubok" slug="alexia">
-		<AlexiaTitleLg />
-		<AlexiaTitleSm />
-		<div className="img">
-			<img itemProp="image" src="/alexia.jpg" alt="" />
-		</div>
-	</Film>
+	<StaticQuery
+		query={graphql`
+			query AlexiaDetail {
+				markdownRemark(
+					fields: { slug: { eq: "/films/alexia/" } }
+				) {
+					frontmatter {
+						title
+						release_date
+						directed_by
+					}
+				}
+			}
+		`}
+		render={data => {
+			const { markdownRemark: post } = data
+			const { title, release_date, directed_by } = post.frontmatter
+
+			return (
+				<Film title={title} date={release_date} director={directed_by} slug="alexia">
+					<AlexiaTitleLg />
+					<AlexiaTitleSm />
+					<div className="img">
+						<img itemProp="image" src="/alexia.jpg" alt="" />
+					</div>
+				</Film>
+			)
+		}}
+	/>
 )
 
 export default Alexia

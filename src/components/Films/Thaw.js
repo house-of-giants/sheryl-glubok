@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticQuery, graphql } from "gatsby"
 import { css } from 'styled-components'
 
 import Film from './Film'
@@ -56,16 +57,38 @@ export const ThawStyles = css`
 `
 
 const Thaw = () => (
-	<Film title="Thaw" date="2014" director="Sheryl Glubok" slug="thaw">
-		<ThawTitle />
-		<div className="img-1">
-			<img itemProp="image" src="/thaw-2.jpg" alt="" />
-		</div>
-		<div className="spacerlol"></div>
-		<div className="img-2">
-			<img itemProp="image" src="/thaw-1.jpg" alt="" />
-		</div>
-	</Film>
+	<StaticQuery
+		query={graphql`
+			query FilmDetail {
+				markdownRemark(
+					fields: { slug: { eq: "/films/thaw/" } }
+				) {
+					frontmatter {
+						title
+						release_date
+						directed_by
+					}
+				}
+			}
+		`}
+		render={data => {
+			const { markdownRemark: post } = data
+			const { title, release_date, directed_by } = post.frontmatter
+
+			return (
+				<Film title={title} date={release_date} director={directed_by} slug="thaw">
+					<ThawTitle />
+					<div className="img-1">
+						<img itemProp="image" src="/thaw-2.jpg" alt="" />
+					</div>
+					<div className="spacerlol"></div>
+					<div className="img-2">
+						<img itemProp="image" src="/thaw-1.jpg" alt="" />
+					</div>
+				</Film>
+			)
+		}}
+	/>
 )
 
 export default Thaw
