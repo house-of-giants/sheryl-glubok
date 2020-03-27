@@ -14,7 +14,8 @@ produced_by:
   - Iana Dontcheva
   - Sheryl Glubok
   - Sterling Cook
-starring: []
+starring:
+  - 'Shooting in Colorado #COFilm'
 poster: ''
 awards: []
 team: []
