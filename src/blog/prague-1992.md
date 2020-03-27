@@ -25,4 +25,5 @@ I wish I could say it's been a smooth journey on my road as a filmmaker. Alas, i
 It's been enough to keep me going as I've dragged the negative from house to house, city to city over this last quarter century. Thanks to wonderful restoration work by Cinepost in Georgia and Wes Matheny here in Denver, I give you ALEXIA.
 
 <iframe src="https://player.vimeo.com/video/168465882" width="640" height="487" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/168465882">ALEXIA</a> from <a href="https://vimeo.com/sherylglubok">Sheryl Glubok</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+[ALEXIA](https://vimeo.com/168465882) from [Sheryl Glubok](https://vimeo.com/sherylglubok) on [Vimeo](https://vimeo.com)
