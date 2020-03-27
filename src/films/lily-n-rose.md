@@ -89,8 +89,6 @@ I loved this script of first best friends growing apart. That first heartbreak i
 
 I knew we had something special just making our pitch video for the Seed & Spark campaign. It helped us create a dedicated community that is still with us today. Check it out [here](https://vimeo.com/214587886) along with a bit of 80s nostalgia care of [5280s.](http://the80sareawesome.com/)
 
-I feel like this is the film where it all came together: desire, craft, resources, and belief. Producer Sterling Cook and I have had so much joy sharing this film with festival audiences from east to west, from Toronto to Killarney. Many a teary eyed viewer has come up after a screening at being reminded of their childhood best friend. One older woman’s image burns particularly bright in my mind. “Thank you,” she said, "for helping me heal."
-
 > I feel like this is the film where it all came together: desire, craft, resources, and belief.
 
 Our young teen cast of Marina Leo, Aicha Bleers, Grace Dotson, Eliza Disbrow, and Tessa Maruyama give me hope that all will be well in this world as they grow up more self-aware and empowered than my generation. To work with Maggy Stacy again who embodied Lily’s grown-up self (literally or figuratively, your choice ;) was a joy. As was working with the brilliant cinematographer [Johanna Coelho](https://www.johannacoelho.com/work). That Alexa Mini with Vintage Cooke lenses were worth all those pennies.
