@@ -7,20 +7,19 @@ intro: >-
   themselves too seriously. We’re grungey. We’re not boomers. We may be small in
   number, but we’re also not ready to fade off into the sunset. I’m here to make
   my mark.
-button_link: ""
-button_label: ""
 intro_image: /images/sheryl-headshot.jpg
+button_label: ''
+button_link: ''
 column_one_img: /images/about-1.jpg
 column_two_img: /images/about-2.jpg
 column_three_img: /images/about-3.jpg
 home_body: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis
-  consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod
-  semper. Curabitur blandit tempus porttitor.
-
-
-  [](https://compassionate-lamarr-33dd20.netlify.com/about)
-home_button_label: ""
+  Sheryl is an award-winning writer, director and producer based in Denver. She
+  was born in Colorado, grew up in Arkansas, went to college in Northern
+  California, studied film in Prague, got a MFA in Fiction in Vermont all the
+  while telling stories that center around identity, female agency, love, and
+  self-understanding.
+home_button_label: ''
 ---
 At 13, on the day I became a Bat Mitzvah in front of an enormous congregation of my family and friends, I chanted Torah, gave my speech, and then as the Rabbi was blessing me, I barfed. Thankfully, not on the Rabbi (though his stale pipe-smoking breath made it tempting) but I mean projectile puke that went across a large swath of the bimah. I ran off in tears and my mother found me in the bathroom sobbing. She looked me in the eyes with compassion and said, I am so proud of you. She shored me up, helped me get the vomit off my blue taffeta dress, and I went right back out there, embarrassed but determined not to let this humiliate me, or stop me.
 
