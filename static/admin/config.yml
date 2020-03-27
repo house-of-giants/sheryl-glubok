@@ -23,7 +23,6 @@ collections:
           - label: "Home - About Section"
             name: "home_about"
             widget: "list"
-            allow_add: false
             fields:
               - {label: "Column One Image", name: "column_one_img", widget: "image"}
               - {label: "Column Two Image", name: "column_two_img", widget: "image"}
