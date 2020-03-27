@@ -7,16 +7,15 @@ intro: >-
   themselves too seriously. We’re grungey. We’re not boomers. We may be small in
   number, but we’re also not ready to fade off into the sunset. I’m here to make
   my mark.
-intro_image: /images/about-1.jpg
 button_label: ""
 button_link: ""
-home_about:
-  - column_one_img: /images/about-1.jpg
-    column_two_img: /images/about-2.jpg
-    column_three_img: /images/about-3.jpg
-    body: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.
-    button_label: "Learn More"
+intro_image: /images/about-1.jpg
+column_one_img: /images/about-1.jpg
+column_two_img: /images/about-2.jpg
+column_three_img: /images/about-3.jpg
+home_body: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.
+home_button_label: "Learn More"
 ---
 
 

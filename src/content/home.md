@@ -1,7 +1,0 @@
----
-column_one_img: /images/about-1.jpg
-column_two_img: /images/about-2.jpg
-column_three_img: /images/about-3.jpg
-button_label: Learn More
----
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.
