@@ -7,16 +7,6 @@ intro: >-
   themselves too seriously. We’re grungey. We’re not boomers. We may be small in
   number, but we’re also not ready to fade off into the sunset. I’m here to make
   my mark.
-
-
-  So instead of my CV, I’d like to share a few moments that have shaped my life
-  and gotten me to this point. They may not be pretty, but they’re mine, and I
-  think reveal my character better than this degree or that award. We all know
-  making films is a big leap of faith. To make great work, and that’s always
-  been my goal, we have to really trust each other. So if you want to know who I
-  am - read on. If you want to read my accomplishments (no judgment): you can
-  see my
-  [CV](https://drive.google.com/open?id=1qgc6gsh15xcVVQldT7amItfO_zKfcPHZV7NJVRM5Bto).
 button_link: ""
 button_label: ""
 intro_image: /images/sheryl-headshot.jpg
