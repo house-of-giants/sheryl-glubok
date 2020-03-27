@@ -62,30 +62,16 @@ const StyledColumns = styled.div`
 	}
 
 	& .content {
+		& > *:not(img):not(blockquote):not(.grid-2) {
+			max-width: 39.9125em;
+		}
+
 		& p:first-child {
 			padding-top: 2rem;
 		}
 
 		& > p {
 			font-size: 1.5rem;
-		}
-	}
-
-	& .-film {
-		& > *:not(img):not(blockquote):not(.grid-2) {
-			max-width: 39.9125em;
-		}
-
-		& > p {
-			margin: 0;
-		}
-
-		& > p:not(:last-child) {
-			padding-bottom: 2rem;
-		}
-
-		& > img {
-			padding-bottom: 2rem;
 		}
 
 		& .grid-2 {
@@ -113,6 +99,20 @@ const StyledColumns = styled.div`
 
 		& blockquote:last-child {
 			margin-bottom: 2rem;
+		}
+	}
+
+	& .-film {
+		& > p {
+			margin: 0;
+		}
+
+		& > p:not(:last-child) {
+			padding-bottom: 2rem;
+		}
+
+		& > img {
+			padding-bottom: 2rem;
 		}
 	}
 
