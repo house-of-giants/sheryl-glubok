@@ -25,9 +25,9 @@ So instead of my CV, I’d like to share a few moments that have shaped my life 
 
 At 13, on the day I became a Bat Mitzvah in front of an enormous congregation of my family and friends, I chanted Torah, gave my speech, and then as the Rabbi was blessing me, I barfed. Thankfully, not on the Rabbi (though his stale pipe-smoking breath made it tempting) but I mean projectile puke that went across a large swath of the bimah. I ran off in tears and my mother found me in the bathroom sobbing. She looked me in the eyes with compassion and said, I am so proud of you. She shored me up, helped me get the vomit off my blue taffeta dress, and I went right back out there, embarrassed but determined not to let this humiliate me, or stop me.
 
-![](/images/lily-n-rose-3.jpg)
-
 I think it’s one of my more remarkable traits, the ability to pick myself up, get on with things.
+
+![](/images/lily-n-rose-3.jpg)
 
 Sophomore year at college, I got really sick with mono. I have no doubt one of the reasons I got so sick was because I was taking an insane course load. I hadn’t grown up in Little Rock, Arkansas (valedictorian of Central High School’s Class of ‘89 Go Tigers!) to get all the way to Stanford University not to take my studies seriously. I wanted to understand one simple thing: why does war exist? I was a child of the 80s and we were beginning to process Vietnam through our films. Oliver Stone’s PLATOON and Stanley Kubrick’s FULL METAL JACKET had made a huge impression on me. So I studied International Relations and learned from many of those on the front lines of American foreign policy: Condoleezza Rice, George Schultz, Stephen Krasner, Peter Bernstein. It was literally making me sick. So I stopped out, took incompletes and went home to Little Rock to heal. It was there that I decided I didn’t want to be part of the war-making / perpetuating system. I want to be part of a creative life of filmmakers who make us think. Not tell us what to think (that’s fascism) but get us to think, ideally, before we act and maybe just maybe change our lives.
 
