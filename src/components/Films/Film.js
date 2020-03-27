@@ -39,6 +39,8 @@ const Film = ( { slug, children, title, director, date } ) => {
 		} )
 	} )
 
+	const dateYear = date.length > 4 ? date.substr(date.length - 5) : date;
+
 	return(
 		<StyledFilm className={`film ${slug}`} ref={ filmRef } itemScope itemType="http://schema.org/Movie">
 			<Link to={`/films/${slug}`} className="film-wrap">
@@ -46,7 +48,7 @@ const Film = ( { slug, children, title, director, date } ) => {
 				<div className="meta">
 					<span className="screen-reader-text" itemProp="name">{title}</span>
 					<span className="screen-reader-text" itemProp="director">{director[0]}</span>
-					<p itemProp="dateCreated">{date}</p>
+					<p itemProp="dateCreated">{dateYear}</p>
 					<p>View Film</p>
 				</div>
 			</Link>
