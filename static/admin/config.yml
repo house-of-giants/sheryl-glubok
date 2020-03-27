@@ -20,16 +20,11 @@ collections:
           - {label: "Button Label", name: "button_label", required: false, widget: "string", default: "Contact Sheryl"}
           - {label: "Button Link", name: "button_link", required: false, widget: "string", default: "/contact"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - label: "Home - About Section"
-            name: "home_about"
-            widget: "list"
-            allow_add: false
-            fields:
-              - {label: "Column One Image", name: "column_one_img", widget: "image"}
-              - {label: "Column Two Image", name: "column_two_img", widget: "image"}
-              - {label: "Column Three Image", name: "column_three_img", widget: "image"}
-              - {label: "Body", name: "body", widget: "markdown"}
-              - {label: "Button Label", name: "button_label", widget: "string", required: false}
+          - {label: "Home About - Column One Image", name: "column_one_img", widget: "image"}
+          - {label: "Home About - Column Two Image", name: "column_two_img", widget: "image"}
+          - {label: "Home About - Column Three Image", name: "column_three_img", widget: "image"}
+          - {label: "Home About - Body", name: "home_body", widget: "markdown"}
+          - {label: "Home About - Button Label", name: "home_button_label", widget: "string", required: false}
   - name: "blog"
     label: "Blog"
     folder: "src/blog"

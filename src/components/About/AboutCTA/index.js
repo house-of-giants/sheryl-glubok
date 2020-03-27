@@ -7,7 +7,7 @@ import { StyledAboutCTA } from './StyledAboutCTA'
 import Button from '../../Button'
 
 const AboutCTA = (props) => {
-	const { column_one_img, column_two_img, column_three_img, body } = props.data[0]
+	const { column_one_img, column_two_img, column_three_img, home_body, home_button_label } = props.data
 
 	return (
 		<StyledAboutCTA>
@@ -21,8 +21,8 @@ const AboutCTA = (props) => {
 				<div className="content">
 					<AboutCTATitle />
 					<div className="blurb">
-						<p>{body}</p>
-						<Button to="/about">Learn More About Sheryl</Button>
+						<p>{home_body}</p>
+						<Button to="/about">{ home_button_label ? home_button_label : 'Learn More About Sheryl' }</Button>
 					</div>
 				</div>
 			</StyledContainer>
@@ -30,8 +30,12 @@ const AboutCTA = (props) => {
 	)
 }
 
-AboutCTA.propTypes ={
-	data: PropTypes.array.isRequired
+AboutCTA.propTypes = {
+	column_one_img: PropTypes.string.isRequired,
+	column_two_img: PropTypes.string.isRequired,
+	column_three_img: PropTypes.string.isRequired,
+	home_body: PropTypes.string.isRequired,
+	home_button_label: PropTypes.string,
 }
 
 export default AboutCTA

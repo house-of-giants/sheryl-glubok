@@ -23,7 +23,7 @@ export default function Page({ data }) {
 			<NavLogo />
 			<OxHidden>
 				<FilmList />
-				<AboutCTA data={ post.frontmatter.home_about } />
+				<AboutCTA data={ post.frontmatter } />
 			</OxHidden>
 		</Layout>
 	)
@@ -35,13 +35,11 @@ export const query = graphql`
 			frontmatter: { layout: { eq: "about" } }
 		) {
 			frontmatter {
-				home_about {
-					column_one_img
-					column_two_img
-					column_three_img
-					body
-					button_label
-				}
+				column_one_img
+				column_two_img
+				column_three_img
+				home_body
+				home_button_label
 			}
 		}
 	}
