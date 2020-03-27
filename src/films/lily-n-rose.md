@@ -97,7 +97,7 @@ Our young teen cast of Marina Leo, Aicha Bleers, Grace Dotson, Eliza Disbrow, an
 
 So was writing the 80s throwback *Steel Heart* with Neil Lyons, Reed Fox, and Megan Crooks of Denver’s own music collective [Moon Magnet](https://www.moonmagnetmusic.com/). There’s such amazing talent here in Denver, I love connecting with our creative community.
 
-Speaking of community, Paonia, Colorado rocked. They were the consummate hosts as our film crew who came from all over the state as well as LA and Boston. We planted ourselves there for a week and enjoyed every minute. Did you know we make wine country in Colorado? They do in Paonia!
+Speaking of community, Paonia, Colorado rocked. They were the consummate hosts as our film crew who came from all over the state as well as LA and Boston. We planted ourselves there for a week and enjoyed every minute. Did you know we make wine in Colorado? They do in Paonia!
 
 ![](/images/lily-n-rose-3.jpg)
 
