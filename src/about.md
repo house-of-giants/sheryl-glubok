@@ -31,7 +31,7 @@ I think it’s one of my more remarkable traits, the ability to pick myself up, 
 
 Sophomore year at college, I got really sick with mono. I have no doubt one of the reasons I got so sick was because I was taking an insane course load. I hadn’t grown up in Little Rock, Arkansas to get all the way to Stanford not to take my studies seriously. I wanted to understand one simple thing: why does war exist? I was a child of the 80s and we were beginning to process Vietnam through our films. Oliver Stone’s PLATOON and Stanley Kubrick’s FULL METAL JACKET had made a huge impression on me. So I studied International Relations and learned from many of those on the front lines of American foreign policy: Condoleezza Rice, George Schultz, Stephen Krasner, Peter Bernstein. It was literally making me sick. So I stopped out, took incompletes and went home to Little Rock to heal. It was there that I decided I didn’t want to be part of the war-making / perpetuating system. I want to be part of a creative life of filmmakers who make us think. Not tell us what to think (that’s fascism) but get us to think, ideally, before we act and maybe just maybe change our lives.
 
-> I think it’s one of my more remarkable traits, the ability to pick myself up, get on with things..
+> I think it’s one of my more remarkable traits, the ability to pick myself up, get on with things.
 
 In the early 90s, Stanford had no film program, and I was very tempted to bail on college. But I knew that would kill my parents. And I believe in finishing what I start. So I went back to Stanford, and proceeded to finish my degree in four quarters straight leaving a required semester abroad as my only remaining credits.
 
