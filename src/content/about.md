@@ -4,8 +4,10 @@ intro: >-
   some list of accomplishments that check off this box or that. I’m a Gen X’er
   through and through, and we have a severe aversion to people who take
   themselves too seriously. We’re grungey. We’re not boomers. We may be small in
-  number, but we’re also not ready to fade off into the sunset. I’m here to make
-  my mark.
+  number, but we’re also not ready to fade off into the sunset. 
+
+
+  I’m here to make my mark.
 intro_image: /images/sheryl-headshot.jpg
 column_one_img: /images/about-1.jpg
 column_two_img: /images/about-2.jpg
