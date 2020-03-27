@@ -36,6 +36,7 @@ export const StyledAboutHero = styled(motion.div)`
 	& .cta {
 		grid-column: 1;
 		grid-row: 5;
+		z-index: 2;
 
 		@media (${bpMedium}) {
 			grid-row: 3;
@@ -58,11 +59,13 @@ export const StyledAboutHero = styled(motion.div)`
 
 		& img {
 			height: 100%;
+			object-position: 0 19%;
 			object-fit: cover;
 			position: absolute;
 			width: 100%;
 
 			@media (${bpMedium}) {
+				object-position: 0 19%;
 				object-fit: contain;
 			}
 		}
@@ -70,7 +73,7 @@ export const StyledAboutHero = styled(motion.div)`
 
 	& .desc {
 		grid-column: 1;
-		grid-row: 4 / span 3;
+		grid-row: 5 / span 3;
 		position: relative;
 		z-index: 1;
 
@@ -83,7 +86,11 @@ export const StyledAboutHero = styled(motion.div)`
 			display: block;
 			height: auto;
 			margin-left: auto;
-			width: 277px;
+			width: 45%;
+
+			@media (${bpMedium}) {
+				width: 277px;
+			}
 		}
 	}
 `
