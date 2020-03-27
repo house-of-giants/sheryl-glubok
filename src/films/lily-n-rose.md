@@ -24,7 +24,7 @@ poster: /images/lnr-poster-27x40-revised-oct-2019.jpg
 awards:
   - logo: /images/w-f-laurels.png
   - logo: /images/female-eye-laurel.jpg
-  - logo: /images/THAW.jpeg
+  - logo: /images/official-selection-laurel_white.png
   - logo: /images/THAW.jpeg
   - logo: /images/THAW.jpeg
   - logo: /images/THAW.jpeg
