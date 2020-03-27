@@ -44,7 +44,7 @@ export const FishbowlStyles = css`
 const Fishbowl = () => (
 	<StaticQuery
 		query={graphql`
-			query FilmDetail {
+			query FishbowlDetail {
 				markdownRemark(
 					fields: { slug: { eq: "/films/welcome-to-the-fishbowl/" } }
 				) {

@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticQuery, graphql } from "gatsby"
 import { css } from 'styled-components'
 
 import { Sonnet98Title } from '../SVG'
@@ -41,15 +42,37 @@ export const Sonnet98Styles = css`
 `
 
 const Sonnet98 = () => (
-	<Film title="Sonnet 98" date="2016" director="Sheryl Glubok" slug="sonnet-98">
-		<Sonnet98Title />
-		<div className="img-1">
-			<img itemProp="image" src="/sonnet-98-1.jpg" alt="" />
-		</div>
-		<div className="img-2">
-			<img itemProp="image" src="/sonnet-98-2.jpg" alt="" />
-		</div>
-	</Film>
+	<StaticQuery
+		query={graphql`
+			query SonnetDetail {
+				markdownRemark(
+					fields: { slug: { eq: "/films/sonnet-98/" } }
+				) {
+					frontmatter {
+						title
+						release_date
+						directed_by
+					}
+				}
+			}
+		`}
+		render={data => {
+			const { markdownRemark: post } = data
+			const { title, release_date, directed_by } = post.frontmatter
+
+			return (
+				<Film title={title} date={release_date} director={directed_by} slug="sonnet-98">
+					<Sonnet98Title />
+					<div className="img-1">
+						<img itemProp="image" src="/sonnet-98-1.jpg" alt="" />
+					</div>
+					<div className="img-2">
+						<img itemProp="image" src="/sonnet-98-2.jpg" alt="" />
+					</div>
+				</Film>
+			)
+		}}
+	/>
 )
 
 export default Sonnet98
