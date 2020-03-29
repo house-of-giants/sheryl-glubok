@@ -20,6 +20,7 @@ poster: ''
 awards:
   - logo: /images/THAW.jpeg
   - logo: /images/middlebury new filmmakers festival 2015.png
+  - logo: /images/VTIFF.png
 pullquote: >-
   Human speech is like a cracked kettle on which we tap crude rhythms for bears
   to dance to, while we long to make music that will melt the stars.
