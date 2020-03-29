@@ -15,7 +15,7 @@ produced_by:
   - Sheryl Glubok
   - Sterling Cook
 starring:
-  - 'Shooting in Colorado #COFilm'
+  - ''
 poster: ''
 awards: []
 team: []
