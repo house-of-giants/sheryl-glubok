@@ -16,7 +16,7 @@ produced_by:
   - Sterling Cook
 starring:
   - ''
-poster: ''
+poster: /images/fb-team-photo.jpg
 awards: []
 team: []
 ---
