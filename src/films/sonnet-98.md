@@ -18,7 +18,7 @@ produced_by:
 starring:
   - Maggy Stacy
   - Matt Block
-poster: /images/fb-team-photo.jpg
+poster: ''
 awards: []
 team: []
 ---
