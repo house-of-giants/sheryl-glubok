@@ -49,7 +49,7 @@ Do you see how much I don’t quit? Here’s another example.
 
 Donald Rae and I started writing the feature script WELCOME TO THE FISHBOWL in 2010 (it was called “We’ll Always Have Paris” back then). We have picked it up and put it down many times over the last decade. Each time we return to it, it has become more and more personal. Then last year, 2019, I finally figured out what the story was trying to say to me.
 
-Does a fish know it’s in a bowl? Who can say? But in middle age it’s easy to forget how to take risks, to believe in change and opportunity. So this script is about saying, "Fishbowl I see you and I’m not going to let you stop me. "Because we actually aren’t fish, these walls are in our minds. 
+Does a fish know it’s in a bowl? Who can say? But in middle age it’s easy to forget how to take risks, to believe in change and opportunity. So this script is about saying, "Fishbowl I see you and I’m not going to let you stop me." Because we actually aren’t fish, these walls are in our minds. 
 
 We’re ready to make this film.
 
