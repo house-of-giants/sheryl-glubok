@@ -36,7 +36,7 @@ Imagine if MRS. MAISEL went on a roadtrip like SIDEWAYS with some antics of GET 
 
 There’s no speed limit when you’re trying to put yourself on the map.
 
-> In short, it's the tale of a woman who becomes the PROTAGONIST of her own story.
+> ...it's the tale of a woman who becomes the PROTAGONIST of her own story.
 
 ![](/images/car.jpg)
 
