@@ -12,14 +12,14 @@ written_by:
 directed_by:
   - Sheryl Glubok
 produced_by:
-  - Marina Leo
-  - Aicha Bleers
-  - Grace Dotson
-  - Maggy Stacy
+  - Sterling Cook
+  - Sheryl Glubok
+  - Wesley Matheny
 starring:
   - Marina Leo
   - Aicha Bleers
   - Grace Dotson
+  - Maggy Stacy
 poster: /images/lnr-poster-27x40-revised-oct-2019.jpg
 awards:
   - logo: /images/w-f-laurels.png
