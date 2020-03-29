@@ -16,7 +16,7 @@ produced_by:
 starring:
   - Molly Walsh
   - Lowell Thompson
-poster: /images/about-1.jpg
+poster: ''
 awards:
   - logo: /images/THAW.jpeg
   - logo: /images/middlebury new filmmakers festival 2015.png
