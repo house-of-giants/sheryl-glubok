@@ -2,7 +2,7 @@
 layout: film
 title: Lily 'N' Rose
 vimeo_url: '283566827'
-thumbnail: /images/lnr-unhappy-threesome.jpg
+thumbnail: /images/lily-n-rose.jpg
 release_date: 'April 14, 2018'
 in_production: false
 runtime: 13
