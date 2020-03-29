@@ -2,7 +2,7 @@
 layout: film
 title: Thaw
 vimeo_url: '101800925'
-thumbnail: /images/about-2.jpg
+thumbnail: /images/thaw.jpg
 release_date: 'November, 2014'
 in_production: false
 runtime: 10
