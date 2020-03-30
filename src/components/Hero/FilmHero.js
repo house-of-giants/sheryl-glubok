@@ -3,10 +3,11 @@ import PropTypes from 'prop-types'
 
 import Button from '../Button'
 import StyledFilmHero from './StyledFilmHero'
+import ResponsiveImg from '../Content/ResponsiveImg'
 
 const FilmHero = ({ hasVideo, isVideo, showVideo, thumbnail }) => (
 	<StyledFilmHero onClick={() => showVideo( ! isVideo )} hasVideo={hasVideo}>
-		<img src={thumbnail} alt="" />
+		<ResponsiveImg src={thumbnail} params="ar_16:9,c_fill,g_center/c_scale,w_auto/c_limit,w_1365,h_831" />
 		{ hasVideo &&
 			<Button isButton>
 				<span className="screen-reader-text">Play Video</span>

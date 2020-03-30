@@ -18,6 +18,7 @@ import { AboutFilmTitle } from '../components/SVG/AboutFilmTitle'
 import Support from '../components/Content/Support'
 import SupportCTA from '../components/Content/SupportCTA'
 import Button from '../components/Button'
+import ResponsiveImg from '../components/Content/ResponsiveImg'
 
 const StyledFilmTitle = styled.div`
 	margin: 0 auto;
@@ -101,7 +102,7 @@ const Film = ({ data }) => {
 					}
 					<Columns cols={poster ? '3fr 1fr' : '1fr'} colGap="4rem" separator nopad>
 						<Columns className="film-meta" cols="repeat(auto-fit, minmax(285px, 1fr))" colGap="2rem">
-							{ written_by.length > 0 &&
+							{ written_by.length > 0 && written_by[0].length > 0 &&
 								<div className="col">
 									<p><strong>Written by</strong></p>
 									{written_by.map( person => (
@@ -111,7 +112,7 @@ const Film = ({ data }) => {
 									))}
 								</div>
 							}
-							{ directed_by.length > 0 &&
+							{ directed_by.length > 0 && directed_by[0].length > 0 &&
 								<div className="col">
 									<p><strong>Directed by</strong></p>
 									{directed_by.map( person => (
@@ -121,7 +122,7 @@ const Film = ({ data }) => {
 									))}
 								</div>
 							}
-							{ produced_by.length > 0 &&
+							{ produced_by.length > 0 && produced_by[0].length > 0 &&
 								<div className="col">
 									<p><strong>Produced by</strong></p>
 									{produced_by.map( person => (
@@ -131,7 +132,7 @@ const Film = ({ data }) => {
 									))}
 								</div>
 							}
-							{ starring.length > 0 &&
+							{ starring.length > 0 && starring[0].length > 0 &&
 								<div className="col">
 									<p><strong>Starring</strong></p>
 									{starring.map( person => (
@@ -155,7 +156,7 @@ const Film = ({ data }) => {
 							}
 						</Columns>
 						{ poster &&
-							<img className="col poster" src={poster} alt="" />
+							<ResponsiveImg className="col poster" src={poster} params="ar_5:8,c_lfill/c_scale,w_auto/c_limit,w_385" />
 						}
 					</Columns>
 
@@ -170,9 +171,9 @@ const Film = ({ data }) => {
 							{awards.map( (award, i) => {
 								return award.logo_link ?
 									<a key={`award-${i}`} href={ award.logo_link }>
-										<img src={ award.logo } alt="" />
+										<ResponsiveImg src={award.logo} params="h_144" />
 									</a> :
-									<img key={`award-${i}`} src={ award.logo } alt="" />
+									<ResponsiveImg key={`award-${i}`} src={award.logo} params="h_144" />
 							})}
 						</Columns>
 					}
@@ -182,7 +183,7 @@ const Film = ({ data }) => {
 						<Columns cols="repeat(2, 1fr)" colGap="4rem">
 							{team.map( ( { member_headshot, member_name, member_title, member_excerpt } ) => (
 								<Team key={member_name}>
-									<img src={ member_headshot } alt={ member_name } />
+									<ResponsiveImg src={member_headshot} alt={member_name} params="ar_1:1,c_fill,g_face/c_scale,w_auto/c_limit,w_220,h_220/" />
 									<div className="meta">
 										<h3 className="name">{ member_name }</h3>
 										{ member_title &&

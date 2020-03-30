@@ -11,6 +11,7 @@ import StyledSinglePost from '../components/Blog/StyledSinglePost'
 
 import { StyledContainer } from '../styles/global/layout'
 import Layout from '../theme/layout'
+import ResponsiveImg from '../components/Content/ResponsiveImg'
 
 export default function Post({ data }) {
 	const { markdownRemark: post } = data
@@ -18,7 +19,6 @@ export default function Post({ data }) {
 	const { title, date, thumbnail } = post.frontmatter
 	const dateString = formatDateString( date )
 	const dateISO = new Date( date.replace( ' ', 'T') + 'Z' )
-	const thumb = thumbnail ? thumbnail : 'https://source.unsplash.com/user/claudiotesta/1350x478'
 
 	const animItem = {
 		finish: {
@@ -59,8 +59,8 @@ export default function Post({ data }) {
 									</motion.p>
 								</div>
 								<div className="hero" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-									<img src={thumb} alt="" />
-									<meta itemProp="url" content={thumb} />
+									<ResponsiveImg src={thumbnail} />
+									<meta itemProp="url" content={thumbnail} />
 									<meta itemProp="width" content="100" />
 									<meta itemProp="height" content="100" />
 								</div>

@@ -6,10 +6,11 @@ import Button from '../../Button'
 import { AboutHeroTitle, AboutHeroDesc } from '../../SVG'
 import { StyledAboutHero } from './StyledAboutHero'
 import { animPageDefault } from '../../../utils/animationDefs'
+import ResponsiveImg from '../../Content/ResponsiveImg'
 
 const AboutHero = ({ data }) => {
 	const { intro, intro_image, button_link, button_label } = data
-	
+
 	return (
 		<AnimatePresence exitBeforeEnter>
 			<StyledAboutHero variants={animPageDefault} initial="in" animate="normal" exit="out">
@@ -19,7 +20,7 @@ const AboutHero = ({ data }) => {
 					<Button to={button_link ? button_link : '/contact'}>{button_label ? button_label : 'Contact Sheryl'}</Button>
 				</div>
 				<div className="image">
-					<img src={intro_image} alt=""/>
+					<ResponsiveImg src={intro_image} params="c_fill,g_face/c_scale,w_auto/c_limit,w_658,h_715" />
 				</div>
 				<div className="desc">
 					<AboutHeroDesc />
