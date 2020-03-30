@@ -16,7 +16,7 @@ produced_by:
   - Sterling Cook
 starring:
   - ''
-poster: /images/fb-team-photo.jpg
+poster: /images/donald-n-sheryl.jpg
 awards: []
 team: []
 ---
