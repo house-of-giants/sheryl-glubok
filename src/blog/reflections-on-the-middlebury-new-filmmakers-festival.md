@@ -2,8 +2,7 @@
 layout: blog
 title: Reflections on the Middlebury New Filmmakers Festival
 date: '2015-10-09 08:20'
-thumbnail: >-
-  https://res.cloudinary.com/houseofgiants/image/upload/v1585582094/Blog/middlebury_new_filmmakers_festival_2015_splkaa.png
+thumbnail: /images/middlebury new filmmakers festival 2015.png
 ---
 More than a month later, I am still glowing as I reflect on THAW playing to a sold-out audience at the first annual MNFF. It was truly a homecoming, after all THAW was made in Vermont. The festival was so well run and inviting to filmmakers and filmgoers. Lloyd Komesar and his production team, Phoebe Lewis and Kyla Jarrett, rocked it.
 
