@@ -5,20 +5,20 @@ import { Link } from 'gatsby'
 import { formatDateString } from '../../utils/formatDate'
 
 import StyledPostItem from './StyledPostItem'
+import ResponsiveImg from '../Content/ResponsiveImg'
 
 const PostItem = ({ post, variants, i }) => {
 	const { date, thumbnail, title } = post.frontmatter
 	const { slug } = post.fields
 	const dateString = formatDateString( date )
 	const dateISO = new Date( date.replace( ' ', 'T') + 'Z' )
-	const thumb = thumbnail ? thumbnail : 'https://source.unsplash.com/user/claudiotesta/350x368'
 
 	return(
 		<StyledPostItem variants={variants} i={i} itemScope itemType="https://schema.org/BlogPosting">
 			<Link to={slug}>
 				<div className="image" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-					<img src={thumb} alt="" />
-					<meta itemProp="url" content={thumb} />
+					<ResponsiveImg src={thumbnail} />
+					<meta itemProp="url" content={thumbnail} />
 					<meta itemProp="width" content="100" />
 					<meta itemProp="height" content="100" />
 				</div>

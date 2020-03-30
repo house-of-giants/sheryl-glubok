@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import { white, bpMedium } from '../../../styles/base/variables'
+import { white, bpLarge } from '../../../styles/base/variables'
 
 export const StyledAboutHero = styled(motion.div)`
 	display: grid;
 	grid-row-gap: 1rem;
 	grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 
-	@media (${bpMedium}) {
+	@media (${bpLarge}) {
 		grid-column-gap: 3rem;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: 2fr 2fr 1fr 0.6fr;
@@ -20,7 +20,7 @@ export const StyledAboutHero = styled(motion.div)`
 	& .title {
 		grid-column: 1;
 
-		@media (${bpMedium}) {
+		@media (${bpLarge}) {
 			grid-row: 1;
 		}
 	}
@@ -28,7 +28,7 @@ export const StyledAboutHero = styled(motion.div)`
 	& .blurb {
 		grid-column: 1;
 
-		@media (${bpMedium}) {
+		@media (${bpLarge}) {
 			grid-row: 2;
 		}
 	}
@@ -38,7 +38,7 @@ export const StyledAboutHero = styled(motion.div)`
 		grid-row: 5;
 		z-index: 2;
 
-		@media (${bpMedium}) {
+		@media (${bpLarge}) {
 			grid-row: 3;
 		}
 	}
@@ -47,12 +47,12 @@ export const StyledAboutHero = styled(motion.div)`
 		grid-column: 1;
 		grid-row: 4;
 		height: 100%;
-		min-height: 300px;
+		min-height: 400px;
 		position: relative;
 		width: 100%;
 		z-index: 0;
 
-		@media (${bpMedium}) {
+		@media (${bpLarge}) {
 			grid-row: 1 / span 3;
 			grid-column: 2;
 		}
@@ -63,11 +63,6 @@ export const StyledAboutHero = styled(motion.div)`
 			object-fit: cover;
 			position: absolute;
 			width: 100%;
-
-			@media (${bpMedium}) {
-				object-position: 0 19%;
-				object-fit: contain;
-			}
 		}
 	}
 
@@ -77,7 +72,7 @@ export const StyledAboutHero = styled(motion.div)`
 		position: relative;
 		z-index: 1;
 
-		@media (${bpMedium}) {
+		@media (${bpLarge}) {
 			grid-column: 2;
 			grid-row: 3 / span 2;
 		}
@@ -88,7 +83,7 @@ export const StyledAboutHero = styled(motion.div)`
 			margin-left: auto;
 			width: 45%;
 
-			@media (${bpMedium}) {
+			@media (${bpLarge}) {
 				width: 277px;
 			}
 		}

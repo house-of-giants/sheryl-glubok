@@ -5,6 +5,7 @@ import { Logo, AboutCTATitle } from '../../SVG'
 import { StyledContainer } from '../../../styles/global/layout'
 import { StyledAboutCTA } from './StyledAboutCTA'
 import Button from '../../Button'
+import ResponsiveImg from '../../Content/ResponsiveImg'
 
 const AboutCTA = (props) => {
 	const { column_one_img, column_two_img, column_three_img, home_body, home_button_label } = props.data
@@ -14,9 +15,9 @@ const AboutCTA = (props) => {
 			<StyledContainer>
 				<Logo />
 				<div className="strip">
-					<img src={column_one_img} alt=""/>
-					<img src={column_two_img} alt=""/>
-					<img src={column_three_img} alt=""/>
+					<ResponsiveImg src={column_one_img} params="ar_1:1,c_fill,g_face/c_scale,w_auto/c_limit,w_385" />
+					<ResponsiveImg src={column_two_img} params="ar_1:1,c_fill,g_face/c_scale,w_auto/c_limit,w_385" />
+					<ResponsiveImg src={column_three_img} params="ar_1:1,c_fill,g_face/c_scale,w_auto/c_limit,w_385" />
 				</div>
 				<div className="content">
 					<AboutCTATitle />
