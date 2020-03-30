@@ -43,7 +43,7 @@ It took twenty years to make my second film. Why you may wonder? One reason was 
 
 So I decided to focus on writing since I could do that for free, and follow my father's other piece of advice: get a job! So I did, as an executive recruiter in the Bay Area and learned the business ropes. This was ‘99 when the Internet was blowing up. I was really good at recruiting. I can talk to anyone about anything, and I’m good at getting folks to talk to me. 
 
-![](/images/road.jpg)
+![](/images/fb-team-photo.jpg)
 
 I had no idea how well that would serve me, but it did. I’ve been able to support myself financially while also completing my MFA in fiction, getting married, having children, teaching screenwriting, and making my other short films.
 
