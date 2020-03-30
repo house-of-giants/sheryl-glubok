@@ -39,7 +39,7 @@ This is how I got to Prague. I saw a flyer in the quad from American University 
 
 I’ll let my first film, ALEXIA, speak for itself. Bottom line, I’d never been happier in my life. It felt like a total marriage of my right and left brain, and I’ve been pursuing this dream of writing - directing ever since. 
 
-It took twenty years to make my second film. Why you may wonder? One reason was that my father said never go into debt to make a movie because it’s a terrible investment. He was a finance professor, so he knew what he was talking about. Another was that I didn't see myself reflected the pantheon of the American Indie film movement that was taking off. I wasn’t Tarantino, Soderbergh, Rodriguez or Linklater. 
+It took twenty years to make my second film. Why you may wonder? One reason was that my father said never go into debt to make a movie because it’s a terrible investment. He was a finance professor, so he knew what he was talking about. Another was that I didn't see myself reflected in the pantheon of the American Indie film movement that was taking off. I wasn’t Tarantino, Soderbergh, Rodriguez or Linklater. 
 
 So I decided to focus on writing since I could do that for free, and follow my father's other piece of advice: get a job! So I did, as an executive recruiter in the Bay Area and learned the business ropes. This was ‘99 when the Internet was blowing up. I was really good at recruiting. I can talk to anyone about anything, and I’m good at getting folks to talk to me. 
 
