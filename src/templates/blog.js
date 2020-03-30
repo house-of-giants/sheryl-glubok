@@ -4,7 +4,7 @@ import { graphql, Link } from 'gatsby'
 import { motion, AnimatePresence } from 'framer-motion'
 
 import { animPageDefault } from '../utils/animationDefs'
-import { formatDateString, formatDateISO } from '../utils/formatDate'
+import { formatDateString } from '../utils/formatDate'
 
 import NavLogo from '../components/Nav/NavLogo'
 import StyledSinglePost from '../components/Blog/StyledSinglePost'
@@ -17,7 +17,7 @@ export default function Post({ data }) {
 	const { html } = post
 	const { title, date, thumbnail } = post.frontmatter
 	const dateString = formatDateString( date )
-	const dateISO = formatDateISO( date )
+	const dateISO = new Date( date.replace( ' ', 'T') + 'Z' )
 	const thumb = thumbnail ? thumbnail : 'https://source.unsplash.com/user/claudiotesta/1350x478'
 
 	const animItem = {
