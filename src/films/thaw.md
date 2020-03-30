@@ -2,8 +2,7 @@
 layout: film
 title: Thaw
 vimeo_url: '101800925'
-thumbnail: >-
-  https://res.cloudinary.com/houseofgiants/image/upload/v1585582361/Film/thaw-2_xn6if4.jpg
+thumbnail: /images/thaw.jpg
 release_date: 'November, 2014'
 in_production: false
 runtime: 10
