@@ -8,7 +8,7 @@ intro: >-
   number, but we’re also not ready to fade off into the sunset. I’m here to make
   my mark.
 intro_image: >-
-  https://res.cloudinary.com/houseofgiants/image/upload/c_scale,q_auto:good,w_829/v1585581364/sheryl-headshot_hs5qly.webp
+  https://res.cloudinary.com/houseofgiants/image/upload/c_scale,q_auto,w_862/v1585581364/sheryl-headshot_hs5qly.jpg
 button_label: ''
 button_link: ''
 column_one_img: >-
