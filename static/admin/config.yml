@@ -1,7 +1,11 @@
 backend:
   name: git-gateway
   repo: house-of-giants/sheryl-glubok
-media_folder: "static/images"
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: houseofgiants
+    api_key: 373948418376991
 public_folder: "/images"
 slug:
   encoding: "ascii"

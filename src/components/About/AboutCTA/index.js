@@ -31,11 +31,13 @@ const AboutCTA = (props) => {
 }
 
 AboutCTA.propTypes = {
-	column_one_img: PropTypes.string.isRequired,
-	column_two_img: PropTypes.string.isRequired,
-	column_three_img: PropTypes.string.isRequired,
-	home_body: PropTypes.string.isRequired,
-	home_button_label: PropTypes.string,
+	data: PropTypes.shape({
+		column_one_img: PropTypes.string.isRequired,
+		column_two_img: PropTypes.string.isRequired,
+		column_three_img: PropTypes.string.isRequired,
+		home_body: PropTypes.string.isRequired,
+		home_button_label: PropTypes.string,
+	})
 }
 
 export default AboutCTA
