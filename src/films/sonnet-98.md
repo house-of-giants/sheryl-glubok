@@ -2,7 +2,8 @@
 layout: film
 title: Sonnet 98
 vimeo_url: '185687306'
-thumbnail: /images/sonnet-98-1.jpg
+thumbnail: >-
+  https://res.cloudinary.com/houseofgiants/image/upload/v1585582021/Blog/sonnet-98-1_kocfwc.jpg
 release_date: 'Mar 16, 2016'
 in_production: false
 runtime: 5
