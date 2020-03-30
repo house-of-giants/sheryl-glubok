@@ -1,7 +1,7 @@
 ---
 layout: film
 title: Welcome to the Fishbowl
-thumbnail: /images/cover_c0lcwq.jpg
+thumbnail: /images/cover.jpg
 release_date: '2021'
 in_production: true
 runtime: 0
@@ -16,7 +16,7 @@ produced_by:
   - Sterling Cook
 starring:
   - ''
-poster: /images/fb-team-photo_uwrzwc.jpg
+poster: /images/fb-team-photo.jpg
 awards: []
 team: []
 ---
@@ -26,7 +26,7 @@ With 40 receding in the rearview mirror, Elizabeth Ford, mother of two, gets a c
 
 Surprise! I am ELIZABETH FORD. Rather she was a version of me at 40 when I was on the summit of a Vermont mountain, wearing skis for the first time in years, and was terrified. This went beyond the fear that I was too rusty to get down the mountain, that I would break all my bones and freeze to death. This was a new fear. An emotional fear. From that snowy summit I saw my future - it wasn’t the future I wanted.
 
-![](/images/road_pfgvqr.jpg)
+![](/images/car.jpg)
 
 Soon after making it down (nothing broken except for my ego) I re-committed to my writing, directing and nearly ten years later WELCOME TO THE FISHBOWL is ready to be realized. It’s the story of a journey to the ESSENTIAL SELF, the shedding of the image that others have of us.
 
@@ -38,6 +38,6 @@ There’s no speed limit when you’re trying to put yourself on the map.
 
 > ...it's the tale of a woman who becomes the PROTAGONIST of her own story.
 
-![](/images/car_c1ghvk.jpg)
+![](/images/road.jpg)
 
-![](/images/car-on-road_vubnjk.jpg)
+![](/images/car-on-road.jpg)
