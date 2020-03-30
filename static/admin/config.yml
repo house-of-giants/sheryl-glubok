@@ -6,6 +6,12 @@ media_library:
   config:
     cloud_name: houseofgiants
     api_key: 373948418376991
+    default_transformations:
+      - fetch_format: auto
+        width: auto
+        quality: auto
+        crop: fill
+        gravity: face:auto
 public_folder: "/images"
 slug:
   encoding: "ascii"
