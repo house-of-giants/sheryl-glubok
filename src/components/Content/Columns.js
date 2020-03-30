@@ -124,6 +124,11 @@ const StyledColumns = styled.div`
 	& img {
 		object-fit: cover;
 		width: 100%;
+
+		&.poster {
+			object-fit: contain;
+			max-height: 382px;
+		}
 	}
 `
 
