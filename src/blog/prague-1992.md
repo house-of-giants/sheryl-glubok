@@ -2,8 +2,7 @@
 layout: blog
 title: Prague 1992
 date: '2016-07-03 08:25'
-thumbnail: >-
-  https://res.cloudinary.com/houseofgiants/image/upload/v1585582052/Blog/prague-89_t7g99s.jpg
+thumbnail: /images/prague-89.jpg
 ---
 It's hard to believe it's been nearly 24 years since I landed in Prague full of that special hubris reserved for the young. I was there to study at FAMU, the world famous film school (or at least famous for those who knew Eastern European cinema). This was not the first time I'd been to Prague. I'd gone three years before, just months before the Velvet Revolution and was already under its spell. I knew I'd be back, but I had no idea then, at 18, about to head off to college, that I would return to make a film.
 

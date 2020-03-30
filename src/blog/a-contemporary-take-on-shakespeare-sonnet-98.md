@@ -2,8 +2,7 @@
 layout: blog
 title: A Contemporary Take on Shakespeare Sonnet 98
 date: '2016-09-15 15:16'
-thumbnail: >-
-  https://res.cloudinary.com/houseofgiants/image/upload/v1585582021/Blog/sonnet-98-1_kocfwc.jpg
+thumbnail: /images/sonnet-98-1.jpg
 ---
 Back in February, Maggy Stacy and I were having coffee and decided to make a film together. Something short, experimental, to have fun and stretch our creative muscles. She said, "I have this Shakespeare sonnet I'm doing for John Moore's Denver Sonnets Project. Wanna check it out? Oh and I think we should do something unexpected, like shoot it in a nightclub."
 

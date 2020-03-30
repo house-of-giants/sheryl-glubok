@@ -2,8 +2,7 @@
 layout: film
 title: Thaw
 vimeo_url: '101800925'
-thumbnail: >-
-  https://res.cloudinary.com/houseofgiants/image/upload/v1585582361/Film/thaw-2_xn6if4.jpg
+thumbnail: /images/thaw.jpg
 release_date: 'November, 2014'
 in_production: false
 runtime: 10
@@ -19,12 +18,9 @@ starring:
   - Lowell Thompson
 poster: ''
 awards:
-  - logo: >-
-      https://res.cloudinary.com/houseofgiants/image/upload/v1585582186/Blog/THAW_tpfq29.jpg
-  - logo: >-
-      https://res.cloudinary.com/houseofgiants/image/upload/v1585582094/Blog/middlebury_new_filmmakers_festival_2015_splkaa.png
-  - logo: >-
-      https://res.cloudinary.com/houseofgiants/image/upload/v1585582242/Blog/VTIFF_mfq77j.png
+  - logo: /images/THAW.jpeg
+  - logo: /images/middlebury new filmmakers festival 2015.png
+  - logo: /images/VTIFF.png
 pullquote: >-
   Human speech is like a cracked kettle on which we tap crude rhythms for bears
   to dance to, while we long to make music that will melt the stars.
