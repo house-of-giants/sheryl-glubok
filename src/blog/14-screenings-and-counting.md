@@ -2,8 +2,7 @@
 layout: blog
 title: 14 Screenings and Counting!
 date: '2019-11-29 17:31'
-thumbnail: >-
-  https://res.cloudinary.com/houseofgiants/image/upload/q_auto:good/v1585581868/Blog/lnr-walkietalkie_woc4nn.jpg
+thumbnail: /images/lnr-walkietalkie.jpg
 ---
 Have we been madly working to get Lily ‘N’ Rose to big, beautiful 5:1 Surround Sound theaters near you! We’re pleased to be going on our 10th screening this Saturday, February 23rd at The Bug Theater in Denver. This may be our last hometown screening so join us if you can! 8pm - Tickets [here](https://www.facebook.com/events/775867979439113/?event_time_id=775868002772444?ti=icl).
 
