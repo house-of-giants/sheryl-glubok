@@ -2,8 +2,7 @@
 layout: blog
 title: Patricia Arquette is my hero
 date: '2015-03-03 07:58'
-thumbnail: >-
-  https://res.cloudinary.com/houseofgiants/image/upload/c_fill,f_auto,g_face:auto,q_auto,w_auto/v1585582120/Blog/patricia-arquette_d6kjdv.jpg
+thumbnail: /images/patricia-arquette_d6kjdv.jpg
 ---
 Patricia Arquette's acceptance speeches were hands-down the highlights of the Golden Globes and Oscars. First, let's not forget what won her those moments: her stellar performance in BOYHOOD. She and writer/director Richard Linklater showed us a woman not just aging, but maturing. It was revolutionary.
 
