@@ -7,12 +7,16 @@ intro: >-
   themselves too seriously. We’re grungey. We’re not boomers. We may be small in
   number, but we’re also not ready to fade off into the sunset. I’m here to make
   my mark.
-intro_image: /images/sheryl-headshot.jpg
+intro_image: >-
+  https://res.cloudinary.com/houseofgiants/image/upload/v1585581364/sheryl-headshot_hs5qly.jpg
 button_label: ''
 button_link: ''
-column_one_img: /images/about-1.jpg
-column_two_img: /images/about-2.jpg
-column_three_img: /images/about-3.jpg
+column_one_img: >-
+  https://res.cloudinary.com/houseofgiants/image/upload/v1585581483/about-1_zc0akw.jpg
+column_two_img: >-
+  https://res.cloudinary.com/houseofgiants/image/upload/v1585581492/about-2_tfbaj9.jpg
+column_three_img: >-
+  https://res.cloudinary.com/houseofgiants/image/upload/v1585581501/about-3_ybaeec.jpg
 home_body: >-
   Sheryl is an award-winning writer, director and producer based in Denver. She
   was born in Colorado, grew up in Arkansas, went to college in Northern
@@ -27,7 +31,7 @@ At 13, on the day I became a Bat Mitzvah in front of an enormous congregation of
 
 I think it’s one of my more remarkable traits, the ability to pick myself up and get on with things.
 
-![](/images/lily-n-rose-3.jpg)
+![](https://res.cloudinary.com/houseofgiants/image/upload/v1585581417/lily-n-rose-3_meelwt.jpg)
 
 Sophomore year at college, I got super sick with mono. No doubt one of the reasons was because I was taking an insane course load. I hadn’t grown up in Little Rock, Arkansas to get all the way to Stanford not to take all the classes I could. I wanted to understand one simple thing: why does war exist? I was a child of the 80s and we were beginning to process Vietnam through our movies. Oliver Stone’s PLATOON and Stanley Kubrick’s FULL METAL JACKET had made huge impressions on me. So I studied International Relations and learned from many of those on the front lines of American foreign policy: Condoleezza Rice, George Schultz, Stephen Krasner. It was literally making me sick. So I stopped out, took incompletes and went home to Little Rock to heal. It was there that I decided I didn’t want to be part of the war-perpetuating system. I want to be part of a creative life of filmmakers who make us think. Not tell us what to think (that’s fascist) but get us to think, ideally, before we act and maybe just maybe change our lives.
 
@@ -43,7 +47,7 @@ It took twenty years to make my second film. Why you may wonder? One reason was 
 
 So I decided to focus on writing since I could do that for free, and follow my father's other piece of advice: get a job! So I did, as an executive recruiter in the Bay Area and learned the business ropes. This was ‘99 when the Internet was blowing up. I was really good at recruiting. I can talk to anyone about anything, and I’m good at getting folks to talk to me. 
 
-![](/images/lily-n-rose-3.jpg)
+![](https://res.cloudinary.com/houseofgiants/image/upload/v1585581417/lily-n-rose-3_meelwt.jpg)
 
 I had no idea how well that would serve me, but it did. I’ve been able to support myself financially while also completing my MFA in fiction, getting married, having children, teaching screenwriting, and making my other short films.
 
@@ -61,4 +65,4 @@ That’s what FISHBOWL is about.
 
 That’s what my life is about.
 
-![](/images/road.jpg)
+![](https://res.cloudinary.com/houseofgiants/image/upload/v1585581457/road_pfgvqr.jpg)
