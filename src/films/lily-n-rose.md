@@ -2,7 +2,8 @@
 layout: film
 title: Lily 'N' Rose
 vimeo_url: '283566827'
-thumbnail: /images/lily-n-rose.jpg
+thumbnail: >-
+  https://res.cloudinary.com/houseofgiants/image/upload/v1585582476/Film/lily-n-rose_xudu3x.jpg
 release_date: 'April 14, 2018'
 in_production: false
 runtime: 13
@@ -20,23 +21,26 @@ starring:
   - Aicha Bleers
   - Grace Dotson
   - Maggy Stacy
-poster: /images/lnr-poster-27x40-revised-oct-2019.jpg
+poster: >-
+  https://res.cloudinary.com/houseofgiants/image/upload/v1585581893/Blog/lily-n-rose-poster_w0bm0l.jpg
 awards:
-  - logo: /images/w-f-laurels.png
-  - logo: /images/female-eye-laurel.jpg
-  - logo: /images/official-selection-laurel_white.png
-  - logo: /images/THAW.jpeg
-  - logo: /images/THAW.jpeg
-  - logo: /images/THAW.jpeg
+  - logo: >-
+      https://res.cloudinary.com/houseofgiants/image/upload/v1585582632/Film/fff_laurel_2019_official_selection_flaqfm.png
+  - logo: >-
+      https://res.cloudinary.com/houseofgiants/image/upload/v1585582646/Film/female-eye-laurel_dnjuod.jpg
+  - logo: >-
+      https://res.cloudinary.com/houseofgiants/image/upload/v1585582670/Film/official-selection-laurel_white_acxfk7.png
+  - logo: >-
+      https://res.cloudinary.com/houseofgiants/image/upload/v1585582186/Blog/THAW_tpfq29.jpg
 team: []
 ---
 Having found a great filmmaking team through SONNET 98, I felt ready to tackle my most ambitious project yet. I’d written this short script in 2011 just for fun. I had no expectations I would ever make it. I thought of myself as a writer then, directing was something I had wanted to do from the beginning, but had gotten lost on the way. My new friend Jessica Ticktin and I had bonded over being writers and mothers of young children and thought it would be fun to have coffee once a week and make up a story. It was! 
 
 I loved this script of first best friends growing apart. That first heartbreak is so palpable and one Jessica and I both remembered with such clarity nearly 30 years later. I wanted LNR to be done professionally (paying people!) and on the scale of a feature meaning: we’d have a proper budget, the best cast and crew we could attract, and all the departments from composer to colorist.
 
-![](/images/lily-n-rose-0.jpg)
+![](https://res.cloudinary.com/houseofgiants/image/upload/v1585582543/Film/lily-n-rose-0_u0xcnj.jpg)
 
-![](/images/lily-n-rose-1.jpg)
+![](https://res.cloudinary.com/houseofgiants/image/upload/v1585582552/Film/lily-n-rose-1_bu7vsf.jpg)
 
 I knew we had something special just making our pitch video for the Seed & Spark campaign. It helped us create a dedicated community that is still with us today. Check it out [here](https://vimeo.com/214587886) along with a bit of 80s nostalgia care of [5280s.](http://the80sareawesome.com/)
 
@@ -44,7 +48,7 @@ I knew we had something special just making our pitch video for the Seed & Spark
 
 Our young teen cast of Marina Leo, Aicha Bleers, Grace Dotson, Eliza Disbrow, and Tessa Maruyama give me hope that all will be well in this world as they grow up more self-aware and empowered than my generation. To work with Maggy Stacy again who embodied Lily’s grown-up self (literally or figuratively, your choice ;) was a joy. As was working with the brilliant cinematographer [Johanna Coelho](https://www.johannacoelho.com/work). That Alexa Mini with Vintage Cooke lenses were worth all those pennies.
 
-![](/images/lily-n-rose-2.jpg)
+![](https://res.cloudinary.com/houseofgiants/image/upload/v1585582570/Film/lily-n-rose-2_yibsud.jpg)
 
 So was writing the 80s throwback *Steel Heart* with Neil Lyons, Reed Fox, and Megan Crooks of Denver’s own music collective [Moon Magnet](https://www.moonmagnetmusic.com/). There’s such amazing talent here in Denver, I love connecting with our creative community.
 
@@ -52,6 +56,6 @@ Speaking of community, Paonia, Colorado rocked. They were the consummate hosts a
 
 Visit www.lilynrosefilm.com for more info on cast, crew, and BTS.
 
-![](/images/lily-n-rose-3.jpg)
+![](https://res.cloudinary.com/houseofgiants/image/upload/v1585581417/lily-n-rose-3_meelwt.jpg)
 
 > There’s such amazing talent here in Denver, I love connecting with our creative community!
