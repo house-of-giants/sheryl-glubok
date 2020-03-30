@@ -2,7 +2,8 @@
 layout: film
 title: Alexia
 vimeo_url: '168465882'
-thumbnail: /images/alexia.jpg
+thumbnail: >-
+  https://res.cloudinary.com/houseofgiants/image/upload/v1585582322/Film/alexia_caeedy.jpg
 release_date: '1993'
 in_production: false
 runtime: 12
