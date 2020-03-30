@@ -2,7 +2,8 @@
 layout: blog
 title: Starz Denver Film Festival adds THAW to CO Filmmakers' Lineup
 date: '2014-10-30 17:55'
-thumbnail: /images/THAW.jpeg
+thumbnail: >-
+  https://res.cloudinary.com/houseofgiants/image/upload/v1585582186/Blog/THAW_tpfq29.jpg
 ---
 [Watch Trailer](https://vimeo.com/106204915)
 
