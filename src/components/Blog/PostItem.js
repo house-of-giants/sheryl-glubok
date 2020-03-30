@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-import { formatDateString, formatDateISO } from '../../utils/formatDate'
+import { formatDateString } from '../../utils/formatDate'
 
 import StyledPostItem from './StyledPostItem'
 
@@ -10,7 +10,7 @@ const PostItem = ({ post, variants, i }) => {
 	const { date, thumbnail, title } = post.frontmatter
 	const { slug } = post.fields
 	const dateString = formatDateString( date )
-	const dateISO = formatDateISO( date )
+	const dateISO = new Date( date.replace( ' ', 'T') + 'Z' )
 	const thumb = thumbnail ? thumbnail : 'https://source.unsplash.com/user/claudiotesta/350x368'
 
 	return(
