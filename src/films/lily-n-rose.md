@@ -38,7 +38,7 @@ Having found a great filmmaking team through SONNET 98, I felt ready to tackle m
 
 I loved this script of first best friends growing apart. That first heartbreak is so palpable and one Jessica and I both remembered with such clarity nearly 30 years later. I wanted LNR to be done professionally (paying people!) and on the scale of a feature meaning: we’d have a proper budget, the best cast and crew we could attract, and all the departments from composer to colorist.
 
-![](/images/lily-n-rose-0.jpg)
+![](/images/lnr-betrayed.jpg)
 
 ![](/images/lily-n-rose-1.jpg)
 
