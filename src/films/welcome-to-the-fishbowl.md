@@ -20,7 +20,7 @@ poster: /images/donald-n-sheryl.jpg
 awards: []
 team: []
 ---
-FEATURE FILM to be shot in COLORADO 2020 #COFilm
+FEATURE FILM shooting in COLORADO 2020 #COFilm
 
 With 40 receding in the rearview mirror, Elizabeth Ford, mother of two, gets a career-making opportunity. All she has to do is chaperone the manic, narcissistic literary legend, Storm Grandquist, 200 miles to an awards ceremony in Telluride. But he has another plot up his sleeve.
 
