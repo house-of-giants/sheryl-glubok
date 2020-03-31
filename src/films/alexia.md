@@ -13,8 +13,8 @@ directed_by:
 produced_by: []
 starring:
   - Alexia Stresi
-  - Jiri Menzel
-  - Jiri Steffl
+  - Jiří Menzel
+  - Jiří Steffl
 poster: ''
 awards: []
 team: []
