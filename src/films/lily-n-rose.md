@@ -47,7 +47,7 @@ So was writing the 80s throwback *Steel Heart* with Neil Lyons, Reed Fox, and Me
 
 Speaking of community, Paonia, Colorado rocked. They were the consummate hosts as our film crew who came from all over the state as well as LA and Boston. We planted ourselves there for a week and enjoyed every minute. Did you know we make wine in Colorado? They do in Paonia!
 
-Visit www.lilynrosefilm.com for more info on cast, crew, and BTS.
+Visit [www.lilynrosefilm.com](https://www.lilynrosefilm.com/) for more info on cast, crew, and BTS.
 
 ![](/images/lily-n-rose-3.jpg)
 
