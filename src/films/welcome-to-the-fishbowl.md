@@ -38,6 +38,6 @@ There’s no speed limit when you’re trying to put yourself on the map.
 
 > ...it's the tale of a woman who becomes the PROTAGONIST of her own story.
 
-![](/images/car.jpg)
+![](/images/maisel-1.jpg)
 
 ![](/images/car-on-road.jpg)
