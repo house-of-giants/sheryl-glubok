@@ -46,9 +46,11 @@ It took twenty years to make my second film. Why? One reason was that my father 
 
 So I decided to focus on writing since I could do that for free, and follow my father's other piece of advice: get a job! And next thing I knew, I was an executive recruiter in the Bay Area - learning the business ropes. This was ‘99 when Internet 1.0 was blowing up. I was really good at recruiting. I can talk to anyone about anything, and I’m good at getting folks to talk to me. I had no idea how well that would serve me, but it did. I’ve been able to support myself financially while also completing my MFA in fiction, getting married, having children, teaching screenwriting, and making my other short films.
 
+See how much I don’t quit? 
+
 ![](/images/fb-team-photo.jpg)
 
-See how much I don’t quit? Here’s another example. 
+Here’s another example. 
 
 Donald Rae and I started writing the feature script WE'LL ALWAYS HAVE PARIS in 2011. We've picked it up and put it down many times over the last decade. Each time we returned to it, it'd become more and more personal, but it never quite worked. Then last year, 2019, I finally figured out what the story was trying to say to me.
 
