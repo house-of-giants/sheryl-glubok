@@ -34,19 +34,17 @@ Sophomore year at college, I got mono. Severe mono. No doubt partly because of m
 
 > I think it’s one of my more remarkable traits, the ability to pick myself up and get on with things.
 
-In the early 90s, Stanford had no film program, and I was very tempted to bail on college. But I knew that would just kill my parents. And I believe in finishing what I start. So I went back to school and proceeded to finish my degree in four quarters straight leaving only a required semester abroad.
+Stanford had no film program then, and I was very tempted to bail on college. But I knew that would just kill my parents. And I finish what I start. So I went back to school and proceeded to finish my degree in four quarters straight leaving only a required semester abroad.
 
-This is how I got to Prague. I saw a flyer in the quad from American University offering a study abroad semester at FAMU. I went, ready to leave my college days behind and see if this film dream I’d had one feverish night during my mono recovery was for real.
+Which is how I got to Prague. I saw a flyer in the quad from American University offering a study abroad semester at FAMU. I went, ready to see if this film dream I’d had one feverish night during my mono recovery was for real.
 
-I’ll let my first film, ALEXIA, speak for itself. Bottom line, I’d never been happier in my life. It felt like a total marriage of my right and left brain, and I’ve been pursuing this dream of writing - directing ever since. 
+I’ll let my first film, ALEXIA, speak for itself. Bottom line, I’d never been happier in my life. It felt like a total marriage of my right and left brain, and I’ve been pursuing this dream of writing/directing ever since.
 
-It took twenty years to make my second film. Why you may wonder? One reason was that my father said never go into debt to make a movie because it’s a terrible investment. He was a finance professor, so he knew what he was talking about. Another was that I didn't see myself reflected in the pantheon of the American Indie film movement that was taking off. I wasn’t Tarantino, Soderbergh, Rodriguez or Linklater. 
+It took twenty years to make my second film. Why? One reason was that my father said never go into debt to make a movie because it’s a terrible investment. He was a finance professor, so he knew what he was talking about. Another was that I didn't see myself reflected in the pantheon of the American Indie film movement that was taking off. I wasn’t Tarantino, Soderbergh, Rodriguez or Linklater. 
 
-So I decided to focus on writing since I could do that for free, and follow my father's other piece of advice: get a job! So I did, as an executive recruiter in the Bay Area and learned the business ropes. This was ‘99 when the Internet was blowing up. I was really good at recruiting. I can talk to anyone about anything, and I’m good at getting folks to talk to me. 
+So I decided to focus on writing since I could do that for free, and follow my father's other piece of advice: get a job! And next thing I knew, I was an executive recruiter in the Bay Area - learning the business ropes. This was ‘99 when Internet 1.0 was blowing up. I was really good at recruiting. I can talk to anyone about anything, and I’m good at getting folks to talk to me. I had no idea how well that would serve me, but it did. I’ve been able to support myself financially while also completing my MFA in fiction, getting married, having children, teaching screenwriting, and making my other short films.
 
 ![](/images/fb-team-photo.jpg)
-
-I had no idea how well that would serve me, but it did. I’ve been able to support myself financially while also completing my MFA in fiction, getting married, having children, teaching screenwriting, and making my other short films.
 
 Do you see how much I don’t quit? Here’s another example. 
 
