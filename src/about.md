@@ -46,9 +46,9 @@ So I decided to focus on writing since I could do that for free, and follow my f
 
 ![](/images/fb-team-photo.jpg)
 
-Do you see how much I don’t quit? Here’s another example. 
+See how much I don’t quit? Here’s another example. 
 
-Donald Rae and I started writing the feature script WELCOME TO THE FISHBOWL in 2011 (it was called “We’ll Always Have Paris” back then). We have picked it up and put it down many times over the last decade. Each time we return to it, it has become more and more personal. Then last year, 2019, I finally figured out what the story was trying to say to me.
+Donald Rae and I started writing the feature script WE'LL ALWAYS HAVE PARIS in 2011. We've picked it up and put it down many times over the last decade. Each time we returned to it, it'd become more and more personal, but it never quite worked. Then last year, 2019, I finally figured out what the story was trying to say to me.
 
 Does a fish know it’s in a bowl? Who can say? But in middle age it’s easy to forget how to take risks, to believe in change and opportunity. So this script is about saying, "Fishbowl I see you and I’m not going to let you stop me." Because we aren’t actually fish, these walls are only in our minds. 
 
