@@ -22,9 +22,9 @@ home_body: >-
   self-understanding.
 home_button_label: ''
 ---
-Instead, I’d like to share a few moments that have shaped my life and gotten me here. They may not be pretty, but they’re mine, and I think reveal my character better than this degree or that award. We all know making films is a big ol' leap into the arms of the universe. To make great work, and that’s always been my goal, we have to really trust each other. So if you want to know who I am - read on.
+Instead, I’d like to share a few moments that have shaped my life and gotten me here. They may not be pretty, but they’re mine and reveal my character better than a degree or an award. We all know making movies is a big leap into the arms of the universe. To make great work, which is always my goal, we have to really trust each other. So if you want to know who I am - read on.
 
-At 13, on the day I became a Bat Mitzvah in front of an enormous congregation of my family and friends, I chanted Torah, gave my speech, and then as the Rabbi was blessing me, I barfed. Thankfully, not on the Rabbi (though his stale pipe-smoking breath made it tempting) but I mean projectile puke that went across a large swath of the bimah. I ran off in tears and my mother found me in the bathroom sobbing. She looked me in the eyes with compassion and said, I am so proud of you. She shored me up, helped me get the vomit off my blue taffeta dress, and I went right back out there, embarrassed but determined not to let this humiliate me, or stop me.
+At 13, on the day I became a Bat Mitzvah in front of an enormous congregation of my family and friends, IchantedTorah, gave my speech, and then as the Rabbi was blessing me, I barfed. I mean projectile puke that went across a large swath of the bimah. I ran off in tears and my mother found me in the bathroom sobbing. She looked me in the eyes with compassion and said, I am so proud of you. Sheshoredme up. Then shehelped me get the vomit off my blue taffeta dress, and I went right back out there, embarrassed but determined not to let this stop me.
 
 I think it’s one of my more remarkable traits, the ability to pick myself up and get on with things.
 
