@@ -1,12 +1,13 @@
 ---
 layout: about
 intro: >-
-  Ugh, bios! It is so hard to convey in a few hundred words who I am. I’m not
-  some list of accomplishments that check off this box or that. I’m a Gen X’er
-  through and through, and we have a severe aversion to people who take
-  themselves too seriously. We’re grungey. We’re not boomers. We may be small in
-  number, but we’re also not ready to fade off into the sunset. I’m here to make
-  my mark.
+  Ugh, bios! I've got as many of these as I do passwords. It's always hard to
+  convey self in a hundred words. I’m not a perfectly candid photo, or a list of
+  accomplishments. I’m a Gen X’er through and through, and we have a severe
+  aversion to people who take themselves too seriously. We lived through the
+  "end of history." Then we watched history insist that it couldn't end. We’re
+  grungy. Skeptical. And we’re not ready to fade off into a sunset. So, here I
+  am - making my mark and writing a bio.
 intro_image: /images/sheryl-headshot.jpg
 button_label: ''
 button_link: ''
