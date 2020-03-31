@@ -17,7 +17,7 @@ produced_by:
   - Wesley Matheny
 starring:
   - Marina Leo
-  - Aicha Bleers
+  - Aïcha Bleers
   - Grace Dotson
   - Maggy Stacy
 poster: /images/lily-n-rose-poster.jpg
@@ -46,7 +46,7 @@ I knew we had something special just making our pitch video for the Seed & Spark
 
 > I feel like this is the film where it all came together: desire, craft, resources, and belief.
 
-Our young teen cast of Marina Leo, Aicha Bleers, Grace Dotson, Eliza Disbrow, and Tessa Maruyama give me hope that all will be well in this world as they grow up more self-aware and empowered than my generation. To work with Maggy Stacy again who embodied Lily’s grown-up self (literally or figuratively, your choice ;) was a joy. As was working with the brilliant cinematographer [Johanna Coelho](https://www.johannacoelho.com/work). That Alexa Mini with Vintage Cooke lenses were worth all those pennies.
+Our young teen cast of Marina Leo, Aïcha Bleers, Grace Dotson, Eliza Disbrow, and Tessa Maruyama give me hope that all will be well in this world as they grow up more self-aware and empowered than my generation. To work with Maggy Stacy again who embodied Lily’s grown-up self (literally or figuratively, your choice ;) was a joy. As was working with the brilliant cinematographer [Johanna Coelho](https://www.johannacoelho.com/work). That Alexa Mini with Vintage Cooke lenses were worth all those pennies.
 
 ![](/images/lily-n-rose-2.jpg)
 
