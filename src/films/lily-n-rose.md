@@ -31,6 +31,7 @@ awards:
   - logo: /images/officialselection-kerryfilmfestival-2018-copy.png
   - logo: /images/vtiff-laurel_official_selection-white.png
   - logo: /images/female-eye-laurel-wht-.png
+  - logo: /images/fff2_laurel_2019_official_selection.png
 team: []
 ---
 Having found a great filmmaking team through SONNET 98, I felt ready to tackle my most ambitious project yet. I’d written this short script in 2011 just for fun. I had no expectations I would ever make it. I thought of myself as a writer then, directing was something I had wanted to do from the beginning, but had gotten lost on the way. My new friend Jessica Ticktin and I had bonded over being writers and mothers of young children and thought it would be fun to have coffee once a week and make up a story. It was! 
