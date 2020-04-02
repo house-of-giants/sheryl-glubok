@@ -35,7 +35,7 @@ Does a fish know it’s in a bowl? Who can say? But in middle age it’s easy to
 
 We’re ready to make this film.
 
-It’s time for a 50 YO woman to helm a movie about becoming the protagonist of her own story. Even though she’s married, even though she has children. We need a society that allows each of us to give our gifts no matter our age, our pasts, or whether we’ve been traditionally allowed to hold such power.
+It’s time for a 40-something woman to helm a movie about becoming the protagonist of her own story. Even though she’s married, even though she has children. We need a society that allows each of us to give our gifts no matter our age, our pasts, or whether we’ve been traditionally allowed to hold such power.
 
 That’s what FISHBOWL is about.
 
@@ -43,12 +43,6 @@ That’s what I’m about.
 
 > Fishbowl I see you and I'm not going to let you stop me.
 
-
-
-
-
 ![](/images/fb-team-photo.jpg "Fishbowl Producers Sterling Cook, Iana Dontcheva, Sheryl, and Co-Writer Donald Rae")
-
-
 
 ![]()
