@@ -31,6 +31,11 @@ team:
   - member_name: Donald Rae
     member_title: Co-Writer
     member_headshot: /images/donald-headshot.jpg
+    member_excerpt: >-
+      Donald is a former Scottish barrister now writer living in Denver,
+      Colorado. Having collaborated with Sheryl for nearly ten years on writing
+      and re-writing WELCOME TO THE FISHBOWL, he’s ready to see this story on
+      the screen.
   - member_name: Sterling Cook
     member_title: Producer
     member_headshot: /images/sterling.jpg
