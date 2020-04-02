@@ -22,6 +22,12 @@ team:
   - member_name: Iana Dontcheva
     member_title: Producer
     member_headshot: /images/iana.jpg
+    member_excerpt: >-
+      Sorbonne-educated and a mother of two, Iana has produced more than 20
+      films and has a lengthy track record of launching films at the world's
+      biggest festivals and securing broadcast and international theatrical
+      distribution. She is more driven than ever to elevate unsung voices and
+      help directors make their visions a reality.
   - member_name: Donald Rae
     member_title: Co-Writer
     member_headshot: /images/donald-headshot.jpg
