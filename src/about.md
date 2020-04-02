@@ -1,8 +1,8 @@
 ---
 layout: about
 intro: >-
-  Ugh, bios! I've got as many of these as I do passwords. It's always hard to
-  convey self in a hundred words. I’m not a perfectly candid photo, or a list of
+  Bios - I've got as many of these as I do passwords. It's always hard to convey
+  self in a hundred words. I’m not a perfectly candid photo, or a list of
   accomplishments. I’m a Gen X’er through and through, and we have a severe
   aversion to people who take themselves too seriously. We lived through the
   "end of history." Then we watched history insist that it couldn't end. We’re
