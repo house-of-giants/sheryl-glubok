@@ -47,7 +47,7 @@ That’s what I’m about.
 
 
 
-![](/images/fb-team-photo.jpg "Fishbowl Producers Sterling Cook, Iana Dontcheva, and Co-Writer Donald Rae")
+![](/images/fb-team-photo.jpg "Fishbowl Producers Sterling Cook, Iana Dontcheva, Sheryl, and Co-Writer Donald Rae")
 
 
 
