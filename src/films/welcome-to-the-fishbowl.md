@@ -38,7 +38,13 @@ team:
       the screen.
   - member_name: Sterling Cook
     member_title: Producer
-    member_headshot: /images/sterling.jpg
+    member_headshot: /images/sterling-2.jpg
+    member_excerpt: >-
+      Having come up in San Francisco’s film and commercial scene, Sterling is a
+      filmmaker now living in Denver, Colorado. In addition to comfortably
+      wearing many production hats (AD, Locations, UPM) he's also a kick-ass
+      crowdfunder. He's worked with Sheryl since 2016 and produced and ran
+      social media for LILY 'N' ROSE.
 ---
 FEATURE FILM shooting in COLORADO 2020 #COFilm
 
