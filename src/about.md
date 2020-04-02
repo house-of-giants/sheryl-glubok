@@ -35,9 +35,7 @@ So I stopped out, took incompletes and went home to Little Rock to heal. It was 
 
 > I think it’s one of my more remarkable traits, the ability to pick myself up and get on with things.
 
-Stanford had no film program then, and I was very tempted to bail on college. But I knew that would kill my parents. And I finish what I start. So I went back to school and proceeded to finish my degree in four quarters straight leaving only a required semester abroad.
-
-Which is how I got to Prague. I saw a flyer in the quad from American University offering a study abroad semester at FAMU. I went, ready to see if this film dream I’d had one feverish night during my mono recovery was for real.
+Stanford had no film program then, and I was very tempted to bail on college. But I knew that would kill my parents. And I finish what I start. So I went back to school and proceeded to finish my degree in four quarters straight leaving only a required semester abroad. Which is how I got to Prague. I saw a flyer in the quad from American University offering a study abroad semester at FAMU. I went, ready to see if this film dream I’d had one feverish night during my mono recovery was for real.
 
 I’ll let my first film, ALEXIA, speak for itself. Bottom line, I’d never been happier in my life. It felt like a total marriage of my right and left brain, and I’ve been pursuing this dream of writing/directing ever since.
 
