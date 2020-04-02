@@ -51,7 +51,7 @@ Here’s another example.
 
 Donald Rae and I started writing the feature script WE'LL ALWAYS HAVE PARIS in 2011. We've picked it up and put it down many times over the last decade. Each time we returned to it, it'd become more and more personal, but it never quite worked. Then last year, 2019, I finally figured out what the story was trying to say to me.
 
-Does a fish know it’s in a bowl? Who can say? But in middle age it’s easy to forget how to take risks, to believe in change and opportunity. So this script is about saying, "Fishbowl I see you and I’m not going to let you stop me." Because we aren’t actually fish, these walls are only in our minds. 
+Does a fish know it’s in a bowl? Who can say? But in middle age it’s easy to forget how to take risks, to believe in change and opportunity. So this script is about saying, "Fishbowl I see you and I’m not going to let you stop me." Because we're not actually fish, these walls are only in our minds. 
 
 We’re ready to make this film.
 
