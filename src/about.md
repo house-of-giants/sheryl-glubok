@@ -21,7 +21,7 @@ home_button_label: ''
 ---
 There is a twenty year gap between my first two films. Why? One reason was that my father said never go into debt to make a movie because it’s a terrible investment. He was a finance professor, so he knew what he was talking about. Another was that when I was coming up in the 90s, I didn't see myself reflected in the pantheon of the American Indie film movement. I wasn’t Tarantino, Soderbergh, Rodriguez or Linklater.
 
-So I decided to focus on writing since I could do that for free, and follow my father's other piece of advice: get a job! I left LA for the Bay Area,  became an executive recruiter, and learned the business ropes. This was ‘99 when Internet 1.0 was blowing up. I was good at recruiting. I can talk to anyone about anything, and I’m good at getting folks to talk to me.
+So I decided to focus on writing since I could do that for free, and follow my father's other piece of advice: get a job! I left LA for the Bay Area,  became an executive recruiter, and learned the business ropes. This was ‘99 when Internet 1.0 was blowing up. I was good at recruiting. I can talk to anyone about anything, and folks like to talk to me.
 
 I had no idea how well that would serve me, but it did. I’ve been able to support myself financially while also completing my MFA in fiction, getting married, having children, teaching screenwriting, and making my other short films.
 
