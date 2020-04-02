@@ -33,15 +33,13 @@ In 2011, Donald Rae and I started writing a feature script called "We'll Always 
 
 Does a fish know it’s in a bowl? Who can say? But in middle age it’s easy to forget how to take risks, to believe in change and opportunity. So this script is about saying, "Fishbowl I see you and I’m not going to let you stop me." Because these walls are only in our minds. And on the next pass the words just flooded out - a cliche, I know - and the script became WELCOME TO THE FISHBOWL.
 
-We’re ready to make this film.
-
 It’s time for a 40-something woman to helm a movie about becoming the protagonist of her own story. Even though she’s married, even though she has children. We need a society that allows each of us to give our gifts no matter our age, our pasts, or whether we’ve been traditionally allowed to hold such power.
 
 That’s what FISHBOWL is about.
 
 That’s what I’m about.
 
-> Fishbowl I see you and I'm not going to let you stop me.
+> We’re ready to make this film!
 
 ![](/images/fb-team-photo.jpg "Fishbowl Producers Sterling Cook, Iana Dontcheva, Sheryl, and Co-Writer Donald Rae")
 
