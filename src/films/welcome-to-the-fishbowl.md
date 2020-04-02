@@ -22,6 +22,9 @@ team:
   - member_name: Iana Dontcheva
     member_title: Producer
     member_headshot: /images/iana.jpg
+  - member_name: Donald Rae
+    member_title: Co-Writer
+    member_headshot: /images/donald-headshot.jpg
 ---
 FEATURE FILM shooting in COLORADO 2020 #COFilm
 
