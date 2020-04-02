@@ -25,6 +25,9 @@ team:
   - member_name: Donald Rae
     member_title: Co-Writer
     member_headshot: /images/donald-headshot.jpg
+  - member_name: Sterling Cook
+    member_title: Producer
+    member_headshot: /images/sterling.jpg
 ---
 FEATURE FILM shooting in COLORADO 2020 #COFilm
 
