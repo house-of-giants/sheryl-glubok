@@ -19,7 +19,7 @@ home_body: >-
   identity, female agency, love, and self-understanding.
 home_button_label: ''
 ---
-There is a twenty year gap between my first two films. Why? One reason was that my father said never go into debt to make a movie because it’s a terrible investment. He was a finance professor, so he knew what he was talking about. Another was that I didn't see myself reflected in the pantheon of the American Indie film movement when I was coming up in the 90s. I wasn’t Tarantino, Soderbergh, Rodriguez or Linklater.
+There is a twenty year gap between my first two films. Why? One reason was that my father said never go into debt to make a movie because it’s a terrible investment. He was a finance professor, so he knew what he was talking about. Another was that when I was coming up in the 90s, I didn't see myself reflected in the pantheon of the American Indie film movement. I wasn’t Tarantino, Soderbergh, Rodriguez or Linklater.
 
 So I decided to focus on writing since I could do that for free, and follow my father's other piece of advice: get a job! I left LA for the Bay Area and became an executive recruiter - learning the business ropes. This was ‘99 when Internet 1.0 was blowing up. I was really good at recruiting. I can talk to anyone about anything, and I’m good at getting folks to talk to me.
 
