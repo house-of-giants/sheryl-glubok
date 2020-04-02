@@ -29,7 +29,7 @@ Now, onto my debut feature!
 
 ![](/images/lily-n-rose-3.jpg)
 
-In 2011, Donald Rae and I started writing a feature script called "We'll Always Have Paris." We've picked it up and put it down many times over the last decade. Each time we returned to it, it'd become more and more personal, but it never quite worked. Then last year, 2019, I finally figured out what the story was trying to say to me.
+In 2011, Donald Rae and I started writing a feature script called "We'll Always Have Paris." We've picked it up and put it down many times over the last decade. Each time we returned to it, it'd become more and more personal, but never quite worked. Then last year, 2019, I finally figured out what the story was trying to say to me.
 
 Does a fish know it’s in a bowl? Who can say? But in middle age it’s easy to forget how to take risks, to believe in change and opportunity. So this script is about saying, "Fishbowl I see you and I’m not going to let you stop me." Because these walls are only in our minds. And on the next pass the words just flooded out - a cliche, I know - and the script became WELCOME TO THE FISHBOWL.
 
