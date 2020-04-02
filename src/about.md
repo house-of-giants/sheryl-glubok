@@ -15,11 +15,10 @@ column_one_img: /images/about-1.jpg
 column_two_img: /images/about-2.jpg
 column_three_img: /images/about-3.jpg
 home_body: >-
-  Sheryl is an award-winning writer, director and producer based in Denver. She
-  was born in Colorado, grew up in Arkansas, went to college in Northern
-  California, studied film in Prague, got a MFA in Fiction in Vermont all the
-  while telling stories that center around identity, female agency, love, and
-  self-understanding.
+  I am an award-winning writer, director and producer based in Denver. I was
+  born in Colorado, grew up in Arkansas, studied film in Prague, and got my MFA
+  in Fiction in Vermont all the while telling stories that center around
+  identity, female agency, love, and self-understanding.
 home_button_label: ''
 ---
 Instead, I’d like to share a few moments that have shaped my life and gotten me here. They may not be pretty, but they’re mine and reveal my character better than a degree or an award. We all know making movies is a big leap into the arms of the universe. To make great work, which is always my goal, we have to really trust each other. So if you want to know who I am - read on.
