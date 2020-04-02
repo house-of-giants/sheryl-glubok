@@ -21,7 +21,7 @@ home_button_label: ''
 ---
 There is a twenty year gap between my first two films. Why? One reason was that my father said never go into debt to make a movie because it’s a terrible investment. He was a finance professor, so he knew what he was talking about. Another was that I didn't see myself reflected in the pantheon of the American Indie film movement when I was coming up in the 90s. I wasn’t Tarantino, Soderbergh, Rodriguez or Linklater.
 
-So I decided to focus on writing since I could do that for free, and follow my father's other piece of advice: get a job! And next thing I knew, I was an executive recruiter in the Bay Area - learning the business ropes. This was ‘99 when Internet 1.0 was blowing up. I was really good at recruiting. I can talk to anyone about anything, and I’m good at getting folks to talk to me.
+So I decided to focus on writing since I could do that for free, and follow my father's other piece of advice: get a job! I left LA for the Bay Area and became an executive recruiter - learning the business ropes. This was ‘99 when Internet 1.0 was blowing up. I was really good at recruiting. I can talk to anyone about anything, and I’m good at getting folks to talk to me.
 
 I had no idea how well that would serve me, but it did. I’ve been able to support myself financially while also completing my MFA in fiction, getting married, having children, teaching screenwriting, and making my other short films.
 
@@ -29,7 +29,7 @@ Now, onto my debut feature!
 
 ![](/images/lily-n-rose-3.jpg)
 
-Donald Rae and I started writing the feature script WE'LL ALWAYS HAVE PARIS in 2011. We've picked it up and put it down many times over the last decade. Each time we returned to it, it'd become more and more personal, but it never quite worked. Then last year, 2019, I finally figured out what the story was trying to say to me.
+Donald Rae and I started writing a feature script called "We'll Always Have Paris" in 2011. We've picked it up and put it down many times over the last decade. Each time we returned to it, it'd become more and more personal, but it never quite worked. Then last year, 2019, I finally figured out what the story was trying to say to me.
 
 Does a fish know it’s in a bowl? Who can say? But in middle age it’s easy to forget how to take risks, to believe in change and opportunity. So this script is about saying, "Fishbowl I see you and I’m not going to let you stop me." Because these walls are only in our minds. And on the next pass the words just flooded out - a cliche, I know - and the script became WELCOME TO THE FISHBOWL.
 
