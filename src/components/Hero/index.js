@@ -17,7 +17,7 @@ const Hero = () => (
 				<motion.div className="content -difference" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ delay: 1.7 }}>
 					<p aria-label="Writer, Director, Storyteller">
 						<span className="words" aria-hidden="true">
-							<span>Writ-<br />er,</span><span>Director,</span><span>S<br />t<br />o<br />ryteller</span>
+							<span>Writer,</span><span>Director,</span><span>S<br />t<br />o<br />ryteller</span>
 						</span>
 						<motion.span className="line" style={{ originX: 0.5, originY: 0 }} initial={{ scaleY: 0 }} animate={{ scaleY: 1 }} exit={{ scaleY: 0 }} transition={{ duration: 1.7, delay: 2.7 }} />
 					</p>
