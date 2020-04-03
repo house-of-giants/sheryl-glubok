@@ -40,10 +40,9 @@ team:
     member_headshot: /images/sterling-2.jpg
     member_excerpt: >-
       Having come up in San Francisco’s film and commercial scene, Sterling is
-      now based in Denver, Colorado. In addition to comfortably wearing many
-      production hats (AD, Locations, UPM) he's also a kick-ass crowdfunder.
-      He's worked with Sheryl since 2016 and produced and ran social media for
-      LILY 'N' ROSE.
+      now based in Denver. Comfortable wearing many production hats (AD, UPM,
+      locations) he's also a kick-ass crowdfunder. He's worked with Sheryl since
+      '16, producing and running social media for LILY 'N' ROSE.
 ---
 Feature Logline: With 40 receding in the rearview mirror, Elizabeth Ford, mother of two, gets a career-making opportunity. All she has to do is chaperone the manic, narcissistic literary legend, Storm Grandquist, 200 miles to an awards ceremony in Telluride. But he has another plot up his sleeve.
 
