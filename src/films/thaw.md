@@ -32,6 +32,4 @@ I love how Molly Walsh, who plays Maggy, lets her hair down. In real life, she w
 
 The Flaubert quote is from *Madame Bovary* which I’d read in high school and totally didn’t understand. When I read the novel a dozen years later during my MFA, I was floored. To me the quote voices the doubt we all feel as creators. At first we’re enamored with the possibility of our ambitions and the exciting newness of an idea. The reality during and after the struggle of creation is often much less.
 
-> I love working with actors.
-
 Still you gotta do it and remember the work doesn’t owe you anything. Oh and don’t forget the olives!
