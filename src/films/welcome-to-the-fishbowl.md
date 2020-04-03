@@ -16,7 +16,7 @@ produced_by:
   - Sterling Cook
 starring:
   - ''
-poster: /images/donald-n-sheryl.jpg
+poster: ''
 awards: []
 team:
   - member_name: Iana Dontcheva
