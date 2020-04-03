@@ -4,6 +4,8 @@ export const white = '#ffffff'
 export const bossanova = '#4c2954'
 export const cosmic = '#774175'
 export const chateau = '#a55ba0'
+export const highlight = '#c60d45';
+export const yellow = '#d1b372';
 export const revolver = '#281c3d'
 
 export const colors = {
@@ -12,6 +14,8 @@ export const colors = {
   white,
   bossanova,
   cosmic,
+  highlight,
+  yellow,
   revolver,
   chateau,
 }
