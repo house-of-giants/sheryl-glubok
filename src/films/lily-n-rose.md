@@ -34,7 +34,7 @@ awards:
   - logo: /images/fff2_laurel_2019_official_selection.png
 team: []
 ---
-In 2011, I wrote LILY 'N' ROSE for fun. I had no expectations I would ever make it. I thought of myself as a writer then, directing was something I had wanted to do from the beginning, but had gotten lost on the way. My new friend Jessica Ticktin and I had bonded over being writers and mothers of young children and thought it would be fun to have coffee once a week and make up a story. It was! 
+In 2011, I wrote LILY 'N' ROSE for fun. I had no expectations I would ever make it. I thought of myself as a writer then, directing was something I had wanted to do from the beginning, but had gotten lost on the way. My new friend Jessica Ticktin and I had bonded over being writers and mothers of young children and thought it would be fun to have coffee once a week and make up a story.
 
 I loved this script of first best friends growing apart. That first heartbreak is so palpable and one Jessica and I both remembered with such clarity nearly 30 years later. I wanted LNR to be done professionally (paying people!) and on the scale of a feature meaning: we’d have a proper budget, the best cast and crew we could attract, and all the departments from composer to colorist.
 
