@@ -45,9 +45,7 @@ team:
       He's worked with Sheryl since 2016 and produced and ran social media for
       LILY 'N' ROSE.
 ---
-FEATURE FILM shooting in COLORADO 2020 #COFilm
-
-With 40 receding in the rearview mirror, Elizabeth Ford, mother of two, gets a career-making opportunity. All she has to do is chaperone the manic, narcissistic literary legend, Storm Grandquist, 200 miles to an awards ceremony in Telluride. But he has another plot up his sleeve.
+Feature Logline: With 40 receding in the rearview mirror, Elizabeth Ford, mother of two, gets a career-making opportunity. All she has to do is chaperone the manic, narcissistic literary legend, Storm Grandquist, 200 miles to an awards ceremony in Telluride. But he has another plot up his sleeve.
 
 Surprise! I am ELIZABETH FORD. Rather she was a version of me at 40 when I was on the summit of a Vermont mountain, wearing skis for the first time in years, and was terrified. This went beyond the fear that I was too rusty to get down the mountain, that I would break all my bones and freeze to death. This was a new fear. An emotional fear. From that snowy summit I saw my future - it wasn’t the future I wanted.
 
