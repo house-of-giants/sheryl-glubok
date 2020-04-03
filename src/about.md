@@ -23,7 +23,7 @@ There is a twenty year gap between my first two films. Why? One reason was that 
 
 So I decided to focus on writing since I could do that for free, and follow my father's other piece of advice: get a job! I left LA for the Bay Area,  became an executive recruiter, and learned the business ropes. This was ‘99 when Internet 1.0 was blowing up. I was good at recruiting. I can talk to anyone about anything, and folks like to talk to me.
 
-I had no idea how well that would serve me, but it did. I’ve been able to support myself financially while also completing my MFA in fiction, getting married, having children, teaching screenwriting, and making my other short films.
+I had no idea how well that would serve me. I’ve been able to support myself financially while also completing my MFA in fiction, getting married, having children, teaching screenwriting, and making my other short films.
 
 Now, onto my debut feature!
 
