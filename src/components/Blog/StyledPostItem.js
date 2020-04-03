@@ -53,7 +53,7 @@ const StyledPostItem = styled(motion.article)`
 		padding-bottom: 0;
 
 		&::before {
-			background-color: ${colors.white};
+			background-color: ${colors.highlight};
 			border-radius: 5px;
 			content: "";
 			display: inline-block;

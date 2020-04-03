@@ -55,7 +55,7 @@ const StyledFilm = styled.div`
 			padding-bottom: 0;
 
 			&::before {
-				background-color: ${colors.white};
+				background-color: #8c758a;
 				border-radius: 5px;
 				content: "";
 				display: inline-block;

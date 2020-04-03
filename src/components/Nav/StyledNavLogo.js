@@ -3,16 +3,16 @@ import styled from 'styled-components'
 import { colors, mq } from '../../styles/base/variables'
 
 export const StyledNavLogo = styled.div`
+	mix-blend-mode: difference;
 	padding-bottom: 5rem;
 	position: sticky;
+	text-align: center;
 	top: 1.6rem;
 	z-index: 3;
-	mix-blend-mode: difference;
 
 	& svg {
-		display: block;
+		display: inline-block;
 		fill: ${colors.white};
-		margin-right: auto;
 		padding-left: 1rem;
 		max-height: 38px;
 		max-width: 192px;

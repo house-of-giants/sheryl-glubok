@@ -48,7 +48,7 @@ const StyledTeam = styled.div`
 	}
 
 	& .blurb {
-		font-size: 0.875rem;
+		font-size: 1.1rem;
 		margin: 0;
 	}
 `
