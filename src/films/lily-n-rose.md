@@ -20,7 +20,7 @@ starring:
   - Aïcha Bleers
   - Grace Dotson
   - Maggy Stacy
-poster: /images/lily-n-rose-poster.jpg
+poster: /images/lnr-poster-27x40-revised-oct-2019.jpg
 awards:
   - logo: /images/w-f-laurels.png
   - logo: /images/official-selection-laurel_white.png
