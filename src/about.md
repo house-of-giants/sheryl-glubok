@@ -6,7 +6,7 @@ intro: >-
   For the last twenty+ years I’ve been mining my broken heart, building my
   craft, learning to trust my voice, and believing when it seems impossible,
   that you can never give up on your dream.
-intro_image: /images/sheryl-headshot.jpg
+intro_image: /images/sheryl-headshot-2020.jpg
 button_label: ''
 button_link: ''
 column_one_img: /images/about-1.jpg
