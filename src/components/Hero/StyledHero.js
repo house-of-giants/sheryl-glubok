@@ -122,4 +122,10 @@ export const StyledHero = styled(motion.div)`
 			clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 		}
 	}
+
+	@-webkit-keyframes glitch-text {
+		0% {
+			transform: translate3d(calc(-1 * ${gapHor}),0,0) scale3d(-1,-1,1);
+		}
+	}
 `
