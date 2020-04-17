@@ -23,7 +23,7 @@ const Head = ({ pageMeta }) => {
 			<meta property="og:image" content={thumbnail} />
 
 			{/* <!-- Twitter --> */}
-			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:card" content="summary" />
 			<meta name="twitter:site" content={`${siteURL}`}  />
 			<meta name="twitter:title" content={`Sheryl Glubok | ${title}`} />
 			<meta name="twitter:description" content={`Sheryl Glubok | ${title}`} />
