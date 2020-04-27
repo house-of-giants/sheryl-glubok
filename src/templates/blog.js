@@ -8,6 +8,7 @@ import { formatDateString } from '../utils/formatDate'
 
 import NavLogo from '../components/Nav/NavLogo'
 import StyledSinglePost from '../components/Blog/StyledSinglePost'
+import SEO from '../components/SEO'
 
 import { StyledContainer } from '../styles/global/layout'
 import Layout from '../theme/layout'
@@ -37,6 +38,12 @@ export default function Post({ data }) {
 
 	return (
 		<Layout pageMeta={{ title, thumbnail }}>
+			 <SEO
+					title={post.frontmatter.title}
+					description={post.frontmatter.description || post.excerpt}
+					image={thumbnail}
+					pathname={'test'}
+				/>
 			<NavLogo />
 			<StyledContainer>
 				<StyledSinglePost variants={animPageDefault} initial="in" animate="normal" exit="out" itemScope itemType="https://schema.org/BlogPosting">
@@ -89,12 +96,19 @@ Post.propTypes = {
 
 export const pageQuery = graphql`
 	query BlogPostByPath($slug: String!) {
+		site {
+			siteMetadata {
+				title
+				author
+			}
+		}
 		markdownRemark(
 			fields: {
 				slug: { eq: $slug }
 			}
 			frontmatter: { layout: { eq: "blog" } }
 		) {
+			excerpt(pruneLength: 160)
 			html
 			frontmatter {
 				date
