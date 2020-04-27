@@ -14,18 +14,21 @@ const GlobalStyle = createGlobalStyle`
 
 const defaultMeta = {
 	title: 'Writer, Director, Storyteller',
-	thumbnail: '/social-image.png'
+	thumbnail: '/social-image.png',
 }
 
-const Layout = ({ pageMeta = defaultMeta, children }) => (
-	<div className='app'>
-		<GlobalStyle />
-		<Head pageMeta={pageMeta} />
-		<Nav />
-		{children}
-		<Footer />
-	</div>
-)
+const Layout = ({ pageMeta = defaultMeta, children, pathname }) => {
+	console.log(pathname);
+	return (
+		<div className='app'>
+			<GlobalStyle />
+			<Head pageMeta={pageMeta} pathname={pathname} />
+			<Nav />
+			{children}
+			<Footer />
+		</div>
+	)
+}
 
 Layout.propTypes = {
 	pageMeta: PropTypes.shape({
