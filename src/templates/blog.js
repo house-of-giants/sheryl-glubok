@@ -14,7 +14,7 @@ import { StyledContainer } from '../styles/global/layout'
 import Layout from '../theme/layout'
 import ResponsiveImg from '../components/Content/ResponsiveImg'
 
-export default function Post({ data }) {
+export default function Post({ data, location }) {
 	const { markdownRemark: post } = data
 	const { html } = post
 	const { title, date, thumbnail } = post.frontmatter
@@ -37,7 +37,7 @@ export default function Post({ data }) {
 	}
 
 	return (
-		<Layout pageMeta={{ title, thumbnail }}>
+		<Layout pageMeta={{ title, thumbnail }} pathname={location.pathname}>
 			 <SEO
 					title={post.frontmatter.title}
 					description={post.frontmatter.description || post.excerpt}

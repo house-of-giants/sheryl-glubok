@@ -7,8 +7,8 @@ import { StyledContainer } from '../styles/global/layout'
 import { animPageDefault } from '../utils/animationDefs'
 import { AnimatePresence, motion } from 'framer-motion'
 
-export default () => (
-	<Layout pageMeta={{ title: 'Thank You' }}>
+export default ({ location }) => (
+	<Layout pageMeta={{ title: 'Thank You' }} pathname={location.pathname}>
 		<NavLogo />
 		<StyledContainer narrow>
 			<AnimatePresence exitBeforeEnter>

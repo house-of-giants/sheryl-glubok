@@ -11,7 +11,7 @@ import { animPageDefault } from '../utils/animationDefs'
 import { AnimatePresence, motion } from 'framer-motion'
 import Columns from '../components/Content/Columns'
 
-export default function Page({ data }) {
+export default function Page({ data, location }) {
 	const contentEl = useRef( null )
 	const { markdownRemark: post } = data
 	const { html } = post
@@ -39,7 +39,7 @@ export default function Page({ data }) {
 	}, [])
 
 	return (
-		<Layout pageMeta={{ title: 'About' }}>
+		<Layout pageMeta={{ title: 'About' }} pathname={location.pathname}>
 			<NavLogo />
 			<StyledContainer>
 				<AboutHero data={ post.frontmatter } />
