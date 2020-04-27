@@ -14,11 +14,11 @@ const OxHidden = styled.div`
 	overflow-y: visible;
 `
 
-export default function Page({ data }) {
+export default function Page({ data, location }) {
 	const { markdownRemark: post } = data
 
 	return (
-		<Layout>
+		<Layout pathname={location.pathname}>
 			<Hero />
 			<NavLogo />
 			<OxHidden>

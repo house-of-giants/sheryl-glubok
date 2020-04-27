@@ -53,7 +53,7 @@ const FilmTitle = ({ title }) => {
 	return <h1>{title}</h1>
 }
 
-const Film = ({ data }) => {
+const Film = ({ data, location }) => {
 	const [ isVideo, showVideo ] = useState( false )
 	const contentEl = useRef( null )
 	const { markdownRemark: post } = data
@@ -84,7 +84,7 @@ const Film = ({ data }) => {
 	}, [])
 
 	return (
-		<Layout pageMeta={{ title, thumbnail }}>
+		<Layout pageMeta={{ title, thumbnail }} pathname={location.pathname}>
 			<NavLogo />
 			<motion.div variants={animPageDefault} initial="in" animate="normal" exit="out" itemScope itemType="http://schema.org/Movie">
 				<StyledContainer>

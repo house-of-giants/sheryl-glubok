@@ -5,8 +5,8 @@ import NavLogo from '../components/Nav/NavLogo'
 import FilmList from '../components/Films/FilmList'
 
 
-const FilmArchive = () => (
-	<Layout pageMeta={{ title: 'Films' }}>
+const FilmArchive = ({ location }) => (
+	<Layout pageMeta={{ title: 'Films' }} pathname={location.pathname}>
 		<NavLogo />
 		<FilmList />
 	</Layout>

@@ -14,13 +14,13 @@ const GlobalStyle = createGlobalStyle`
 
 const defaultMeta = {
 	title: 'Writer, Director, Storyteller',
-	thumbnail: '/social-image.png'
+	thumbnail: '/social-image.png',
 }
 
-const Layout = ({ pageMeta = defaultMeta, children }) => (
+const Layout = ({ pageMeta = defaultMeta, children, pathname }) => (
 	<div className='app'>
 		<GlobalStyle />
-		<Head pageMeta={pageMeta} />
+		<Head pageMeta={pageMeta} pathname={pathname} />
 		<Nav />
 		{children}
 		<Footer />

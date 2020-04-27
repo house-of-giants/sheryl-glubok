@@ -31,12 +31,12 @@ const animItem = {
 	}
 }
 
-const BlogList = ( { data, pageContext } ) => {
+const BlogList = ( { data, pageContext, location } ) => {
 	const { edges: posts } = data.allMarkdownRemark
 	const { currentPage, numPages } = pageContext
 
 	return (
-		<Layout pageMeta={{ title: 'Blog, Community, News' }}>
+		<Layout pageMeta={{ title: 'Blog, Community, News' }} pathname={location.pathname}>
 			<NavLogo />
 			<StyledBlogContainer itemScope itemType="https://schema.org/Blog" variants={animPageDefault} initial="in" animate="normal" exit="out">
 				<div className="blog-heading">
