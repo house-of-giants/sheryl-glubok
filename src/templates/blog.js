@@ -42,7 +42,7 @@ export default function Post({ data }) {
 					title={post.frontmatter.title}
 					description={post.frontmatter.description || post.excerpt}
 					image={thumbnail}
-					pathname={'test'}
+					pathname={window.location.pathname}
 				/>
 			<NavLogo />
 			<StyledContainer>
