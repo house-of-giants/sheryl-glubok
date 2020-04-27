@@ -17,18 +17,15 @@ const defaultMeta = {
 	thumbnail: '/social-image.png',
 }
 
-const Layout = ({ pageMeta = defaultMeta, children, pathname }) => {
-	console.log(pathname);
-	return (
-		<div className='app'>
-			<GlobalStyle />
-			<Head pageMeta={pageMeta} pathname={pathname} />
-			<Nav />
-			{children}
-			<Footer />
-		</div>
-	)
-}
+const Layout = ({ pageMeta = defaultMeta, children, pathname }) => (
+	<div className='app'>
+		<GlobalStyle />
+		<Head pageMeta={pageMeta} pathname={pathname} />
+		<Nav />
+		{children}
+		<Footer />
+	</div>
+)
 
 Layout.propTypes = {
 	pageMeta: PropTypes.shape({
