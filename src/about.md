@@ -14,9 +14,10 @@ column_two_img: /images/about-2.jpg
 column_three_img: /images/about-3.jpg
 home_body: >-
   I am an award-winning writer, director and producer based in Denver. I was
-  born in Colorado, grew up in Arkansas, studied film in Prague, and got my MFA
-  in Fiction in Vermont all the while telling stories that center around
-  identity, female agency, love, and self-understanding.
+  born in Colorado, grew up in Arkansas, went to college in Northern California,
+  studied film in Prague, and got my MFA in Fiction in Vermont all the while
+  telling stories that center around identity, female agency, love, and
+  self-understanding.
 home_button_label: ''
 ---
 There is a twenty year gap between my first two films. Why? One reason was that my father said never go into debt to make a movie because it’s a terrible investment. He was a finance professor, so he knew what he was talking about. Another was that when I was coming up in the 90s, I didn't see myself reflected in the pantheon of the American Indie film movement. I wasn’t Tarantino, Soderbergh, Rodriguez or Linklater.
