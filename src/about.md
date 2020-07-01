@@ -14,8 +14,8 @@ column_two_img: /images/about-2.jpg
 column_three_img: /images/about-3.jpg
 home_body: >-
   I am an award-winning writer, director and producer based in Denver. I was
-  born in Colorado, grew up in Arkansas, went to college in Northern California,
-  studied film in Prague, and got my MFA in Fiction in Vermont all the while
+  born in Colorado, grew up in Arkansas, went to college at Stanford, studied
+  film at FAMU in Prague, and got my MFA in Fiction at Bennington all the while
   telling stories that center around identity, female agency, love, and
   self-understanding.
 home_button_label: ''
